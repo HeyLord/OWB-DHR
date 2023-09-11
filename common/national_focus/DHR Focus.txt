@@ -1,0 +1,297 @@
+focus_tree = {
+	id = nf_mxt_mexico_territory
+	country = {
+		factor = 0
+		modifier = {
+			add = 45
+			original_tag = MXT
+		}
+	}
+	default = no
+	shared_focus = NCR_shared_industrial_start_focus
+    shared_focus = NCR_shared_military_start_focus
+
+	focus = {
+		id = mxt_moore_administration
+		icon = GFX_goal_NCR_Hayes_Expansion_Mexico
+		cost = 14
+		x = 30
+		y = 3
+		available = {
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mxt_red_rose_of_mexico
+		icon = GFX_goal_RRG_rosado
+		cost = 28
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = mxt_moore_administration
+		}
+		will_lead_to_war_with = ACH
+		relative_position_id = mxt_moore_administration
+		completion_reward = {
+			country_event = ncr_hayes_expansion.3
+		}
+	}
+	focus = {
+		id = mxt_steel_hand_of_colonel
+		icon = GFX_goal_PLS_Rise_And_Shine
+		cost = 28
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mxt_moore_administration
+		}
+		relative_position_id = mxt_moore_administration
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = MXT_mexico_administration
+				add_idea = MXT_mexico_administration_2
+			}
+			add_manpower = -1948
+		}
+	}
+	focus = {
+		id = mxt_the_dealmaker
+		icon = GFX_goal_TAA_take_my_money
+		cost = 28
+		x = 2
+		y = 1
+		bypass = {
+			TAA = {
+				exists = yes
+				is_not_new_california_member = yes
+			}
+		}
+		prerequisite = {
+			focus = mxt_moore_administration
+		}
+		relative_position_id = mxt_moore_administration
+		completion_reward = {
+			add_ideas = TAA_the_master_gunsmiths
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1500
+				producer = TAA
+			}
+		}
+	}
+	focus = {
+		id = mxt_robotic_policemen
+		icon = GFX_goal_TLA_LQ_police
+		cost = 28
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mxt_red_rose_of_mexico
+		}
+		relative_position_id = mxt_red_rose_of_mexico
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					NOT = {
+						is_core_of = MXT
+					}
+				}
+				add_resistance = -25
+				add_compliance = 25
+			}
+			if = {
+				limit = {
+					has_country_flag = mxt_rosada_agrees
+				}
+				custom_effect_tooltip = mxt_rosado_bots_tt
+				hidden_effect = {
+					load_oob = MXT_robots
+				}
+			}
+		}
+	}
+	focus = {
+		id = mxt_kickstart_the_industry
+		icon = GFX_goal_generic_megaloader
+		cost = 28
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mxt_the_dealmaker
+		}
+		relative_position_id = mxt_the_dealmaker
+		completion_reward = {
+			add_ideas = MXT_mexico_industry
+			every_owned_state = {
+				limit = {
+					is_core_of = MXT
+				}
+				PREV = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = arms_factory
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 4
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = mxt_stabilisation
+		icon = GFX_goal_bobble_head_charisma
+		cost = 28
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = mxt_robotic_policemen
+		}
+		prerequisite = {
+			focus = mxt_steel_hand_of_colonel
+		}
+		prerequisite = {
+			focus = mxt_kickstart_the_industry
+		}
+		relative_position_id = mxt_steel_hand_of_colonel
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = MXT_mexico_administration_2
+				add_idea = MXT_mexico_administration_3
+			}
+		}
+	}
+	focus = {
+		id = mxt_leader_of_the_territories
+		icon = GFX_goal_NCR_Moore_Ranger
+		cost = 28
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mxt_stabilisation
+		}
+		relative_position_id = mxt_stabilisation
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = mxt_leader_tt
+		}
+	}
+	focus = {
+		id = mxt_lady_of_the_bells
+		icon = GFX_goal_RRG_Rosado_New
+		cost = 28
+		x = -5
+		y = 1
+		available = {
+			has_country_flag = mxt_rosada_agrees
+		}
+		mutually_exclusive = {
+			focus = mxt_whos_laughing_now
+			focus = mxt_iron_grip
+		}
+		prerequisite = {
+			focus = mxt_leader_of_the_territories
+		}
+		relative_position_id = mxt_leader_of_the_territories
+		completion_reward = {
+			add_country_leader_role = {
+				character = MXT_valentina_rosado
+				promote_leader = yes
+				country_leader = {
+					ideology = technocracy
+					expire = "3000.01.01.01"
+					traits = {
+						old_worldist
+					}
+				}
+			}
+			set_politics = {
+				ruling_party = intellectuals
+			}
+			hidden_effect = {
+				set_popularities = {
+					ruler = 0
+					people = 0
+					elites = 0
+					intellectuals = 100
+				}
+			}
+			set_cosmetic_tag = MXT_Technate
+		}
+	}
+	focus = {
+		id = mxt_iron_grip
+		icon = GFX_goal_NCR_Moore
+		cost = 28
+		x = 0
+		y = 1
+		mutually_exclusive = {
+			focus = mxt_whos_laughing_now
+			focus = mxt_lady_of_the_bells
+		}
+		prerequisite = {
+			focus = mxt_leader_of_the_territories
+		}
+		relative_position_id = mxt_leader_of_the_territories
+		completion_reward = {
+			set_cosmetic_tag = MXT_Republic
+		}
+	}
+	focus = {
+		id = mxt_whos_laughing_now
+		icon = GFX_goal_TAA_Saint_Tod
+		cost = 28
+		x = 5
+		y = 1
+		available = {
+			TAA = {
+				OR = {
+					exists = no
+					is_new_california_member = yes
+				}
+			}
+		}
+		mutually_exclusive = {
+			focus = mxt_iron_grip
+			focus = mxt_lady_of_the_bells
+		}
+		prerequisite = {
+			focus = mxt_leader_of_the_territories
+		}
+		relative_position_id = mxt_leader_of_the_territories
+		completion_reward = {
+			add_country_leader_role = {
+				character = MXT_todd_howitzer
+				promote_leader = yes
+				country_leader = {
+					ideology = contractualism
+					expire = "3000.01.01.01"
+					traits = {
+						compassionate_gentleman
+						war_industrialist
+					}
+				}
+			}
+			set_politics = {
+				ruling_party = elites
+			}
+			hidden_effect = {
+				set_popularities = {
+					ruler = 0
+					people = 0
+					elites = 100
+					intellectuals = 0
+				}
+			}
+			set_cosmetic_tag = MXT_MAA
+		}
+	}
+
+}
