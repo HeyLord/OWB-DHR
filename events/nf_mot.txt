@@ -1,0 +1,1646 @@
+﻿add_namespace = nf_mot
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.1" }
+	id = nf_mot.1
+	title = nf_mot.1.t
+	desc = nf_mot.1.d
+	#picture =
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot.1.a
+		add_offsite_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_political_power = 25
+	}
+
+	option = {
+		name = nf_mot.1.b
+		army_experience = 10
+		add_tech_bonus = {
+			name = nf_mot.1.t
+			bonus = 0.5
+			uses = 2
+			category = cat_grand_army
+		}
+		ai_chance = {
+			modifier = {
+				factor = 3
+				NCR = { is_ai = no}
+			}
+		}
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.2" }
+	id = nf_mot.2
+	title = nf_mot.2.t
+	desc = nf_mot.2.d
+	#picture =
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot.2.a
+		47 = {
+			add_compliance = -10
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+
+	option = {
+		name = nf_mot.2.b
+		add_manpower = -300
+		47 = {
+			add_resistance = 10
+		}
+		ai_chance = {
+			modifier = {
+				factor = 3
+				NCR = { is_ai = no}
+			}
+		}
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.3" }
+	id = nf_mot.3
+	title = nf_mot.3.t
+	desc = nf_mot.3.d
+	#picture =
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot.3.a
+		add_ideas = mot_skimping_treaty
+	}
+
+	option = {
+		name = nf_mot.3.b
+		add_stability = 0.075
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 3
+				NCR = { is_ai = no}
+			}
+		}
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.4" }
+	id = nf_mot.4
+	title = nf_mot.4.t
+	desc = nf_mot.4.d
+	#picture =
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot.4.a
+		every_state = {
+			limit = {
+				OR = {
+					state = 47
+					state = 552
+					state = 137
+				}
+			}
+			add_resistance = -7.5
+		}
+	}
+
+	option = {
+		name = nf_mot.4.b
+		add_intel = {
+			target = MOJ
+			civilian_intel = 10
+			army_intel = 10
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = nf_mot.4.c
+		set_temp_variable = { global.op_sun_countdown_temp = 20 }
+		change_op_sun_countdown = yes
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.5" }
+	id = nf_mot.5
+	title = nf_mot.5.t
+	desc = nf_mot.5.d
+	#picture =
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot.5.a
+		custom_effect_tooltip = mot_defence_ctte_tt
+		add_command_power = 25
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.6" }
+	id = nf_mot.6
+	title = nf_mot.6.t
+	desc = nf_mot.6.d
+	picture = GFX_event_MOJ_ncr_raids
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot.6.a
+		custom_effect_tooltip = mot_unlock_supply_system_tt
+		set_variable = { mot_supply = 80 }
+		set_variable = { mot_army_supply = 0.008 }
+	}
+}
+
+country_event = { # Khan Raid on Camp McCarran
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.7" }
+	id = nf_mot.7
+	title = nf_mot.7.t
+	desc = nf_mot.7.d
+	picture = GFX_event_MOJ_ncr_raids
+
+	trigger = {
+		tag = MOT
+		date > 2275.3.1
+		NOT = { has_completed_focus = mot_bittersprings }
+	}
+	fire_only_once = yes
+	mean_time_to_happen = { days = 40 }
+
+	option = {
+		name = nf_mot.7.a
+		add_ideas = mot_khan_raiders
+		add_manpower = -60
+		613 = {
+			damage_building = {
+				type = bunker
+				province = 6989
+				damage = 2
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+		}
+	}
+}
+
+country_event = { # The Second Campaign
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.8" }
+	id = nf_mot.8
+	title = nf_mot.8.t
+	desc = nf_mot.8.d
+	picture = GFX_event_MOJ_ncr_raids
+
+	is_triggered_only = yes
+
+	option = { # Oliver's Option
+		name = nf_mot.8.a
+		custom_effect_tooltip = mot_oli_small_gain_tt
+		subtract_from_variable = { mot_oli_han_bal = 0.2 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_hanlon = yes
+				factor = 0
+			}
+		}
+	}
+
+	option = { # Hanlon's Option
+		name = nf_mot.8.b
+		custom_effect_tooltip = mot_han_small_gain_tt
+		add_to_variable = { mot_oli_han_bal = 0.2 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_oliver = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = { # Defending the Dam
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.9" }
+	id = nf_mot.9
+	title = nf_mot.9.t
+	desc = nf_mot.9.d
+	picture = GFX_event_NCR_hoover_dam
+
+	is_triggered_only = yes
+
+	option = { # Oliver's Option
+		name = nf_mot.9.a
+		custom_effect_tooltip = mot_oli_large_gain_tt
+		subtract_from_variable = { mot_oli_han_bal = 0.3 }
+		custom_effect_tooltip = mot_oli_hoover_plan_tt
+		add_to_variable = { global.fbhd_hoover_defence_add = 0.1 }
+		add_to_variable = { global.fbhd_boulder_defence_add = 0.05 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_hanlon = yes
+				factor = 0
+			}
+		}
+	}
+
+	option = { # Hanlon's Option
+		name = nf_mot.9.b
+		custom_effect_tooltip = mot_han_large_gain_tt
+		add_to_variable = { mot_oli_han_bal = 0.3 }
+		custom_effect_tooltip = mot_han_hoover_plan_tt
+		add_to_variable = { global.fbhd_boulder_defence_add = 0.2 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_oliver = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = { # Divide CTTE
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.10" }
+	id = nf_mot.10
+	title = nf_mot.10.t
+	desc = nf_mot.10.d
+	picture = GFX_event_MOJ_ncr_raids
+
+	is_triggered_only = yes
+
+	option = { # Oliver's Option
+		name = nf_mot.10.a
+		custom_effect_tooltip = mot_oli_small_gain_tt
+		subtract_from_variable = { mot_oli_han_bal = 0.2 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_hanlon = yes
+				factor = 0
+			}
+		}
+	}
+
+	option = { # Hanlon's Option
+		name = nf_mot.10.b
+		custom_effect_tooltip = mot_han_small_gain_tt
+		add_to_variable = { mot_oli_han_bal = 0.2 }
+		news_event = { id = nf_mot_news.2 days = 12 random = 3 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_oliver = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = { # Vegas CTTE
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.11" }
+	id = nf_mot.11
+	title = nf_mot.11.t
+	desc = nf_mot.11.d
+	picture = GFX_event_NCR_hoover_dam
+
+	is_triggered_only = yes
+
+	option = { # Oliver's Option
+		name = nf_mot.11.a
+		custom_effect_tooltip = mot_oli_small_gain_tt
+		subtract_from_variable = { mot_oli_han_bal = 0.2 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_hanlon = yes
+				factor = 0
+			}
+		}
+	}
+
+	option = { # Hanlon's Option
+		name = nf_mot.11.b
+		custom_effect_tooltip = mot_han_small_gain_tt
+		add_to_variable = { mot_oli_han_bal = 0.2 }
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_oliver = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = { # The Problem of New Vegas
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.12" }
+	id = nf_mot.12
+	title = nf_mot.12.t
+	desc = nf_mot.12.d
+	picture = GFX_event_NCR_hoover_dam
+
+	is_triggered_only = yes
+
+	option = { # Oliver's Option
+		name = nf_mot.12.a
+		custom_effect_tooltip = mot_oli_small_gain_tt
+		subtract_from_variable = { mot_oli_han_bal = 0.2 }
+		set_country_flag = mot_veg_oliver_plan
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_hanlon = yes
+				factor = 0
+			}
+		}
+	}
+
+	option = { # Hanlon's Option
+		name = nf_mot.12.b
+		custom_effect_tooltip = mot_han_small_gain_tt
+		add_to_variable = { mot_oli_han_bal = 0.2 }
+		set_country_flag = mot_veg_hanlon_plan
+		ai_chance = {
+			modifier = {
+				MOT_has_ai_behavior_oliver = yes
+				factor = 0
+			}
+		}
+	}
+}
+
+country_event = { # Divide and Conquer
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.13" }
+	id = nf_mot.13
+	title = nf_mot.13.t
+	desc = nf_mot.13.d
+	picture = GFX_event_NCR_hoover_dam
+
+	is_triggered_only = yes
+
+	option = { # We must watch our backs
+		name = nf_mot.13.a
+		add_stability = -0.15
+		add_war_support = -0.1
+	}
+}
+
+country_event = { # The Ranger and the Robot
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.14" }
+	id = nf_mot.14
+	title = nf_mot.14.t
+	desc = nf_mot.14.d
+	picture = GFX_event_NCR_hoover_dam
+
+	is_triggered_only = yes
+
+	option = { # This is the end of the Treaty!
+		name = nf_mot.14.a
+		news_event = nf_mot_news.3
+		every_country = {
+			limit = { has_idea = ncr_veg_treaty_of_new_vegas }
+			remove_ideas = ncr_veg_treaty_of_new_vegas
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = MOT
+					any_guaranteed_country = { original_tag = VEG }
+				}
+				diplomatic_relation = {
+					country = VEG
+					relation = guarantee
+				}
+			}
+			diplomatic_relation = {
+				country = MOT
+				relation = military_access
+			}
+		}
+		add_ai_strategy = {
+			type = declare_war
+			id = MOT
+			value = 150
+		}
+	}
+}
+
+
+
+news_event = { # Bakersfield
+	id = nf_mot.15
+	title = nf_mot.15.t
+	desc = nf_mot.15.d
+	picture = GFX_event_NCR_hoover_dam
+
+	is_triggered_only = yes
+
+	option = { # We must watch our backs
+		name = nf_mot.15.a
+		add_stability = 0.05
+	}
+}
+
+news_event = { # Bakersfield
+	id = nf_mot.16
+	title = nf_mot.16.t
+	desc = nf_mot.16.d
+	picture = GFX_event_NCR_hoover_dam
+
+	is_triggered_only = yes
+
+	option = { # We must watch our backs
+		name = nf_mot.16.a
+		add_stability = -0.05
+	}
+}
+
+country_event = { # The Bear's Claws on Our Throat
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.17" }
+	id = nf_mot.17
+	title = nf_mot.17.t
+	desc = nf_mot.17.d
+	picture = GFX_event_VEG_tops
+
+	is_triggered_only = yes
+
+	option = { # We must watch our backs
+		name = nf_mot.17.a
+		#Vegas is puppeted
+		ai_chance = {
+				# This is NOT the default response.
+				base = 0
+				# If the target has 100 opinion towards the MOT, this adds 10 to the AI
+				# weight for this option; if they have -100, it'll add -10 to the weight
+				# for this option.
+				modifier = {
+					set_temp_variable = { divided_opinion = opinion@MOT }
+					divide_temp_variable = { divided_opinion = 10 }
+					divide_temp_variable = { divided_opinion = 10 }
+					add = divided_opinion
+					always = yes
+				}
+				modifier = {
+
+					# Apparently this is also strength ratio actually does according to
+					# shultays.
+					set_temp_variable = { strength_comp = MOT.num_battalions }
+					divide_temp_variable = { strength_comp = num_battalions?1 }
+					factor = strength_comp
+					always = yes
+				}
+		}
+		MOT = { news_event = nf_mot.19 }
+		custom_effect_tooltip = nf_mot.17.a_tt
+		}
+	option = {
+		name = nf_mot.17.b
+		# War goal effects from RRG to the rejecting country go here.
+		ai_chance = {
+			# Telling RRG to fuck off is the default option.
+			base = 10
+			# If the target has 100 opinion towards the RRG, they will never tell them
+			# to fuck off. Otherwise it simply reduces the odds that they will say no.
+			modifier = {
+				set_temp_variable = { divided_opinion = opinion@MOT }
+				divide_temp_variable = { divided_opinion = -10 }
+				add = divided_opinion
+				always = yes
+			}
+			modifier = {
+				# Apparently this is also strength ratio actually does according to
+				# shultays.
+				set_temp_variable = { strength_comp = num_battalions }
+				divide_temp_variable = { strength_comp = MOT.num_battalions?1 }
+				factor = strength_comp
+				always = yes
+			}
+		}
+		every_other_country = {
+			limit = {
+				is_new_california_member = yes
+			}
+			news_event = nf_mot.18
+		}
+
+	}
+}
+
+news_event = { # Vegas Submits
+	id = nf_mot.18
+	title = nf_mot.18.t
+	desc = nf_mot.18.d
+	picture = GFX_event_VEG_tops
+
+	is_triggered_only = yes
+
+	option = { # Yay that was fun
+		name = nf_mot.18.a
+		if = {
+			limit = {
+				tag = NCR
+			}
+			puppet = VEG
+		}
+	}
+}
+
+news_event = { # Vegas Is Our Enemy
+	id = nf_mot.19
+	title = nf_mot.19.t
+	desc = nf_mot.19.d
+	picture = GFX_event_VEG_tops
+
+	is_triggered_only = yes
+
+	option = { # Yay that was fun
+		name = nf_mot.19.a
+		VEG = {
+			ROOT = { grant_wargoals_on_core_states_of_prev = yes }
+		}
+	}
+}
+
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.20" }
+	id = nf_mot.20
+	title = nf_mot.20.t
+	desc = nf_mot.20.d
+	picture = GFX_event_VEG_strip
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot.20.a
+		380 = {
+			if = {
+				limit = {
+					is_controlled_by = MOT
+				}
+				VEG = {
+					transfer_state = PREV
+				}
+			}
+		}
+		552 = {
+			if = {
+				limit = {
+					is_controlled_by = MOT
+				}
+				VEG = {
+					transfer_state = PREV
+				}
+			}
+		}
+		MOT = { news_event = nf_mot.21 }
+	}
+
+	option = {
+		name = nf_mot.20.b
+		MOT = {news_event = nf_mot.22 }
+	}
+}
+news_event = { # Vegas gave us stuff
+	id = nf_mot.21
+	title = nf_mot.21.t
+	desc = nf_mot.21.d
+	picture = GFX_event_VEG_tops
+
+	is_triggered_only = yes
+
+	option = { # Yay that was fun
+		name = nf_mot.21.a
+		add_offsite_building = {
+			type = arms_factory
+			level = 4
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 400
+			producer = VEG
+		}
+	}
+}
+news_event = { # Vegas gave us stuff
+	id = nf_mot.22
+	title = nf_mot.22.t
+	desc = nf_mot.22.d
+	picture = GFX_event_VEG_tops
+
+	is_triggered_only = yes
+
+	option = { # Yay that was fun
+		name = nf_mot.22.a
+
+	}
+}
+
+news_event = { # Raoul
+	id = nf_mot.24
+	title = nf_mot.24.t
+	desc = nf_mot.24.d
+	picture = GFX_event_ghoul
+
+	is_triggered_only = yes
+
+	option = { # Yay that was fun
+		name = nf_mot.24.a
+		set_temp_variable = { mot_supply_change = 40 }
+		change_mot_supply = yes
+		set_country_flag = mot_raul_found
+		custom_effect_tooltip = nf_mot.24.a_tt
+	}
+}
+
+country_event = { # why Hanlon
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.25" }
+	id = nf_mot.25
+	title = nf_mot.25.t
+	desc = nf_mot.25.d
+	picture = GFX_event_desert_rangers_marching
+
+	is_triggered_only = yes
+
+	option = { # Diplomacy Check
+		name = nf_mot.25.a
+		# trigger = { has_political_power > 100 }
+		add_political_power = -100
+		add_tech_bonus = {
+			category = spec_force_equipment_tech_category
+			bonus = 0.4
+			uses = 2
+			name = spec_forces_research_bonus
+		}
+		ai_chance = {
+			base = 4
+		}
+	}
+	option = { # Yay that was fun
+		name = nf_mot.25.b
+		add_political_power = 25
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_tech_bonus = {
+			category = infantry_tech_category
+			bonus = 0.4
+			uses = 1
+			name = infantry_weapons_bonus
+		}
+		every_unit_leader = {
+			limit = {
+				has_id = 821
+			}
+			retire = yes
+		}
+		custom_effect_tooltip = nf_mot.25.b_tt
+	}
+}
+
+
+news_event = { # Benny is a prick
+	id = nf_mot.26
+	title = nf_mot.26.t
+	desc = nf_mot.26.d
+	picture = GFX_event_VEG_tops
+
+	is_triggered_only = yes
+
+	option = { # Diplomacy Check
+		name = nf_mot.26.a
+		start_civil_war = {
+			ideology = elites
+			size = 0.20
+			states_filter = {
+				NOT = {
+					state = 211
+				}
+			}
+		}
+		random_other_country = {
+			limit = {
+				original_tag = VEG
+				has_government = elites
+			}
+			load_focus_tree = { tree = vegas_nf keep_completed = no }
+			create_new_owb_country = yes
+			MOT = { puppet = PREV }
+			set_politics = {
+				ruling_party = elites
+			}
+			set_political_party = {
+				ideology = elites
+				popularity = 100
+			}
+		}
+	}
+}
+
+country_event = { # The Three-Card Bounty
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_mot.27" }
+	id = nf_mot.27
+	title = nf_mot.27.t
+	desc = nf_mot.27.d
+	picture = event_VEG_wall
+
+	trigger = {
+		original_tag = MOT
+		controls_state = 380
+		always = no
+	}
+	mean_time_to_happen = {
+		months = 8
+	}
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.27.a
+		custom_effect_tooltip = nf_mot.27.a_tt
+		add_state_core = 380
+		hidden_effect = {
+			division_template = {
+				name = "Baja Brothers"
+				regiments = {
+					spec_ops = { x = 0 y = 0 }
+					spec_ops = { x = 0 y = 1 }
+					spec_ops = { x = 0 y = 2 }
+					spec_ops = { x = 0 y = 3 }
+					spec_ops = { x = 1 y = 0 }
+					spec_ops = { x = 1 y = 1 }
+					spec_ops = { x = 1 y = 2 }
+					spec_ops = { x = 2 y = 0 }
+					spec_ops = { x = 2 y = 1 }
+					spec_ops = { x = 2 y = 2 }
+				}
+				support = {
+					fireteam_support = { x = 0 y = 0 }
+					recon_company = { x = 1 y = 0 }
+					demolitions_support = { x = 2 y = 0 }
+				}
+				#is_locked = yes
+				priority = 2
+			}
+			380 = {
+				create_unit = {
+					prioritize_location = 9066
+					division = "name = \"Baja Brothers\" division_template = \"Baja Brothers\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = MOT
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Pursue Great Khans
+	id = nf_mot.28
+	title = nf_mot.28.t
+	desc = nf_mot.28.d
+	picture = event_VEG_wall
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.28.a
+		set_temp_variable = { mot_supply_change = 30 }
+		change_mot_supply = yes
+	}
+	option = {
+		name = nf_mot.28.b
+		set_country_flag = mot_weakened_khans
+	}
+}
+
+country_event = { # Khan Rebellion Event
+	id = nf_mot.29
+	title = nf_mot.29.t
+	desc = nf_mot.29.d
+	picture = event_VEG_wall
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.29.a
+	}
+	option = {
+		name = nf_mot.29.b
+		custom_effect_tooltip = nf_mot_29_tt
+		KHA = { change_tag_from = MOT }
+	}
+}
+
+country_event = { # California Civil War
+	id = nf_mot.30
+	title = nf_mot.30.t
+	desc = nf_mot.30.d
+	picture = GFX_event_NCR_congress
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				mot_farkas_support = 0.1
+			}
+			set_variable = {
+				mot_hanlon_support = 0.2
+			}
+			set_variable = {
+				mot_oliver_support = 0.2
+			}
+			set_country_flag = mot_crisis_in_california
+		}
+	}
+
+	option = {
+		name = nf_mot.30.a
+		every_unit_leader = {
+			limit = {
+				has_id = 12179
+			}
+			retire = yes
+		}
+		custom_effect_tooltip = nf_mot_30_tt
+		leave_new_california = yes
+		set_country_flag = mot_follow_oliver
+		activate_mission = hanlon_takes_action
+		activate_mission = farkas_takes_action
+		NCR = {
+			end_puppet = MOT
+		}
+	}
+	option = {
+		name = nf_mot.30.b
+		end_puppet = yes
+		every_unit_leader = {
+			limit = {
+				has_id = 12179
+			}
+			retire = yes
+		}
+		custom_effect_tooltip = nf_mot_30_tt
+		leave_new_california = yes
+		set_country_flag = mot_follow_hanlon
+		activate_mission = oliver_takes_action
+		activate_mission = farkas_takes_action
+		NCR = {
+			end_puppet = MOT
+		}
+	}
+	option = {
+		name = nf_mot.30.c
+		end_puppet = yes
+		every_unit_leader = {
+			limit = {
+				has_id = 12179
+			}
+			retire = yes
+		}
+		custom_effect_tooltip = nf_mot_30_tt
+		leave_new_california = yes
+		set_country_flag = mot_follow_farkas
+		activate_mission = hanlon_takes_action
+		activate_mission = oliver_takes_action
+		NCR = {
+			end_puppet = MOT
+		}
+	}
+}
+
+country_event = { # California Civil War
+	id = nf_mot.31
+	title = nf_mot.31.t
+	desc = nf_mot.31.d
+	picture = GFX_event_NCR_congress
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = mot_cali_civil_war
+			mark_focus_tree_layout_dirty = yes
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				random_list = {
+					90 = {
+					}
+					10 = {
+						country_event = {
+							id = nf_mot.43
+							days = 14
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_ai = no
+				}
+				country_event = {
+					id = nf_mot.43
+					days = 14
+				}
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {#Oliver
+		name = nf_mot.30.a
+		if = {
+			limit = {
+				NOT = {
+					has_country_leader = {
+						character = MOT_general_lee_oliver
+						ruling_only = yes
+					}
+				}
+			}
+			add_country_leader_role = {
+				character = MOT_general_lee_oliver
+				promote_character = yes
+				country_leader = {
+					ideology = constitutional_republic
+					traits = {
+						dislikes_caesars_legion
+					}
+					expire = "3000.01.01.01"
+					id = -1
+				}
+			}
+			retire_country_leader = yes
+		}
+		ai_chance = {
+            base = 1
+            modifier = {
+                add = 30
+            }
+        }
+		set_country_flag = MOT_civil_war_decided
+		leave_new_california = yes
+		NCR = {
+			end_puppet = MOT
+		}
+	}
+	option = {#Hanlon
+		name = nf_mot.30.b
+		#end_puppet = yes
+		leave_new_california = yes
+		#NCR = {
+		#	end_puppet = MOT
+		#}
+		if = {
+			limit = {
+				NOT = {
+					has_country_leader = {
+						character = MOT_josh_hanlon
+						ruling_only = yes
+					}
+				}
+			}
+			add_country_leader_role = {
+				character = MOT_josh_hanlon
+				promote_character = yes
+				country_leader = {
+					desc = MOT_JOSH_HANLON_DESC
+					ideology = constitutional_republic
+					traits = {
+						dislikes_caesars_legion
+						war_industrialist
+					}
+					expire = "3000.01.01.01"
+					id = -1
+				}
+			}
+			retire_country_leader = yes
+		}
+		ai_chance = {
+            base = 1
+            modifier = {
+                add = 25
+            }
+        }
+		set_country_flag = MOT_civil_war_decided
+	}
+	option = {#Farkas
+		name = nf_mot.30.c
+		#end_puppet = yes
+		add_country_leader_role = {
+			character = MOT_julie_farkas
+			promote_character = yes
+			country_leader = {
+				ideology = peoples_militia
+				traits = {
+					dislikes_caesars_legion
+					follower_buddy
+				}
+				expire = "3000.01.01.01"
+				id = -1
+			}
+		}
+        ai_chance = {
+            base = 1
+            modifier = {
+                add = 45
+            }
+        }
+		retire_country_leader = yes
+		set_country_flag = MOT_civil_war_decided
+		leave_new_california = yes
+		NCR = {
+			end_puppet = MOT
+		}
+	}
+}
+
+####CIVIL WAR: OLIVER
+
+#Oliver emergency
+country_event = {
+	id = nf_mot.32
+	title = nf_mot.32.t
+	desc = nf_mot.32.d
+	picture = GFX_event_NCR_mojave_camp
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.32.a
+		add_ideas = mot_oliv_unpopular_leader
+		set_cosmetic_tag = MOT_MA
+		set_country_leader_portrait = {
+			portrait = GFX_Portrait_MOT_dictator_oliver
+		}
+		set_country_flag = elite_doctrine_ai
+		set_country_flag = power_armor_doctrine_ai
+		clr_country_flag = grand_doctrine_ai
+		clr_country_flag = grand_infantry_doctrine_ai
+	}
+}
+country_event = {
+	id = nf_mot.33
+	title = nf_mot.33.t
+	desc = nf_mot.33.d
+	picture = GFX_event_mot_ranger_sequoia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.33.a
+		add_manpower = -1
+		add_war_support = -0.15
+		add_command_power = 100
+		retire_character = MOT_josh_hanlon
+	}
+	option = {
+		name = nf_mot.33.b
+		add_war_support = -0.1
+		add_command_power = 50
+		retire_character = MOT_josh_hanlon
+	}
+}
+#Oliver won
+country_event = {
+	id = nf_mot.34
+	title = nf_mot.34.t
+	desc = nf_mot.34.d
+	picture = GFX_event_NCR_camp
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.34.a
+		set_cosmetic_tag = MOT_CA
+		253 = {
+			add_core_of = MOT
+		}
+		set_capital = { state = 253 }
+		every_owned_state = {
+			limit = {
+				is_core_of = NCR
+			}
+			add_compliance = 25
+		}
+		swap_ideas = {
+			remove_idea = mot_oliv_unpopular_leader
+			add_idea = mot_military_government
+		}
+		add_country_leader_trait = president_general_weak_2
+		set_country_flag = mot_load_tree
+		load_focus_tree = nf_DHR_focus
+	}
+}
+
+#Oliver VS Hanlon
+country_event = {
+	id = nf_mot.35
+	title = nf_mot.35.t
+	desc = nf_mot.35.d
+	picture = GFX_event_mot_ranger_sequoia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.35.a
+		add_manpower = -1
+		retire_character = MOT_general_lee_oliver
+		set_cosmetic_tag = MOT_Rangers
+		set_capital = { state = 137 }
+		137 = {
+			add_building_construction = {
+				type = bunker
+				level = 2
+				province = 3211
+			}
+		}
+	}
+}
+#Hanlon choice
+country_event = {
+	id = nf_mot.36
+	title = nf_mot.36.t
+	desc = nf_mot.36.d
+	picture = GFX_event_ncr_mojave_outpost
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.36.a
+		complete_national_focus = mot_han_where_the_heart_knows
+	}
+	option = {
+		name = nf_mot.36.b
+		complete_national_focus = mot_han_the_head_forgets
+	}
+}
+#Hanlon award
+country_event = {
+	id = nf_mot.37
+	title = nf_mot.37.t
+	desc = nf_mot.37.d
+	picture = GFX_event_NCR_victory
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.37.a
+		add_stability = -0.01
+		hidden_effect = {
+			country_event = {
+				id = nf_mot.38
+				days = 7
+			}
+		}
+	}
+}
+#Hanlon shooting
+country_event = {
+	id = nf_mot.38
+	title = nf_mot.38.t
+	desc = nf_mot.38.d
+	picture = GFX_event_mot_ranger_sequoia
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.38.a
+		add_stability = -0.15
+		add_manpower = -1
+		retire_character = MOT_josh_hanlon
+		hidden_effect = {
+			every_character = {
+				set_nationality = NCR
+			}
+			every_navy_leader = {
+				set_nationality = NCR
+			}
+			every_unit_leader = {
+				set_nationality = NCR
+			}
+		}
+		NCR = { change_tag_from = MOT }
+		NCR = {
+			annex_country = {
+				target = MOT
+				transfer_troops = yes
+			}
+			every_owned_state = {
+				limit = { is_core_of = MOT }
+				add_core_of = NCR
+			}
+			country_event = {
+				id = nf_mot.39
+				days = 3
+			}
+		}
+	}
+}
+#Hanlon memorial
+country_event = {
+	id = nf_mot.39
+	title = nf_mot.39.t
+	desc = nf_mot.39.d
+	picture = GFX_event_NCR_victory
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.39.a
+		add_war_support = 0.05
+		#set_province_name = {
+		#	id = 325
+		#	name = LOC_KEY
+		#}
+		#add_victory_points = {
+		#	province = 8951
+		#	value = -3
+		#}
+	}
+}
+#Oliver dies
+country_event = {
+	id = nf_mot.40
+	title = nf_mot.40.t
+	desc = nf_mot.40.d
+	picture = GFX_event_NCR_victory
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.40.a
+		add_manpower = -1
+		add_stability = -0.01
+		retire_character = MOT_general_lee_oliver
+		set_cosmetic_tag = MOT_Followers
+	}
+}
+#Marcus and Farkas
+country_event = {
+	id = nf_mot.41
+	title = nf_mot.41.t
+	desc = nf_mot.41.d
+	picture = GFX_event_generic_mutant
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.41.a
+		add_manpower = 314
+		custom_effect_tooltip = MARCUS_TT
+		hidden_effect = {
+			JCT = {
+				JCT_marcus = {
+					set_nationality = MOT
+				}
+			}
+		}
+	}
+}
+#Hsu and Raul
+country_event = {
+	id = nf_mot.42
+	title = nf_mot.42.t
+	desc = nf_mot.42.d
+	picture = GFX_event_raul
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.42.a
+		custom_effect_tooltip = RAUL_TT
+		set_country_flag = mot_raul_ghost
+	}
+}
+country_event = {
+	id = nf_mot.43
+	title = nf_mot.43.t
+	desc = nf_mot.43.d
+	picture = GFX_event_VEG_wall
+
+	immediate = {
+		hidden_effect = {
+			FIE = {
+				transfer_state = 380
+				declare_war_on = {
+					target = MOT
+					type = annex_everything
+				}
+				load_oob = FIE_rise
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_mot.43.a
+	}
+	option = {
+		name = nf_mot.43.b
+		FIE = {
+			change_tag_from = ROOT
+		}
+	}
+}
+
+add_namespace = nf_mot_news
+
+news_event = { # Operation: Sunburst
+	id = nf_mot_news.1
+	title = nf_mot_news.1.t
+	desc = nf_mot_news.1.d
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		trigger = {
+			is_ncr_nation = yes
+		}
+		name = nf_mot_news.1.a
+	}
+
+	option = {
+		trigger = {
+			is_brotherhood_nation = yes
+		}
+		name = nf_mot_news.1.b
+	}
+
+	option = {
+		trigger = {
+			NOT = { is_ncr_nation = yes }
+			NOT = { is_brotherhood_nation = yes }
+		}
+		name = nf_mot_news.1.c
+	}
+}
+
+news_event = { # Expedition to the Divide
+	id = nf_mot_news.2
+	title = nf_mot_news.2.t
+	desc = nf_mot_news.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			is_ncr_nation = yes
+		}
+		name = nf_mot_news.2.a
+	}
+
+	option = {
+		trigger = {
+			NOT = { is_ncr_nation = yes }
+		}
+		name = nf_mot_news.2.b
+	}
+}
+
+news_event = { # Operation: Sunburst
+	id = nf_mot_news.3
+	title = nf_mot_news.3.t
+	desc = nf_mot_news.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		trigger = {
+			is_ncr_nation = yes
+		}
+		name = nf_mot_news.3.a
+	}
+
+	option = {
+		trigger = {
+			original_tag = VEG
+		}
+		name = nf_mot_news.3.b
+	}
+
+	option = {
+		trigger = {
+			NOT = { is_ncr_nation = yes }
+			NOT = { original_tag = VEG }
+		}
+		name = nf_mot_news.3.c
+	}
+}
+
+add_namespace = nf_free_mot
+country_event = {
+	id = nf_free_mot.1
+	title = nf_free_mot.1.t
+	desc = nf_free_mot.1.d
+	picture = GFX_event_VEG_strip
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_free_mot.1.a
+		MOT = {
+			create_or_join_mojave_alliance = yes
+		}
+		VEG = {
+			create_or_join_mojave_alliance = yes
+		}
+	}
+	option = {
+		name = nf_free_mot.1.b
+		ai_chance = {
+			factor = 100
+		}
+		MOT = {
+			country_event = nf_free_mot.2
+		}
+	}
+}
+country_event = {
+	id = nf_free_mot.2
+	title = nf_free_mot.2.t
+	desc = nf_free_mot.2.d
+	picture = GFX_event_VEG_strip
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_free_mot.2.a
+		ai_chance = {
+			factor = 100
+		}
+		every_state = {
+			limit = {
+				is_core_of = VEG
+			}
+			set_state_flag = do_not_exodus
+		}
+		VEG = {
+			MOT = { change_tag_from = ROOT }
+		}
+		annex_country = {
+			target = VEG
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = VEG
+			}
+			clr_state_flag = do_not_exodus
+		}
+		211 = {
+			add_core_of = MOT
+		}
+		set_capital = { state = 211 }
+		VEG = {
+			VEG_the_king = {
+				set_nationality = MOT
+			}
+		}
+		promote_character = VEG_the_king
+		hidden_effect = {
+			set_politics = {
+				ruling_party = people
+			}
+			set_popularities = {
+				ruler = 0
+				people = 100
+				elites = 0
+				intellectuals = 0
+			}
+			remove_ideas = mot_khan_raiders
+		}
+		set_cosmetic_tag = MOT_Free_State
+		#add_ideas = trueindependence
+		load_focus_tree = free_mojave_focus
+	}
+	option = {
+		name = nf_free_mot.2.b
+		MOT = {
+			create_or_join_mojave_alliance = yes
+		}
+		VEG = {
+			create_or_join_mojave_alliance = yes
+		}
+	}
+}
+country_event = {
+	id = nf_free_mot.3
+	title = nf_free_mot.3.t
+	desc = nf_free_mot.3.d
+	picture = GFX_event_VEG_strip
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_free_mot.3.a
+		hidden_effect = {
+			division_template = {
+				name = "Rangers"
+				regiments = {
+					spec_ops = { x = 0 y = 0 }
+					spec_ops = { x = 0 y = 1 }
+					spec_ops = { x = 0 y = 2 }
+					spec_ops = { x = 1 y = 0 }
+					spec_ops = { x = 1 y = 1 }
+					spec_ops = { x = 1 y = 2 }
+					spec_ops = { x = 2 y = 0 }
+					spec_ops = { x = 2 y = 1 }
+					spec_ops = { x = 2 y = 2 }
+				}
+			}
+		}
+		350 = {
+			create_unit = {
+				division = "name = \"Mojave Rangers\" division_template = \"Rangers\" start_experience_factor = 1.0 start_equipment_factor = 1.0 }"
+				owner = BON
+				allow_spawning_on_enemy_provs = no
+				count = 5
+			}
+		}
+	}
+}
+country_event = {
+	id = nf_free_mot.4
+	title = nf_free_mot.4.t
+	desc = nf_free_mot.4.d
+	picture = GFX_event_VEG_strip
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_free_mot.4.a
+		set_country_flag = ncr_mojave_free
+		MOT = {
+			country_event = nf_free_mot.5
+		}
+	}
+}
+country_event = {
+	id = nf_free_mot.5
+	title = nf_free_mot.5.t
+	desc = nf_free_mot.5.d
+	picture = GFX_event_VEG_strip
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_free_mot.5.a
+		d_join_dharma_way = yes
+		declare_war_on = {
+			target = NCR
+			type = annex_everything
+		}
+	}
+}
+
+news_event = {
+	id = nf_free_mot.6
+	title = nf_free_mot.6.t
+	desc = nf_free_mot.6.d
+	picture = GFX_event_VEG_strip
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = nf_free_mot.6.a
+		custom_effect_tooltip = mot_ending_tt
+	}
+}
+

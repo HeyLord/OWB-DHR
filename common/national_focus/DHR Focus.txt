@@ -1,22 +1,20 @@
 focus_tree = {
-	id = nf_mxt_mexico_territory
+	id = nf_DHR_focus
 	country = {
 		factor = 0
 		modifier = {
-			add = 45
-			original_tag = MXT
+			add = 150
+			has_country_flag = mot_load_tree
 		}
 	}
 	default = no
-	shared_focus = NCR_shared_industrial_start_focus
-    shared_focus = NCR_shared_military_start_focus
 
 	focus = {
-		id = mxt_moore_administration
-		icon = GFX_goal_NCR_Hayes_Expansion_Mexico
+		id = mot_dhr_californian_son
+		icon = GFX_goal_NCR_Army_Big_Jim
 		cost = 14
-		x = 30
-		y = 3
+		x = 15
+		y = 1
 		available = {
 		}
 		completion_reward = {
@@ -24,273 +22,828 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = mxt_red_rose_of_mexico
-		icon = GFX_goal_RRG_rosado
-		cost = 28
-		x = -2
-		y = 1
-		prerequisite = {
-			focus = mxt_moore_administration
-		}
-		will_lead_to_war_with = ACH
-		relative_position_id = mxt_moore_administration
-		completion_reward = {
-			country_event = ncr_hayes_expansion.3
-		}
-	}
-	focus = {
-		id = mxt_steel_hand_of_colonel
-		icon = GFX_goal_PLS_Rise_And_Shine
-		cost = 28
+		id = mot_dhr_republic_call
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = mxt_moore_administration
+			focus = mot_dhr_californian_son
 		}
-		relative_position_id = mxt_moore_administration
+		relative_position_id = mot_dhr_californian_son
+
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = MXT_mexico_administration
-				add_idea = MXT_mexico_administration_2
-			}
-			add_manpower = -1948
+			add_political_power = 100
 		}
 	}
+
+
+	###Industry stuff###
 	focus = {
-		id = mxt_the_dealmaker
-		icon = GFX_goal_TAA_take_my_money
-		cost = 28
-		x = 2
-		y = 1
-		bypass = {
-			TAA = {
-				exists = yes
-				is_not_new_california_member = yes
-			}
-		}
-		prerequisite = {
-			focus = mxt_moore_administration
-		}
-		relative_position_id = mxt_moore_administration
-		completion_reward = {
-			add_ideas = TAA_the_master_gunsmiths
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1500
-				producer = TAA
-			}
-		}
-	}
-	focus = {
-		id = mxt_robotic_policemen
-		icon = GFX_goal_TLA_LQ_police
-		cost = 28
-		x = 1
+		id = mot_dhr_followers_decree
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -4
 		y = 1
 		prerequisite = {
-			focus = mxt_red_rose_of_mexico
+			focus = mot_dhr_republic_call
 		}
-		relative_position_id = mxt_red_rose_of_mexico
+		relative_position_id = mot_dhr_republic_call
+
 		completion_reward = {
-			every_owned_state = {
-				limit = {
-					NOT = {
-						is_core_of = MXT
-					}
-				}
-				add_resistance = -25
-				add_compliance = 25
-			}
-			if = {
-				limit = {
-					has_country_flag = mxt_rosada_agrees
-				}
-				custom_effect_tooltip = mxt_rosado_bots_tt
-				hidden_effect = {
-					load_oob = MXT_robots
-				}
-			}
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = mxt_kickstart_the_industry
-		icon = GFX_goal_generic_megaloader
-		cost = 28
+		id = mot_dhr_broken_cali
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = mxt_the_dealmaker
+			focus = mot_dhr_followers_decree
 		}
-		relative_position_id = mxt_the_dealmaker
+		relative_position_id = mot_dhr_followers_decree
+
 		completion_reward = {
-			add_ideas = MXT_mexico_industry
-			every_owned_state = {
-				limit = {
-					is_core_of = MXT
-				}
-				PREV = {
-					add_extra_state_shared_building_slots = 4
-					add_building_construction = {
-						type = arms_factory
-						level = 4
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 4
-						instant_build = yes
-					}
-				}
-			}
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = mxt_stabilisation
-		icon = GFX_goal_bobble_head_charisma
-		cost = 28
-		x = 0
-		y = 3
+		id = mot_dhr_two_faced_benefactor
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -1
+		y = 1
 		prerequisite = {
-			focus = mxt_robotic_policemen
+			focus = mot_dhr_broken_cali
 		}
-		prerequisite = {
-			focus = mxt_steel_hand_of_colonel
-		}
-		prerequisite = {
-			focus = mxt_kickstart_the_industry
-		}
-		relative_position_id = mxt_steel_hand_of_colonel
+		relative_position_id = mot_dhr_broken_cali
+
 		completion_reward = {
-			add_stability = 0.1
-			swap_ideas = {
-				remove_idea = MXT_mexico_administration_2
-				add_idea = MXT_mexico_administration_3
-			}
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = mxt_leader_of_the_territories
-		icon = GFX_goal_NCR_Moore_Ranger
-		cost = 28
+		id = mot_dhr_spin_the_wheel
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_two_faced_benefactor
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_cali_rd
+		}
+		relative_position_id = mot_dhr_two_faced_benefactor
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_cali_rd
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_two_faced_benefactor
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_spin_the_wheel
+		}
+		relative_position_id = mot_dhr_two_faced_benefactor
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_healing
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = mxt_stabilisation
+			focus = mot_dhr_spin_the_wheel
+			focus = mot_dhr_cali_rd
 		}
-		relative_position_id = mxt_stabilisation
+		relative_position_id = mot_dhr_two_faced_benefactor
+
 		completion_reward = {
 			add_political_power = 100
-			custom_effect_tooltip = mxt_leader_tt
 		}
 	}
 	focus = {
-		id = mxt_lady_of_the_bells
-		icon = GFX_goal_RRG_Rosado_New
-		cost = 28
-		x = -5
+		id = mot_dhr_inner_potential
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -1
 		y = 1
-		available = {
-			has_country_flag = mxt_rosada_agrees
+		prerequisite = {
+			focus = mot_dhr_healing
 		}
 		mutually_exclusive = {
-			focus = mxt_whos_laughing_now
-			focus = mxt_iron_grip
+			focus = mot_dhr_make_it_better
 		}
-		prerequisite = {
-			focus = mxt_leader_of_the_territories
-		}
-		relative_position_id = mxt_leader_of_the_territories
+		relative_position_id = mot_dhr_healing
+
 		completion_reward = {
-			add_country_leader_role = {
-				character = MXT_valentina_rosado
-				promote_leader = yes
-				country_leader = {
-					ideology = technocracy
-					expire = "3000.01.01.01"
-					traits = {
-						old_worldist
-					}
-				}
-			}
-			set_politics = {
-				ruling_party = intellectuals
-			}
-			hidden_effect = {
-				set_popularities = {
-					ruler = 0
-					people = 0
-					elites = 0
-					intellectuals = 100
-				}
-			}
-			set_cosmetic_tag = MXT_Technate
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = mxt_iron_grip
-		icon = GFX_goal_NCR_Moore
-		cost = 28
+		id = mot_dhr_first_church
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_inner_potential
+		}
+		relative_position_id = mot_dhr_inner_potential
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_patriotic_education
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_inner_potential
+			focus = mot_dhr_make_it_better
+		}
+		relative_position_id = mot_dhr_inner_potential
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = mot_dhr_golden_brahmin
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_patriotic_education
+		}
+		relative_position_id = mot_dhr_patriotic_education
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_part_of_the_wheel
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_first_church
+		}
+		prerequisite = {
+			focus = mot_dhr_golden_brahmin
+		}
+		relative_position_id = mot_dhr_first_church
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+
+
+	focus = {
+		id = mot_dhr_make_it_better
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_healing
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_inner_potential
+		}
+		relative_position_id = mot_dhr_healing
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_epa
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_make_it_better
+		}
+		relative_position_id = mot_dhr_make_it_better
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_boneyard
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_patriotic_education
+		}
+		relative_position_id = mot_dhr_patriotic_education
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_brighter_day
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_epa
+		}
+		prerequisite = {
+			focus = mot_dhr_boneyard
+		}
+		relative_position_id = mot_dhr_boneyard
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_rainy_day
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_golden_brahmin
+			focus = mot_dhr_boneyard
+		}
+		relative_position_id = mot_dhr_golden_brahmin
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_cali_dreamin
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
 		x = 0
 		y = 1
-		mutually_exclusive = {
-			focus = mxt_whos_laughing_now
-			focus = mxt_lady_of_the_bells
+		prerequisite = {
+			focus = mot_dhr_rainy_day
 		}
 		prerequisite = {
-			focus = mxt_leader_of_the_territories
+			focus = mot_dhr_part_of_the_wheel
+			focus = mot_dhr_brighter_day
 		}
-		relative_position_id = mxt_leader_of_the_territories
+
+		relative_position_id = mot_dhr_rainy_day
+
 		completion_reward = {
-			set_cosmetic_tag = MXT_Republic
+			add_political_power = 100
+		}
+	}
+
+	###Middle Stuff###
+	focus = {
+		id = mot_dhr_hibernation
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_republic_call
+		}
+		relative_position_id = mot_dhr_republic_call
+
+		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	focus = {
-		id = mxt_whos_laughing_now
-		icon = GFX_goal_TAA_Saint_Tod
-		cost = 28
-		x = 5
+		id = mot_dhr_bear_trap
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -2
 		y = 1
-		available = {
-			TAA = {
-				OR = {
-					exists = no
-					is_new_california_member = yes
-				}
-			}
+		prerequisite = {
+			focus = mot_dhr_hibernation
 		}
 		mutually_exclusive = {
-			focus = mxt_iron_grip
-			focus = mxt_lady_of_the_bells
+			focus = mot_dhr_honeypot
+		}
+		relative_position_id = mot_dhr_hibernation
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_opportunity
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_bear_trap
+		}
+		relative_position_id = mot_dhr_bear_trap
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_honeypot
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_hibernation
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_bear_trap
+		}
+		relative_position_id = mot_dhr_hibernation
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_come
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_honeypot
+		}
+		relative_position_id = mot_dhr_honeypot
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_bear_roars
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 35
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_hibernation
 		}
 		prerequisite = {
-			focus = mxt_leader_of_the_territories
+			focus = mot_dhr_bear_trap
+			focus = mot_dhr_honeypot
 		}
-		relative_position_id = mxt_leader_of_the_territories
+		relative_position_id = mot_dhr_hibernation
+
 		completion_reward = {
-			add_country_leader_role = {
-				character = MXT_todd_howitzer
-				promote_leader = yes
-				country_leader = {
-					ideology = contractualism
-					expire = "3000.01.01.01"
-					traits = {
-						compassionate_gentleman
-						war_industrialist
-					}
-				}
-			}
-			set_politics = {
-				ruling_party = elites
-			}
-			hidden_effect = {
-				set_popularities = {
-					ruler = 0
-					people = 0
-					elites = 100
-					intellectuals = 0
-				}
-			}
-			set_cosmetic_tag = MXT_MAA
+			add_political_power = 100
+		}
+	}
+
+	###Army stuff###
+	focus = {
+		id = mot_dhr_steel_lady
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 4
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_republic_call
+		}
+		relative_position_id = mot_dhr_republic_call
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_promotion
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_steel_lady
+		}
+		relative_position_id = mot_dhr_steel_lady
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_new_deal
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_promotion
+		}
+		relative_position_id = mot_dhr_promotion
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_steel_bear
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_new_deal
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_NCPD
+		}
+		relative_position_id = mot_dhr_new_deal
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_NCPD
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_new_deal
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_steel_bear
+		}
+		relative_position_id = mot_dhr_new_deal
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_still_standing
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_steel_bear
+			focus = mot_dhr_NCPD
+		}
+		relative_position_id = mot_dhr_new_deal
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_expensive
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_still_standing
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_shady_hq
+		}
+		relative_position_id = mot_dhr_still_standing
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_scraps
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_expensive
+		}
+		relative_position_id = mot_dhr_expensive
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_shady_hq
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_still_standing
+		}
+		mutually_exclusive = {
+			focus = mot_dhr_expensive
+		}
+		relative_position_id = mot_dhr_still_standing
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_tough_as_pa
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_shady_hq
+		}
+		relative_position_id = mot_dhr_shady_hq
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_kickstart_machine
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_shady_hq
+			focus = mot_dhr_expensive
+		}
+		relative_position_id = mot_dhr_still_standing
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_old_world_fanatic
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_kickstart_machine
+		}
+		relative_position_id = mot_dhr_kickstart_machine
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_dream_come_true
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_scraps
+		}
+		prerequisite = {
+			focus = mot_dhr_old_world_fanatic
+		}
+		relative_position_id = mot_dhr_old_world_fanatic
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_richardson
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_kickstart_machine
+		}
+		relative_position_id = mot_dhr_kickstart_machine
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_against_all_evil
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_tough_as_pa
+		}
+		prerequisite = {
+			focus = mot_dhr_richardson
+		}
+		relative_position_id = mot_dhr_richardson
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_president_visit
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_old_world_fanatic
+			focus = mot_dhr_richardson
+		}
+		relative_position_id = mot_dhr_old_world_fanatic
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_serve_cali
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_president_visit
+		}
+		prerequisite = {
+			focus = mot_dhr_against_all_evil
+			focus = mot_dhr_dream_come_true
+		}
+		relative_position_id = mot_dhr_president_visit
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+
+    ###the rest of stuff###
+	focus = {
+		id = mot_dhr_here_we_go
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_bear_roars
+		}
+		prerequisite = {
+			focus = mot_dhr_cali_rd
+			focus = mot_dhr_spin_the_wheel
+		}
+		relative_position_id = mot_dhr_opportunity
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_bear_hug
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_bear_roars
+		}
+		relative_position_id = mot_dhr_bear_roars
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_kill_bos
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_bear_roars
+		}
+		prerequisite = {
+			focus = mot_dhr_steel_bear
+			focus = mot_dhr_NCPD
+		}
+		relative_position_id = mot_dhr_come
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_sweet_mojave
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_here_we_go
+		}
+		prerequisite = {
+			focus = mot_dhr_bear_hug
+		}
+		relative_position_id = mot_dhr_here_we_go
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_ode_to_fallen
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_sweet_mojave
+		}
+		relative_position_id = mot_dhr_sweet_mojave
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_vegas
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_kill_bos
+		}
+		prerequisite = {
+			focus = mot_dhr_bear_hug
+		}
+		relative_position_id = mot_dhr_kill_bos
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_dam_good
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_vegas
+		}
+		relative_position_id = mot_dhr_vegas
+
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = mot_dhr_raise_the_flag
+		icon = GFX_goal_NCR_Army_Big_Jim
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_dam_good
+		}
+		prerequisite = {
+			focus = mot_dhr_ode_to_fallen
+		}
+		relative_position_id = mot_dhr_dam_good
+
+		completion_reward = {
+			add_political_power = 100
 		}
 	}
 
