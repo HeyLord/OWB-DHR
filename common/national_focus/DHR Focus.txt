@@ -18,7 +18,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-			add_political_power = 100
+			country_event = nf_dhr.1
 		}
 	}
 	focus = {
@@ -33,7 +33,13 @@ focus_tree = {
 		relative_position_id = mot_dhr_californian_son
 
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.1
+			every_owned_state = {
+				limit = {
+					is_core_of = NCR
+				}
+				add_compliance = 10
+			}
 		}
 	}
 
@@ -337,7 +343,55 @@ focus_tree = {
 		relative_position_id = mot_dhr_republic_call
 
 		completion_reward = {
-			add_political_power = 100
+			#hidden_effect = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 620
+							state = 67
+							state = 47
+							state = 46
+							state = 417
+							state = 573
+							state = 552
+							state = 380
+							state = 613
+							state = 137
+							state = 106
+							state = 252
+							state = 940
+							state = 500
+						}
+					}
+					CES = {
+						transfer_state = PREV
+						add_resistance = 80
+					}
+				}
+				if = {
+					limit = {
+						has_war_with_caesars_legion = yes
+					}
+					every_country = {
+						limit = {
+							is_caesars_legion_member = yes
+							has_war_with = MOT
+							is_in_faction_with = CES
+						}
+						white_peace = MOT
+						set_truce = {
+							target = MOT
+							days = 450
+						}
+						MOT = {
+							set_truce = {
+								target = PREV
+								days = 450
+							}
+						}
+					}
+				}
+			#}
 		}
 	}
 	focus = {

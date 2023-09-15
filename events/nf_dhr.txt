@@ -1,0 +1,25 @@
+﻿add_namespace = nf_dhr
+
+#Oliver sees all the destruction and gets depressed
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.1" }
+	id = nf_dhr.1
+	title = nf_dhr.1.t
+	desc = nf_dhr.1.d
+	picture = GFX_event_ncr_battle
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.1.a
+		set_stability = 0
+		add_ideas = dhr_broken_republic
+		every_owned_state = {
+			limit = {
+				is_core_of = NCR
+			}
+			add_resistance = 20
+		}
+	}
+}
+

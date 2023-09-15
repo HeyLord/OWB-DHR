@@ -1140,7 +1140,7 @@ country_event = {
 			limit = {
 				is_core_of = NCR
 			}
-			add_compliance = 25
+			add_compliance = 15
 		}
 		swap_ideas = {
 			remove_idea = mot_oliv_unpopular_leader

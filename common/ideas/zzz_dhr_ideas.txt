@@ -1,0 +1,92 @@
+ideas = {
+	country = {
+###Oliver Civil War
+		mot_oliv_unpopular_leader = {
+			picture = mot_oliver_hat
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				army_org_factor = -0.15
+				conscription_factor = -0.1
+				army_morale_factor = -0.1
+			}
+		}
+		mot_military_government = {
+			picture = mot_oliver_hat
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.15
+				army_org_factor = 0.1
+				conscription_factor = 0.1
+				army_morale_factor = 0.1
+				consumer_goods_factor = 0.1
+				max_command_power = 50
+			}
+		}
+		mot_oliv_full_spead = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_speed_factor = 0.1
+				army_fuel_consumption_factor = 0.14
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = -0.087
+					breakthrough = 0.1
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+		mot_oliv_waiting_is_good_actually = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_defence_factor = 0.1
+				army_fuel_consumption_factor = 0.08
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = 0.08
+					soft_attack = 0.15
+					defense = 0.1
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+		####
+
+		dhr_broken_republic = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.27
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.15
+			}
+		}
+		dhr_broken_republic_2 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.27
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.1
+			}
+		}
+	}
+}

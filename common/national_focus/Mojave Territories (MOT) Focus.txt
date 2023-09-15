@@ -3542,8 +3542,19 @@ focus_tree = {
 			focus = mot_oliv_no_wait_see
 		}
 		completion_reward = {
-			add_war_support = -0.05
-			add_stability = -0.05
+			add_war_support = 0.05
+			if = {
+				limit = {
+					has_idea = mot_idea_pacification_not_emancipation
+				}
+				remove_ideas = mot_idea_pacification_not_emancipation
+			}
+			if = {
+				limit = {
+					has_idea = mot_idea_pacification_not_emancipation_2
+				}
+				remove_ideas = mot_idea_pacification_not_emancipation_2
+			}
 			every_controlled_state = {
 				add_resistance = -10
 			}
@@ -4389,7 +4400,10 @@ focus_tree = {
 		completion_reward = {
 			NCR = {
 				add_political_power = 150
-				add_ideas = mot_victory_in_the_mojave
+				add_timed_idea = {
+					idea = mot_victory_in_the_mojave
+					days = 365
+				}
 			}
 		}
 	}
