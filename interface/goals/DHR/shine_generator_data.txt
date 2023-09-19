@@ -1,0 +1,2 @@
+C:\Users\Legate\Documents\Paradox Interactive\Hearts of Iron IV\mod\OWB_DHR\interface\goals\DHR\DHR_goals.gfx
+C:\Users\Legate\Documents\Paradox Interactive\Hearts of Iron IV\mod\OWB_DHR\interface\goals\DHR\DHR_goals_shine.gfx

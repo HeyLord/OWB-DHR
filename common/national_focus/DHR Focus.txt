@@ -11,7 +11,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_dhr_californian_son
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Oliver
 		cost = 14
 		x = 15
 		y = 1
@@ -23,7 +23,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_republic_call
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Map
 		cost = 14
 		x = 0
 		y = 1
@@ -333,7 +333,7 @@ focus_tree = {
 	###Middle Stuff###
 	focus = {
 		id = mot_dhr_hibernation
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Shield_Sleeping_Bear
 		cost = 35
 		x = 0
 		y = 1
@@ -343,7 +343,17 @@ focus_tree = {
 		relative_position_id = mot_dhr_republic_call
 
 		completion_reward = {
-			#hidden_effect = {
+			custom_effect_tooltip = dhr_leave_mojave_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						OR = {
+							original_tag = MOT
+							is_neighbor_of = MOT
+						}
+					}
+					country_event = nf_dhr_news.1
+				}
 				every_owned_state = {
 					limit = {
 						OR = {
@@ -365,7 +375,8 @@ focus_tree = {
 					}
 					CES = {
 						transfer_state = PREV
-						add_resistance = 80
+						set_compliance = 0
+						add_resistance = 25
 					}
 				}
 				if = {
@@ -391,7 +402,7 @@ focus_tree = {
 						}
 					}
 				}
-			#}
+			}
 		}
 	}
 	focus = {
@@ -409,11 +420,56 @@ focus_tree = {
 		relative_position_id = mot_dhr_hibernation
 
 		completion_reward = {
-			add_political_power = 100
+			77 = {
+				add_building_construction = {
+					type = bunker2
+					level = 2
+					instant_build = yes
+					province = 6608
+				}
+				add_building_construction = {
+					type = bunker2
+					level = 2
+					instant_build = yes
+					province = 3267
+				}
+				add_building_construction = {
+					type = bunker2
+					level = 2
+					instant_build = yes
+					province = 3268
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 13
+				}
+				13 = {
+					add_building_construction = {
+						type = bunker2
+						level = 2
+						instant_build = yes
+						province = 3241
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns_state = 329
+				}
+				329 = {
+					add_building_construction = {
+						type = bunker2
+						level = 2
+						instant_build = yes
+						province = 8846
+					}
+				}
+			}
 		}
 	}
 	focus = {
-		id = mot_dhr_opportunity
+		id = mot_dhr_shall_not_pass
 		icon = GFX_goal_NCR_Army_Big_Jim
 		cost = 35
 		x = -1
@@ -424,7 +480,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_bear_trap
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = dhr_not_pass
 		}
 	}
 	focus = {
@@ -442,11 +498,31 @@ focus_tree = {
 		relative_position_id = mot_dhr_hibernation
 
 		completion_reward = {
-			add_political_power = 100
+			every_state = {
+				limit = {
+					OR = {
+						state = 620
+						state = 67
+						state = 47
+						state = 46
+						state = 417
+						state = 573
+						state = 552
+						state = 380
+						state = 613
+						state = 137
+						state = 106
+						state = 252
+						state = 940
+						state = 500
+					}
+				}
+				add_resistance = 30
+			}
 		}
 	}
 	focus = {
-		id = mot_dhr_come
+		id = mot_dhr_opportunity
 		icon = GFX_goal_NCR_Army_Big_Jim
 		cost = 35
 		x = 1
@@ -457,7 +533,6 @@ focus_tree = {
 		relative_position_id = mot_dhr_honeypot
 
 		completion_reward = {
-			add_political_power = 100
 		}
 	}
 	focus = {
@@ -466,6 +541,18 @@ focus_tree = {
 		cost = 35
 		x = 0
 		y = 2
+		available = {
+			AND = {
+				OR = {
+					has_completed_focus = mot_dhr_inner_potential
+					has_completed_focus = mot_dhr_make_it_better
+				}
+				OR = {
+					has_completed_focus = mot_dhr_expensive
+					has_completed_focus = mot_dhr_shady_hq
+				}
+			}
+		}
 		prerequisite = {
 			focus = mot_dhr_hibernation
 		}
@@ -476,7 +563,11 @@ focus_tree = {
 		relative_position_id = mot_dhr_hibernation
 
 		completion_reward = {
-			add_political_power = 100
+			CES = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 
@@ -776,7 +867,7 @@ focus_tree = {
 			focus = mot_dhr_cali_rd
 			focus = mot_dhr_spin_the_wheel
 		}
-		relative_position_id = mot_dhr_opportunity
+		relative_position_id = mot_dhr_shall_not_pass
 
 		completion_reward = {
 			add_political_power = 100
@@ -810,7 +901,7 @@ focus_tree = {
 			focus = mot_dhr_steel_bear
 			focus = mot_dhr_NCPD
 		}
-		relative_position_id = mot_dhr_come
+		relative_position_id = mot_dhr_opportunity
 
 		completion_reward = {
 			add_political_power = 100

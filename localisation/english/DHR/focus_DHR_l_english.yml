@@ -7,5 +7,15 @@
   mot_dhr_republic_call_desc:0 ""
 
 
-  mot_dhr_hibernation:0 "Operation §g"Hibernation"§!"
+  mot_dhr_hibernation:0 "Operation §R"Hibernation"§!"
   mot_dhr_hibernation_desc:0 ""
+  mot_dhr_bear_trap:0 "Operation §g"Bear Trap"§!"
+  mot_dhr_bear_trap_desc:0 ""
+  mot_dhr_shall_not_pass:0 "Legion Shall Not Pass"
+  mot_dhr_shall_not_pass_desc:0 ""
+  mot_dhr_honeypot:0 "Operation §O"Honeypot"§!"
+  mot_dhr_honeypot_desc:0 ""
+  mot_dhr_opportunity:0 "Once In a Lifetime Opportunity"
+  mot_dhr_opportunity_desc:0 ""
+  mot_dhr_bear_roars:0 "The Bear Roars"
+  mot_dhr_bear_roars_desc:0 ""

@@ -6,7 +6,7 @@ country_event = {
 	id = nf_dhr.1
 	title = nf_dhr.1.t
 	desc = nf_dhr.1.d
-	picture = GFX_event_ncr_battle
+	picture = GFX_event_ncr_won
 
 	is_triggered_only = yes
 
@@ -23,3 +23,104 @@ country_event = {
 	}
 }
 
+#Arcade comes from Mojave with the Followers and other people
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.2" }
+	id = nf_dhr.2
+	title = nf_dhr.2.t
+	desc = nf_dhr.2.d
+	picture = GFX_event_followers_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.2.a
+		47 = {
+			set_temp_variable = { pop_add = -11184 }
+			add_state_population_no_state_name = yes
+		}
+		552 = {
+			set_temp_variable = { pop_add = -2764 }
+			add_state_population_no_state_name = yes
+		}
+		613 = {
+			set_temp_variable = { pop_add = -13634 }
+			add_state_population_no_state_name = yes
+		}
+		589 = {
+			set_temp_variable = { pop_add = 6817 }
+			add_state_population_no_state_name = yes
+		}
+		77 = {
+			set_temp_variable = { pop_add = 6817 }
+			add_state_population_no_state_name = yes
+		}
+		253 = {
+			set_temp_variable = { pop_add = 13634 }
+			add_state_population_no_state_name = yes
+		}
+		1 = {
+			set_temp_variable = { pop_add = 11184 }
+			add_state_population_no_state_name = yes
+		}
+	}
+}
+
+
+add_namespace = nf_dhr_news
+
+#Mojave Exodus
+news_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.1" }
+	id = nf_dhr_news.1
+	title = nf_dhr_news.1.t
+	desc = nf_dhr_news.1.d
+	picture = GFX_event_NCR_settlers
+
+	is_triggered_only = yes
+
+	#Mojave
+	option = {
+		name = nf_dhr_news.1.a
+		trigger = {
+			original_tag = MOT
+		}
+		add_war_support = -0.1
+		add_offsite_building = {
+			type = industrial_complex
+			level = 8
+		}
+		add_offsite_building = {
+			type = industrial_complex
+			level = 8
+		}
+		hidden_effect = {
+			country_event = {
+				id = nf_dhr.2
+				days = 7
+			}
+		}
+	}
+
+	#Legion
+	option = {
+		name = nf_dhr_news.1.b
+		trigger = {
+			original_tag = CES
+		}
+	}
+
+	#Others
+	option = {
+		name = nf_dhr_news.1.c
+		trigger = {
+			NOT = {
+				OR = {
+					original_tag = CES
+					original_tag = MOT
+				}
+			}
+		}
+	}
+
+}
