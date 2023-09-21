@@ -63,6 +63,26 @@ country_event = {
 			set_temp_variable = { pop_add = 11184 }
 			add_state_population_no_state_name = yes
 		}
+		#Arcade advisor
+	}
+}
+#Oliver meets with Wendell
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.3
+	title = nf_dhr.3.t
+	desc = nf_dhr.3.d
+	picture = GFX_event_NCR_congress
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.1.a
+		swap_ideas = {
+			remove_idea = dhr_broken_republic
+			add_idea = dhr_broken_republic_2
+		}
+		#Add Wendell as an advisor
 	}
 }
 

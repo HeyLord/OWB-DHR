@@ -12,6 +12,37 @@ spriteTypes = {
 		name = "GFX_goal_MOT_DHR_Shield_Sleeping_Bear"
 		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Sleeping_Bear.dds"
 	}
-
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Hunny"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Hunny.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Trap"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Trap.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Rawr"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Rawr.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Soldier"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Soldier.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Soldiers"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Soldiers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_WP"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_WP.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_Punch"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_Punch.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Gallows"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Gallows.dds"
+	}
 
 }

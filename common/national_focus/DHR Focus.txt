@@ -46,8 +46,8 @@ focus_tree = {
 
 	###Industry stuff###
 	focus = {
-		id = mot_dhr_followers_decree
-		icon = GFX_goal_NCR_Army_Big_Jim
+		id =  mot_dhr_meet_the_senator
+		icon = GFX_goal_MOT_DHR_Left_WP
 		cost = 35
 		x = -4
 		y = 1
@@ -57,19 +57,19 @@ focus_tree = {
 		relative_position_id = mot_dhr_republic_call
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = nf_dhr.3
 		}
 	}
 	focus = {
-		id = mot_dhr_broken_cali
-		icon = GFX_goal_NCR_Army_Big_Jim
+		id =  mot_dhr_followers_decree
+		icon = GFX_goal_MOT_DHR_Left_Punch
 		cost = 35
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = mot_dhr_followers_decree
+			focus =  mot_dhr_meet_the_senator
 		}
-		relative_position_id = mot_dhr_followers_decree
+		relative_position_id =  mot_dhr_meet_the_senator
 
 		completion_reward = {
 			add_political_power = 100
@@ -82,9 +82,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		prerequisite = {
-			focus = mot_dhr_broken_cali
+			focus =  mot_dhr_followers_decree
 		}
-		relative_position_id = mot_dhr_broken_cali
+		relative_position_id =  mot_dhr_followers_decree
 
 		completion_reward = {
 			add_political_power = 100
@@ -407,7 +407,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_bear_trap
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Shield_Trap
 		cost = 35
 		x = -2
 		y = 1
@@ -470,7 +470,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_shall_not_pass
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Shield_Soldiers
 		cost = 35
 		x = -1
 		y = 1
@@ -485,7 +485,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_honeypot
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Shield_Hunny
 		cost = 35
 		x = 2
 		y = 1
@@ -523,7 +523,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_opportunity
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Shield_Soldier
 		cost = 35
 		x = 1
 		y = 1
@@ -533,11 +533,12 @@ focus_tree = {
 		relative_position_id = mot_dhr_honeypot
 
 		completion_reward = {
+			add_ideas = dhr_attack_buff
 		}
 	}
 	focus = {
 		id = mot_dhr_bear_roars
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Shield_Rawr
 		cost = 35
 		x = 0
 		y = 2
@@ -574,7 +575,7 @@ focus_tree = {
 	###Army stuff###
 	focus = {
 		id = mot_dhr_steel_lady
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Right_Gallows
 		cost = 14
 		x = 4
 		y = 1

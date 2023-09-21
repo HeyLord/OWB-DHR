@@ -2,9 +2,14 @@
   ## Starting Focuses
   mot_dhr_californian_son:0 "Californian Son"
   mot_dhr_californian_son_desc:0 ""
-
   mot_dhr_republic_call:0 "When the Republic Calls"
   mot_dhr_republic_call_desc:0 ""
+
+
+  mot_dhr_meet_the_senator:0 "Old Acquaintance"
+  mot_dhr_meet_the_senator_desc:0 ""
+  mot_dhr_followers_decree:0 "Followers Decree"
+  mot_dhr_followers_decree_desc:0 ""
 
 
   mot_dhr_hibernation:0 "Operation §R"Hibernation"§!"
