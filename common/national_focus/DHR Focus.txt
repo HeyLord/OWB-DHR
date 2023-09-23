@@ -77,7 +77,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_two_faced_benefactor
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Left_Samaritan
 		cost = 35
 		x = -1
 		y = 1
@@ -92,7 +92,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_spin_the_wheel
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Left_Hubology
 		cost = 35
 		x = -1
 		y = 1
@@ -110,7 +110,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_cali_rd
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Left_RD
 		cost = 35
 		x = 1
 		y = 1
@@ -128,7 +128,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_healing
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Left_Jesus
 		cost = 35
 		x = 0
 		y = 2
@@ -144,7 +144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_inner_potential
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_HUB_Mountain
 		cost = 35
 		x = -1
 		y = 1
@@ -162,7 +162,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_first_church
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_HUB_Observatory
 		cost = 35
 		x = -1
 		y = 1
@@ -193,7 +193,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_golden_brahmin
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_HUB_Gold_Cow
 		cost = 35
 		x = -1
 		y = 1
@@ -208,7 +208,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_part_of_the_wheel
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_HUB_Wheel_Part
 		cost = 35
 		x = 0
 		y = 2

@@ -1,0 +1,32 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Portrait_DHR_wendell"
+		textureFile = "gfx/leaders/DHR/portrait_dhr_wendell.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_advisor_wendell"
+		textureFile = "gfx/interface/ideas/advisors/dhr_mot_advisor_wendell.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_Portrait_DHR_arcade"
+		textureFile = "gfx/leaders/DHR/portrait_dhr_arcade.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_advisor_arcade"
+		textureFile = "gfx/interface/ideas/advisors/dhr_advisor_arcade.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_Portrait_DHR_dick"
+		textureFile = "gfx/leaders/DHR/portrait_dhr_dick.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_advisor_dick"
+		textureFile = "gfx/interface/ideas/advisors/dhr_advisor_dick.dds"
+	}
+
+}

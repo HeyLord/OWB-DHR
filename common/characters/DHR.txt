@@ -1,0 +1,91 @@
+characters = {
+
+	DHR_wendell_peterson = {
+		name = DHR_wendell_peterson_name
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DHR_wendell
+			}
+			army = {
+				small = GFX_Portrait_DHR_advisor_wendell
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = DHR_wendell_peterson_cultural_advisor
+			desc = DHR_wendell_peterson_name_desc
+			allowed = {
+				original_tag = MOT
+			}
+			visible = {
+				has_country_flag = dhr_wendell_advisor
+			}
+			traits = {
+				DHR_experienced_politician
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	DHR_arcade = {
+		name = DHR_arcade_name
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DHR_arcade
+			}
+			army = {
+				small = GFX_Portrait_DHR_advisor_arcade
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = DHR_arcade_cultural_advisor
+			desc = DHR_arcade_name_desc
+			allowed = {
+				original_tag = MOT
+			}
+			visible = {
+				has_country_flag = dhr_arcade_advisor
+			}
+			traits = {
+				DHR_primum_non_nocere
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+	DHR_dick = {
+		name = DHR_dick_name
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DHR_dick
+			}
+			army = {
+				small = GFX_Portrait_DHR_advisor_dick
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = DHR_arcade_cultural_advisor
+			desc = DHR_arcade_name_desc
+			allowed = {
+				original_tag = MOT
+			}
+			visible = {
+				has_country_flag = dhr_dick_advisor
+			}
+			traits = {
+				DHR_good_samarithan
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
+
+}

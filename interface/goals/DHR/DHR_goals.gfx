@@ -44,5 +44,37 @@ spriteTypes = {
 		name = "GFX_goal_MOT_DHR_Right_Gallows"
 		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Gallows.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_Samaritan"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_Samaritan.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_Hubology"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_Hubology.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_RD"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_RD.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_Jesus"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_Jesus.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Mountain"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Mountain.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Observatory"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Observatory.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Gold_Cow"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Gold_Cow.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Wheel_Part"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Wheel_Part.dds"
+	}
 
 }

@@ -1,0 +1,51 @@
+leader_traits = {
+
+	#Leader traits
+
+
+	dhr_wait_and_see = {
+		random = no
+
+		max_dig_in = 8
+		max_planning = 0.1
+        army_speed_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	###Advisor traits
+
+	DHR_experienced_politician = {
+		random = no
+
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	DHR_primum_non_nocere = {
+		random = no
+
+		monthly_population = 0.12
+		research_speed_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	DHR_good_samarithan = {
+		random = no
+
+		stability_factor = 0.1
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

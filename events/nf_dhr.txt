@@ -63,7 +63,10 @@ country_event = {
 			set_temp_variable = { pop_add = 11184 }
 			add_state_population_no_state_name = yes
 		}
-		#Arcade advisor
+		effect_tooltip = {
+			activate_advisor = DHR_arcade_cultural_advisor
+		}
+		set_country_flag = dhr_arcade_advisor
 	}
 }
 #Oliver meets with Wendell
@@ -82,7 +85,10 @@ country_event = {
 			remove_idea = dhr_broken_republic
 			add_idea = dhr_broken_republic_2
 		}
-		#Add Wendell as an advisor
+		effect_tooltip = {
+			activate_advisor = DHR_wendell_peterson_cultural_advisor
+		}
+		set_country_flag = dhr_wendell_advisor
 	}
 }
 
