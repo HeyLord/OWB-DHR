@@ -91,6 +91,208 @@ country_event = {
 		set_country_flag = dhr_wendell_advisor
 	}
 }
+#Arcade hears about followers ban
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.4
+	title = nf_dhr.4.t
+	desc = nf_dhr.4.d
+	picture = GFX_event_followers_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.4.a
+		swap_ideas = {
+			remove_idea = dhr_broken_republic_2
+			add_idea = dhr_broken_republic_3
+		}
+		add_stability = -0.1
+		every_state = {
+			limit = {
+				OR = {
+					state = 350
+					state = 591
+					state = 19
+					state = 1
+					state = 63
+					state = 180
+					state = 396
+					state = 205
+					state = 360
+					state = 70
+					state = 736
+					state = 258
+					state = 245
+					state = 64
+					state = 602
+					state = 357
+					state = 606
+					state = 558
+					state = 312
+					state = 433
+					state = 292
+					state = 866
+					state = 24
+					state = 80
+					state = 583
+					state = 469
+					state = 147
+					state = 107
+					state = 4
+					state = 866
+					state = 41
+					state = 651
+					state = 174
+					state = 158
+					state = 481
+					state = 136
+					state = 176
+					state = 325
+					state = 97
+					state = 473
+					state = 163
+					state = 539
+					state = 132
+				}
+			}
+			add_resistance = 40
+		}
+	}
+}
+#Hubologists activities in the NCR
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.5
+	title = nf_dhr.5.t
+	desc = nf_dhr.5.d
+	picture = GFX_event_dhr_hub_logo
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.5.a
+		swap_ideas = {
+			remove_idea = dhr_broken_republic_3
+			add_idea = dhr_broken_republic_4
+		}
+	}
+}
+#UFO crash
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.6
+	title = nf_dhr.6.t
+	desc = nf_dhr.6.d
+	picture = GFX_event_dhr_hub_logo
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.6.a
+		hidden_effect = {
+			country_event = {
+				id = nf_dhr.7
+				days = 14
+			}
+		}
+	}
+}
+#UFO found
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.7
+	title = nf_dhr.7.t
+	desc = nf_dhr.7.d
+	picture = GFX_event_generic_ufo_crash
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.7.a
+		swap_ideas = {
+			remove_idea = dhr_spin_the_wheel_2
+			add_idea = dhr_spin_the_wheel_3
+		}
+	}
+}
+#Message to Diana
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.8
+	title = nf_dhr.8.t
+	desc = nf_dhr.8.d
+	picture = GFX_event_followers_generic
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.8.a
+		MOT = {
+			country_event = {
+				id = nf_dhr.9
+				days = 7
+			}
+		}
+	}
+}
+#Her response
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.9
+	title = nf_dhr.9.t
+	desc = nf_dhr.9.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.9.a
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			ahead_reduction = 2
+			category = agriculture_tech
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 2
+			ahead_reduction = 2
+			category = industry
+		}
+	}
+}
+#Oliver drinks (Dick)
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.101
+	title = nf_dhr.101.t
+	desc = nf_dhr.101.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.101.a
+	}
+}
+#Oliver drinks (Arcade)
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.102
+	title = nf_dhr.102.t
+	desc = nf_dhr.102.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.102.a
+	}
+}
+
+
+
 
 
 add_namespace = nf_dhr_news

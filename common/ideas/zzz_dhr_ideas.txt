@@ -87,8 +87,34 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.17
 				consumer_goods_factor = 0.12
-				production_speed_buildings_factor = -0.25
-				industrial_capacity_factory = -0.15
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.1
+			}
+		}
+		dhr_broken_republic_3 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.10
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.1
+			}
+		}
+		dhr_broken_republic_4 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
 			}
 		}
 
@@ -117,6 +143,121 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.1
 				production_speed_arms_factory_factor = 0.15
+			}
+		}
+
+
+		dhr_spin_the_wheel = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				production_speed_arms_factory_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		dhr_spin_the_wheel_2 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_arms_factory_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		dhr_spin_the_wheel_3 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.15
+				production_speed_air_base_factor = 0.1
+				air_superiority_efficiency = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		dhr_spin_the_wheel_4 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.08
+				production_speed_arms_factory_factor = 0.2
+				production_speed_air_base_factor = 0.15
+				air_superiority_efficiency = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+			}
+		}
+
+
+		dhr_cali_rd = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				monthly_population = 0.05
+			}
+		}
+		dhr_cali_rd_2 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				production_speed_industrial_complex_factor = 0.1
+				monthly_population = 0.05
+				global_building_slots_factor = 0.05
+			}
+		}
+		dhr_cali_rd_3 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				production_speed_industrial_complex_factor = 0.1
+				monthly_population = 0.1
+				global_building_slots_factor = 0.05
+			}
+			research_bonus = {
+				agriculture_tech = 0.1
+				construction_category = 0.1
+			}
+		}
+		dhr_cali_rd_4 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+				production_speed_industrial_complex_factor = 0.15
+				monthly_population = 0.15
+				global_building_slots_factor = 0.1
+			}
+			research_bonus = {
+				agriculture_tech = 0.15
+				construction_category = 0.15
 			}
 		}
 	}

@@ -57,7 +57,15 @@ focus_tree = {
 		relative_position_id = mot_dhr_republic_call
 
 		completion_reward = {
-			country_event = nf_dhr.3
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = dhr_broken_republic
+					add_idea = dhr_broken_republic_2
+				}
+			}
+			hidden_effect = {
+				country_event = nf_dhr.3
+			}
 		}
 	}
 	focus = {
@@ -72,7 +80,16 @@ focus_tree = {
 		relative_position_id =  mot_dhr_meet_the_senator
 
 		completion_reward = {
-			add_political_power = 100
+			effect_tooltip = {
+				add_stability = -0.1
+				swap_ideas = {
+					remove_idea = dhr_broken_republic_2
+					add_idea = dhr_broken_republic_3
+				}
+			}
+			hidden_effect = {
+				country_event = nf_dhr.4
+			}
 		}
 	}
 	focus = {
@@ -87,7 +104,15 @@ focus_tree = {
 		relative_position_id =  mot_dhr_followers_decree
 
 		completion_reward = {
-			add_political_power = 100
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = dhr_broken_republic_3
+					add_idea = dhr_broken_republic_4
+				}
+			}
+			hidden_effect = {
+				country_event = nf_dhr.5
+			}
 		}
 	}
 	focus = {
@@ -105,7 +130,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_two_faced_benefactor
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = dhr_spin_the_wheel
 		}
 	}
 	focus = {
@@ -123,7 +148,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_two_faced_benefactor
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = dhr_cali_rd
 		}
 	}
 	focus = {
@@ -139,7 +164,79 @@ focus_tree = {
 		relative_position_id = mot_dhr_two_faced_benefactor
 
 		completion_reward = {
-			add_political_power = 100
+			add_stability = 0.15
+			remove_ideas = dhr_broken_republic_4
+			every_owned_state = {
+				limit = {
+					is_core_of = NCR
+					NOT = {
+						is_core_of = MOT
+						OR = {
+							state = 60
+							state = 104
+							state = 135
+							state = 141
+							state = 162
+							state = 168
+							state = 190
+							state = 214
+							state = 421
+							state = 455
+							state = 529
+							state = 543
+							state = 584
+							state = 605
+							state = 511
+							state = 474
+
+							state = 350
+							state = 591
+							state = 19
+							state = 1
+							state = 63
+							state = 180
+							state = 396
+							state = 205
+							state = 360
+							state = 70
+							state = 736
+							state = 258
+							state = 245
+							state = 64
+							state = 602
+							state = 357
+							state = 606
+							state = 558
+							state = 312
+							state = 433
+							state = 292
+							state = 866
+							state = 24
+							state = 80
+							state = 583
+							state = 469
+							state = 147
+							state = 107
+							state = 4
+							state = 866
+							state = 41
+							state = 651
+							state = 174
+							state = 158
+							state = 481
+							state = 136
+							state = 176
+							state = 325
+							state = 97
+							state = 473
+							state = 163
+							state = 539
+							state = 132
+						}
+					}
+				}
+				add_core_of = MOT
+			}
 		}
 	}
 	focus = {
@@ -148,6 +245,9 @@ focus_tree = {
 		cost = 35
 		x = -1
 		y = 1
+		available = {
+			has_completed_focus = mot_dhr_spin_the_wheel
+		}
 		prerequisite = {
 			focus = mot_dhr_healing
 		}
@@ -157,7 +257,23 @@ focus_tree = {
 		relative_position_id = mot_dhr_healing
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = dhr_spin_the_wheel
+				add_idea = dhr_spin_the_wheel_2
+			}
+			253 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -172,12 +288,25 @@ focus_tree = {
 		relative_position_id = mot_dhr_inner_potential
 
 		completion_reward = {
-			add_political_power = 100
+			1 = {
+				add_core_of = MOT
+				add_building_construction = {
+					type = radar_station
+					level = 3
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = nf_dhr.6
+					days = 14
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_patriotic_education
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Left_School
 		cost = 35
 		x = 1
 		y = 1
@@ -203,7 +332,37 @@ focus_tree = {
 		relative_position_id = mot_dhr_patriotic_education
 
 		completion_reward = {
-			add_political_power = 100
+			every_state = {
+				limit = {
+					OR = {
+						state = 60
+						state = 104
+						state = 135
+						state = 141
+						state = 162
+						state = 168
+						state = 190
+						state = 214
+						state = 421
+						state = 455
+						state = 529
+						state = 543
+						state = 584
+						state = 605
+						state = 511
+						state = 474
+					}
+				}
+				add_core_of = MOT
+			}
+			141 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -221,7 +380,10 @@ focus_tree = {
 		relative_position_id = mot_dhr_first_church
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = dhr_spin_the_wheel_3
+				add_idea = dhr_spin_the_wheel_4
+			}
 		}
 	}
 
@@ -229,10 +391,13 @@ focus_tree = {
 
 	focus = {
 		id = mot_dhr_make_it_better
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_ARC_Scientist
 		cost = 35
 		x = 1
 		y = 1
+		available = {
+			has_completed_focus = mot_dhr_cali_rd
+		}
 		prerequisite = {
 			focus = mot_dhr_healing
 		}
@@ -242,12 +407,23 @@ focus_tree = {
 		relative_position_id = mot_dhr_healing
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = dhr_cali_rd
+				add_idea = dhr_cali_rd_2
+			}
+			253 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_epa
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_ARC_EPA
 		cost = 35
 		x = 1
 		y = 1
@@ -257,12 +433,15 @@ focus_tree = {
 		relative_position_id = mot_dhr_make_it_better
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = dhr_cali_rd_2
+				add_idea = dhr_cali_rd_3
+			}
 		}
 	}
 	focus = {
-		id = mot_dhr_boneyard
-		icon = GFX_goal_NCR_Army_Big_Jim
+		id = mot_dhr_paradise
+		icon = GFX_goal_MOT_DHR_ARC_Paradise
 		cost = 35
 		x = 1
 		y = 1
@@ -272,12 +451,34 @@ focus_tree = {
 		relative_position_id = mot_dhr_patriotic_education
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = {
+					TTM = {
+						exists = yes
+					}
+				}
+				TTM = {
+					country_event = nf_dhr.8
+				}
+			}
+			else = {
+				#add tooltip
+				add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = agriculture_tech
+				}
+				add_tech_bonus = {
+					bonus = 1
+					uses = 2
+					category = industry
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_brighter_day
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
 		cost = 35
 		x = 1
 		y = 1
@@ -285,33 +486,99 @@ focus_tree = {
 			focus = mot_dhr_epa
 		}
 		prerequisite = {
-			focus = mot_dhr_boneyard
+			focus = mot_dhr_paradise
 		}
-		relative_position_id = mot_dhr_boneyard
+		relative_position_id = mot_dhr_paradise
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = dhr_cali_rd_3
+				add_idea = dhr_cali_rd_4
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 350
+						state = 591
+						state = 19
+						state = 1
+						state = 63
+						state = 180
+						state = 396
+						state = 205
+						state = 360
+						state = 70
+						state = 736
+						state = 258
+						state = 245
+						state = 64
+						state = 602
+						state = 357
+						state = 606
+						state = 558
+						state = 312
+						state = 433
+						state = 292
+						state = 866
+						state = 24
+						state = 80
+						state = 583
+						state = 469
+						state = 147
+						state = 107
+						state = 4
+						state = 866
+						state = 41
+						state = 651
+						state = 174
+						state = 158
+						state = 481
+						state = 136
+						state = 176
+						state = 325
+						state = 97
+						state = 473
+						state = 163
+						state = 539
+						state = 132
+					}
+				}
+				add_core_of = MOT
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_rainy_day
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Left_Glass
 		cost = 35
 		x = 1
 		y = 1
 		prerequisite = {
 			focus = mot_dhr_golden_brahmin
-			focus = mot_dhr_boneyard
+			focus = mot_dhr_paradise
 		}
 		relative_position_id = mot_dhr_golden_brahmin
 
 		completion_reward = {
-			add_political_power = 100
+			effect_tooltip = {
+				country_event = nf_dhr.101
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_completed_focus = dhr_spin_the_wheel
+					}
+					country_event = nf_dhr.101
+				}
+				else = {
+					country_event = nf_dhr.102
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_cali_dreamin
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Left_Sun
 		cost = 35
 		x = 0
 		y = 1

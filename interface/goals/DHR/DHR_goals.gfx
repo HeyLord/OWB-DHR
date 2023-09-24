@@ -76,5 +76,33 @@ spriteTypes = {
 		name = "GFX_goal_MOT_DHR_HUB_Wheel_Part"
 		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Wheel_Part.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_School"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_School.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_Glass"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_Glass.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Left_Sun"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Left_Sun.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Arcade"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Arcade.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_EPA"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_EPA.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Paradise"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Paradise.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Scientist"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Scientist.dds"
+	}
 
 }

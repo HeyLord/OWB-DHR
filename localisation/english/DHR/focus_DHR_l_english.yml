@@ -18,14 +18,32 @@
   mot_dhr_cali_rd_desc:0 ""
   mot_dhr_healing:0 "Healing the Wounds"
   mot_dhr_healing_desc:0 ""
+
+
   mot_dhr_inner_potential:0 "The Inner Potential"
   mot_dhr_inner_potential_desc:0 ""
-  mot_dhr_first_church:0 "Today I Saw the Brightest Star"
+  mot_dhr_first_church:0 "Journey from a Jar to the Sky"
   mot_dhr_first_church_desc:0 ""
   mot_dhr_golden_brahmin:0 "Golden Brahmin"
   mot_dhr_golden_brahmin_desc:0 ""
   mot_dhr_part_of_the_wheel:0 "Part of the Great Wheel"
   mot_dhr_part_of_the_wheel_desc:0 ""
+
+  mot_dhr_make_it_better:0 "We Can Make It Better"
+  mot_dhr_make_it_better_desc:0 ""
+  mot_dhr_epa:0 "The Search For EPA"
+  mot_dhr_epa_desc:0 ""
+  mot_dhr_paradise:0 "The Lost Paradise"
+  mot_dhr_paradise_desc:0 ""
+  mot_dhr_brighter_day:0 "A Brighter Day"
+  mot_dhr_brighter_day_desc:0 ""
+
+  mot_dhr_patriotic_education:0 "Patriotic Education"
+  mot_dhr_patriotic_education_desc:0 ""
+  mot_dhr_rainy_day:0 "Just One Glass"
+  mot_dhr_rainy_day_desc:0 ""
+  mot_dhr_cali_dreamin:0 "§OCalifornia Dreaming§!"
+  mot_dhr_cali_dreamin_desc:0 ""
 
 
   mot_dhr_hibernation:0 "Operation §R"Hibernation"§!"
