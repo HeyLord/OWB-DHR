@@ -104,5 +104,69 @@ spriteTypes = {
 		name = "GFX_goal_MOT_DHR_ARC_Scientist"
 		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Scientist.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Pappas"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Pappas.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Guns"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_PA"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_PA.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Policeman"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Policeman.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Mask"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Mask.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Trooper"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Trooper.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_NCPD_Justice"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_NCPD_Justice.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_NCPD_Guy"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_NCPD_Guy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_NCPD_Mutant"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_NCPD_Mutant.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Gal"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Gal.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Guns_Factory"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Guns_Factory.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_PA_Gold"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_PA_Gold.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_PA_Helmet"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_PA_Helmet.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_PA_Gun"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_PA_Gun.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Right_Oliver"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Right_Oliver.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_PA_Scientist"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_PA_Scientist.dds"
+	}
 
 }

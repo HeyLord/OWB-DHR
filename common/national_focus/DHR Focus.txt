@@ -843,7 +843,7 @@ focus_tree = {
 	focus = {
 		id = mot_dhr_steel_lady
 		icon = GFX_goal_MOT_DHR_Right_Gallows
-		cost = 14
+		cost = 28
 		x = 4
 		y = 1
 		prerequisite = {
@@ -857,8 +857,8 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_promotion
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Right_Pappas
+		cost = 28
 		x = 1
 		y = 1
 		prerequisite = {
@@ -872,8 +872,8 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_new_deal
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Right_Guns
+		cost = 28
 		x = 1
 		y = 1
 		prerequisite = {
@@ -887,8 +887,8 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_steel_bear
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Right_PA
+		cost = 28
 		x = -1
 		y = 1
 		prerequisite = {
@@ -905,7 +905,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_NCPD
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Right_Policeman
 		cost = 14
 		x = 1
 		y = 1
@@ -923,7 +923,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_still_standing
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Right_Trooper
 		cost = 14
 		x = 0
 		y = 2
@@ -939,7 +939,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_expensive
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_PA_Gold
 		cost = 14
 		x = -1
 		y = 1
@@ -957,7 +957,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_scraps
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_PA_Helmet
 		cost = 14
 		x = -1
 		y = 1
@@ -972,7 +972,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_shady_hq
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_NCPD_Justice
 		cost = 14
 		x = 1
 		y = 1
@@ -990,7 +990,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_tough_as_pa
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_NCPD_Guy
 		cost = 14
 		x = 1
 		y = 1
@@ -1005,7 +1005,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_kickstart_machine
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Right_Guns_Factory
 		cost = 14
 		x = 0
 		y = 2
@@ -1020,8 +1020,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = mot_dhr_old_world_fanatic
-		icon = GFX_goal_NCR_Army_Big_Jim
+		id = mot_dhr_unthinkable
+		icon = GFX_goal_MOT_DHR_PA_Scientist
 		cost = 14
 		x = -1
 		y = 1
@@ -1036,7 +1036,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_dream_come_true
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_PA_Gun
 		cost = 14
 		x = -1
 		y = 1
@@ -1044,9 +1044,9 @@ focus_tree = {
 			focus = mot_dhr_scraps
 		}
 		prerequisite = {
-			focus = mot_dhr_old_world_fanatic
+			focus = mot_dhr_unthinkable
 		}
-		relative_position_id = mot_dhr_old_world_fanatic
+		relative_position_id = mot_dhr_unthinkable
 
 		completion_reward = {
 			add_political_power = 100
@@ -1054,7 +1054,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_richardson
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_NCPD_Mutant
 		cost = 14
 		x = 1
 		y = 1
@@ -1069,7 +1069,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_against_all_evil
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Right_Mask
 		cost = 14
 		x = 1
 		y = 1
@@ -1087,15 +1087,15 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_president_visit
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Right_Oliver
 		cost = 14
 		x = 1
 		y = 1
 		prerequisite = {
-			focus = mot_dhr_old_world_fanatic
+			focus = mot_dhr_unthinkable
 			focus = mot_dhr_richardson
 		}
-		relative_position_id = mot_dhr_old_world_fanatic
+		relative_position_id = mot_dhr_unthinkable
 
 		completion_reward = {
 			add_political_power = 100
@@ -1103,7 +1103,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_serve_cali
-		icon = GFX_goal_NCR_Army_Big_Jim
+		icon = GFX_goal_MOT_DHR_Right_Gal
 		cost = 14
 		x = 0
 		y = 1
