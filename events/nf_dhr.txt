@@ -290,8 +290,62 @@ country_event = {
 		name = nf_dhr.102.a
 	}
 }
+#Moore execution
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.11
+	title = nf_dhr.11.t
+	desc = nf_dhr.11.d
+	picture = GFX_event_TTM_repository
 
+	is_triggered_only = yes
 
+	option = {
+		name = nf_dhr.11.a
+		add_manpower = -1
+		add_war_support = -0.1
+	}
+}
+#Oliver choosing Van Graffs or Gunrunners
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.12
+	title = nf_dhr.12.t
+	desc = nf_dhr.12.d
+	picture = GFX_event_generic_gun_runners
+
+	is_triggered_only = yes
+
+	#Van Graffs
+	option = {
+		name = nf_dhr.12.a
+		add_tech_bonus = {
+			bonus = 0.8
+			uses = 2
+			category = infantry_weapons_tech_category
+		}
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 3500
+			producer = ROOT
+		}
+	}
+
+	#Van Graffs
+	option = {
+		name = nf_dhr.12.b
+		add_tech_bonus = {
+			bonus = 0.8
+			uses = 2
+			category = energy_weaponry_tech_category
+		}
+		add_equipment_to_stockpile = {
+			type = energy_equipment_1
+			amount = 3500
+			producer = USA
+		}
+	}
+}
 
 
 

@@ -260,5 +260,183 @@ ideas = {
 				construction_category = 0.15
 			}
 		}
+
+
+		###Army buffs
+
+		mot_military_government_2 = {
+			picture = mot_oliver_hat
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.15
+				army_org_factor = 0.15
+				conscription_factor = 0.25
+				army_morale_factor = 0.15
+				consumer_goods_factor = 0.08
+				max_command_power = 50
+			}
+		}
+
+		mot_oliv_ncpd = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				resistance_growth = -0.1
+				compliance_gain = 0.01
+			}
+			equipment_bonus = {
+				heavy_infantry_equipment = {
+					soft_attack = 0.05
+					defense = 0.05
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+
+
+		mot_oliv_full_spead_2 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_speed_factor = 0.1
+				army_fuel_consumption_factor = 0.15
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = -0.09
+					breakthrough = 0.12
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+		}
+		mot_oliv_full_spead_3 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_speed_factor = 0.1
+				army_fuel_consumption_factor = 0.2
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = -0.09
+					breakthrough = 0.12
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+		}
+		mot_oliv_full_spead_4 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_speed_factor = 0.15
+				army_fuel_consumption_factor = 0.15
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = -0.05
+					breakthrough = 0.15
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+		}
+		mot_oliv_full_spead_5 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_speed_factor = 0.2
+				army_fuel_consumption_factor = 0.15
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = -0.05
+					breakthrough = 0.2
+					build_cost_ic = -0.2
+					instant = yes
+				}
+			}
+		}
+
+
+		mot_oliv_waiting_is_good_actually_2 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				army_defence_factor = 0.1
+				army_fuel_consumption_factor = 0.1
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = 0.1
+					soft_attack = 0.15
+					defense = 0.12
+					build_cost_ic = 0.18
+					instant = yes
+				}
+			}
+		}
+		mot_oliv_waiting_is_good_actually_3 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_defence_factor = 0.1
+				army_fuel_consumption_factor = 0.15
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = 0.1
+					soft_attack = 0.15
+					defense = 0.12
+					build_cost_ic = 0.18
+					instant = yes
+				}
+			}
+		}
+		mot_oliv_waiting_is_good_actually_4 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_defence_factor = 0.15
+				army_fuel_consumption_factor = 0.15
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = 0.15
+					soft_attack = 0.15
+					defense = 0.15
+					build_cost_ic = 0.15
+					instant = yes
+				}
+			}
+		}
+		mot_oliv_waiting_is_good_actually_5 = {
+			picture = generic_power_armour_t45
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				army_defence_factor = 0.2
+				army_fuel_consumption_factor = 0.15
+			}
+			equipment_bonus = {
+				power_armor_equipment = {
+					reliability = 0.2
+					soft_attack = 0.2
+					defense = 0.2
+					build_cost_ic = 0.2
+					instant = yes
+				}
+			}
+		}
 	}
 }

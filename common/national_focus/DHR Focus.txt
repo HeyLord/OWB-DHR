@@ -843,7 +843,7 @@ focus_tree = {
 	focus = {
 		id = mot_dhr_steel_lady
 		icon = GFX_goal_MOT_DHR_Right_Gallows
-		cost = 28
+		cost = 35
 		x = 4
 		y = 1
 		prerequisite = {
@@ -852,13 +852,13 @@ focus_tree = {
 		relative_position_id = mot_dhr_republic_call
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = nf_dhr.11
 		}
 	}
 	focus = {
 		id = mot_dhr_promotion
 		icon = GFX_goal_MOT_DHR_Right_Pappas
-		cost = 28
+		cost = 35
 		x = 1
 		y = 1
 		prerequisite = {
@@ -867,7 +867,11 @@ focus_tree = {
 		relative_position_id = mot_dhr_steel_lady
 
 		completion_reward = {
-			add_political_power = 100
+			army_experience = 50
+			MOT_pappas = {
+				add_skill_level = 1
+				promote_leader = yes
+			}
 		}
 	}
 	focus = {
@@ -882,7 +886,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_promotion
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = nf_dhr.12
 		}
 	}
 	focus = {
@@ -900,7 +904,21 @@ focus_tree = {
 		relative_position_id = mot_dhr_new_deal
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = {
+					has_idea = mot_oliv_full_spead
+				}
+				swap_ideas = {
+					remove_idea = mot_oliv_full_spead
+					add_idea = mot_oliv_full_spead_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = mot_oliv_waiting_is_good_actually
+					add_idea = mot_oliv_waiting_is_good_actually_2
+				}
+			}
 		}
 	}
 	focus = {
@@ -918,13 +936,13 @@ focus_tree = {
 		relative_position_id = mot_dhr_new_deal
 
 		completion_reward = {
-			add_political_power = 100
+			add_ideas = mot_oliv_ncpd
 		}
 	}
 	focus = {
 		id = mot_dhr_still_standing
 		icon = GFX_goal_MOT_DHR_Right_Trooper
-		cost = 14
+		cost = 35
 		x = 0
 		y = 2
 		prerequisite = {
@@ -934,13 +952,21 @@ focus_tree = {
 		relative_position_id = mot_dhr_new_deal
 
 		completion_reward = {
-			add_political_power = 100
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = cat_land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = mot_military_government
+				add_idea = mot_military_government_2
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_expensive
 		icon = GFX_goal_MOT_DHR_PA_Gold
-		cost = 14
+		cost = 35
 		x = -1
 		y = 1
 		prerequisite = {
@@ -952,22 +978,54 @@ focus_tree = {
 		relative_position_id = mot_dhr_still_standing
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = {
+					has_idea = mot_oliv_full_spead_2
+				}
+				swap_ideas = {
+					remove_idea = mot_oliv_full_spead_2
+					add_idea = mot_oliv_full_spead_3
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = mot_oliv_waiting_is_good_actually_2
+					add_idea = mot_oliv_waiting_is_good_actually_3
+				}
+			}
+			253 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_scraps
 		icon = GFX_goal_MOT_DHR_PA_Helmet
-		cost = 14
+		cost = 35
 		x = -1
 		y = 1
+		available = {
+			owns_state = 157
+		}
 		prerequisite = {
 			focus = mot_dhr_expensive
 		}
 		relative_position_id = mot_dhr_expensive
 
 		completion_reward = {
-			add_political_power = 100
+			add_equipment_to_stockpile = {
+				type = power_armor_equipment
+				amount = 800
+				producer = BOS
+			}
+			set_technology = {
+				t45d_pa_tech = 1
+			}
 		}
 	}
 	focus = {
@@ -1016,28 +1074,54 @@ focus_tree = {
 		relative_position_id = mot_dhr_still_standing
 
 		completion_reward = {
-			add_political_power = 100
+			253 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_unthinkable
 		icon = GFX_goal_MOT_DHR_PA_Scientist
-		cost = 14
+		cost = 35
 		x = -1
 		y = 1
+		available = {
+			owns_state = 39
+		}
 		prerequisite = {
 			focus = mot_dhr_kickstart_machine
 		}
 		relative_position_id = mot_dhr_kickstart_machine
 
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = -100
+			add_stability = -0.05
+			if = {
+				limit = {
+					has_idea = mot_oliv_full_spead_3
+				}
+				swap_ideas = {
+					remove_idea = mot_oliv_full_spead_3
+					add_idea = mot_oliv_full_spead_4
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = mot_oliv_waiting_is_good_actually_3
+					add_idea = mot_oliv_waiting_is_good_actually_4
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_dream_come_true
 		icon = GFX_goal_MOT_DHR_PA_Gun
-		cost = 14
+		cost = 35
 		x = -1
 		y = 1
 		prerequisite = {
@@ -1049,13 +1133,30 @@ focus_tree = {
 		relative_position_id = mot_dhr_unthinkable
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = {
+					has_idea = mot_oliv_full_spead_4
+				}
+				swap_ideas = {
+					remove_idea = mot_oliv_full_spead_4
+					add_idea = mot_oliv_full_spead_5
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = mot_oliv_waiting_is_good_actually_4
+					add_idea = mot_oliv_waiting_is_good_actually_5
+				}
+			}
+			set_technology = {
+				power_armour_tech_level_scientific = 1
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_richardson
 		icon = GFX_goal_MOT_DHR_NCPD_Mutant
-		cost = 14
+		cost = 35
 		x = 1
 		y = 1
 		prerequisite = {
