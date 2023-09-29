@@ -168,5 +168,37 @@ spriteTypes = {
 		name = "GFX_goal_MOT_DHR_PA_Scientist"
 		texturefile = "gfx/interface/goals/DHR/MOT_DHR_PA_Scientist.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Hug"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Hug.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Star"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Star.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Helmet"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Helmet.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Outpost"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Outpost.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Memorial"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Memorial.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Lucky_38"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Lucky_38.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Postcard"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Postcard.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Middle_Flag"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Flag.dds"
+	}
 
 }
