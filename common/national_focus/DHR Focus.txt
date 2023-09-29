@@ -566,7 +566,7 @@ focus_tree = {
 			hidden_effect = {
 				if = {
 					limit = {
-						has_completed_focus = dhr_spin_the_wheel
+						has_completed_focus = mot_dhr_inner_potential
 					}
 					country_event = nf_dhr.101
 				}
@@ -969,6 +969,9 @@ focus_tree = {
 		cost = 35
 		x = -1
 		y = 1
+		available = {
+			has_completed_focus = mot_dhr_steel_bear
+		}
 		prerequisite = {
 			focus = mot_dhr_still_standing
 		}
@@ -1031,9 +1034,12 @@ focus_tree = {
 	focus = {
 		id = mot_dhr_shady_hq
 		icon = GFX_goal_MOT_DHR_NCPD_Justice
-		cost = 14
+		cost = 35
 		x = 1
 		y = 1
+		available = {
+			has_completed_focus = mot_dhr_NCPD
+		}
 		prerequisite = {
 			focus = mot_dhr_still_standing
 		}
@@ -1043,13 +1049,24 @@ focus_tree = {
 		relative_position_id = mot_dhr_still_standing
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = mot_oliv_ncpd
+				add_idea = mot_oliv_ncpd_2
+			}
+			253 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_tough_as_pa
 		icon = GFX_goal_MOT_DHR_NCPD_Guy
-		cost = 14
+		cost = 35
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1058,7 +1075,33 @@ focus_tree = {
 		relative_position_id = mot_dhr_shady_hq
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = {
+					has_tech = heavy_infantry_tech_4
+				}
+				add_equipment_to_stockpile = {
+					type = heavy_infantry_equipment_2
+					amount = 1000
+					producer = ROOT
+				}
+			}
+			else = {
+				set_technology = {
+					heavy_infantry_tech_4 = 1
+				}
+				add_equipment_to_stockpile = {
+					type = heavy_infantry_equipment_2
+					amount = 800
+					producer = USA
+				}
+			}
+			custom_effect_tooltip = dhr_enforcers_tt
+			hidden_effect = {
+				set_technology = {
+					tribal_enforcer_defense_tech = 1
+					tribal_enforcer_org_tech = 1
+				}
+			}
 		}
 	}
 	focus = {
@@ -1165,7 +1208,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_kickstart_machine
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = nf_dhr.13
 		}
 	}
 	focus = {
@@ -1183,7 +1226,10 @@ focus_tree = {
 		relative_position_id = mot_dhr_richardson
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = mot_oliv_ncpd_3
+				add_idea = mot_oliv_ncpd_4
+			}
 		}
 	}
 	focus = {
@@ -1199,7 +1245,15 @@ focus_tree = {
 		relative_position_id = mot_dhr_unthinkable
 
 		completion_reward = {
-			add_political_power = 100
+			if = {
+				limit = {
+					has_completed_focus = mot_dhr_NCPD
+				}
+				country_event = nf_dhr.142
+			}
+			else = {
+				country_event = nf_dhr.141
+			}
 		}
 	}
 	focus = {
@@ -1218,17 +1272,31 @@ focus_tree = {
 		relative_position_id = mot_dhr_president_visit
 
 		completion_reward = {
-			add_political_power = 100
+			swap_ideas = {
+				remove_idea = mot_military_government_2
+				add_idea = mot_military_government_3
+			}
+			253 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 
     ###the rest of stuff###
 	focus = {
 		id = mot_dhr_here_we_go
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Star
+		cost = 20
 		x = 0
 		y = 2
+		available = {
+			owns_state = 520
+		}
 		prerequisite = {
 			focus = mot_dhr_bear_roars
 		}
@@ -1239,30 +1307,76 @@ focus_tree = {
 		relative_position_id = mot_dhr_shall_not_pass
 
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = dhr_arizona_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = CES
+						OWNER = {
+							OR = {
+								tag = MOT
+								is_subject_of = MOT
+							}
+						}
+					}
+					PHR = {
+						transfer_state = PREV
+					}
+				}
+				PHR = {
+					become_puppet = yes
+					kill_country_leader = yes
+					create_country_leader = {
+						name = "NCR Territorial Administration"
+						desc = "ncr_puppet_leader_desc"
+						picture = GFX_Portrait_Puppet_Leader_NCR
+						expire = "3000.1.1"
+						ideology = constitutional_republic
+						traits = { po_loyal_puppet }
+					}
+					set_ruling_party = people
+					set_cosmetic_tag = PHR_puppet
+					load_focus_tree = ncr_puppet_nf
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_bear_hug
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Hug
+		cost = 20
 		x = 0
 		y = 2
+		available = {
+			CES = {
+				exists = no
+			}
+		}
 		prerequisite = {
 			focus = mot_dhr_bear_roars
 		}
 		relative_position_id = mot_dhr_bear_roars
 
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = dhr_bear_hug_tt
 		}
 	}
 	focus = {
 		id = mot_dhr_kill_bos
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Helmet
+		cost = 20
 		x = 0
 		y = 2
+		available = {
+			CES = {
+				exists = no
+			}
+		}
+		bypass = {
+			BOS = {
+				exists = no
+			}
+		}
 		prerequisite = {
 			focus = mot_dhr_bear_roars
 		}
@@ -1273,13 +1387,17 @@ focus_tree = {
 		relative_position_id = mot_dhr_opportunity
 
 		completion_reward = {
-			add_political_power = 100
+			BOS = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_sweet_mojave
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Outpost
+		cost = 28
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1291,13 +1409,27 @@ focus_tree = {
 		relative_position_id = mot_dhr_here_we_go
 
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = dhr_mojave_peace_tt
+			hidden_effect = {
+				every_state = {
+					limit = {
+						NOT = {
+							is_core_of = MOT
+						}
+						OR = {
+							region = 3
+							region = 32
+						}
+					}
+					add_core_of = MOT
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_ode_to_fallen
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Memorial
+		cost = 28
 		x = 1
 		y = 1
 		prerequisite = {
@@ -1306,15 +1438,20 @@ focus_tree = {
 		relative_position_id = mot_dhr_sweet_mojave
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = nf_dhr.15
 		}
 	}
 	focus = {
 		id = mot_dhr_vegas
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Lucky_38
+		cost = 28
 		x = -1
 		y = 1
+		bypass = {
+			VEG = {
+				all_core_land_owned_by_prev_sphere = yes
+			}
+		}
 		prerequisite = {
 			focus = mot_dhr_kill_bos
 		}
@@ -1324,28 +1461,50 @@ focus_tree = {
 		relative_position_id = mot_dhr_kill_bos
 
 		completion_reward = {
-			add_political_power = 100
+			BOS = {
+				ROOT = {
+					grant_wargoals_on_core_states_of_prev = yes
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_dam_good
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Postcard
+		cost = 28
 		x = -1
 		y = 1
 		prerequisite = {
 			focus = mot_dhr_vegas
 		}
+		select_effect = {
+			for_each_loop = {
+				array = dam_turbine_primary
+				if = {
+					limit = { check_variable = { v = 0 } }
+					set_variable = { dam_turbine_primary^i = 1 }
+					set_temp_variable = { break = 1 }
+				}
+			}
+		}
 		relative_position_id = mot_dhr_vegas
 
 		completion_reward = {
-			add_political_power = 100
+			custom_effect_tooltip = moj_activate_a_turbine
+			for_each_loop = {
+				array = dam_turbine_primary
+				if = {
+					limit = { check_variable = { v = 1 } }
+					set_variable = { dam_turbine_primary^i = 2 }
+					set_temp_variable = { break = 1 }
+				}
+			}
 		}
 	}
 	focus = {
 		id = mot_dhr_raise_the_flag
-		icon = GFX_goal_NCR_Army_Big_Jim
-		cost = 14
+		icon = GFX_goal_MOT_DHR_Middle_Flag
+		cost = 28
 		x = -1
 		y = 1
 		prerequisite = {
@@ -1357,7 +1516,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_dam_good
 
 		completion_reward = {
-			add_political_power = 100
+			country_event = nf_dhr.16
 		}
 	}
 

@@ -346,6 +346,135 @@ country_event = {
 		}
 	}
 }
+#Oliver meets Richardson
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.13
+	title = nf_dhr.13.t
+	desc = nf_dhr.13.d
+	picture = GFX_event_generic_mutant
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.13.a
+		add_stability = -0.05
+		swap_ideas = {
+			remove_idea = mot_oliv_ncpd_2
+			add_idea = mot_oliv_ncpd_3
+		}
+		if = {
+			limit = {
+				has_idea = mutant_law_none
+			}
+			swap_ideas = {
+				remove_idea = mutant_law_none
+				add_idea = mutant_law_both
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = mutant_law_ghoul
+			}
+			swap_ideas = {
+				remove_idea = mutant_law_ghoul
+				add_idea = mutant_law_both
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = mutant_law_super
+			}
+			swap_ideas = {
+				remove_idea = mutant_law_super
+				add_idea = mutant_law_both
+			}
+		}
+		else = {
+			add_manpower = 495
+		}
+		#Add general
+	}
+}
+#Oliver visit (PA)
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.141
+	title = nf_dhr.141.t
+	desc = nf_dhr.141.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.141.a
+	}
+}
+#Oliver visit (NCPD)
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.142
+	title = nf_dhr.142.t
+	desc = nf_dhr.142.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.142.a
+	}
+}
+#Oliver opens new memorial
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.15
+	title = nf_dhr.15.t
+	desc = nf_dhr.15.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.15.a
+		add_stability = 0.1
+		add_political_power = 50
+	}
+}
+#Elections
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr.16
+	title = nf_dhr.16.t
+	desc = nf_dhr.16.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	#Oliver
+	option = {
+		name = nf_dhr.16.a
+		set_country_flag = mot_dhr_oliver_wins
+		mark_focus_tree_layout_dirty = yes
+	}
+	#Dick
+	option = {
+		name = nf_dhr.16.b
+		trigger = {
+			has_completed_focus = mot_dhr_spin_the_wheel
+		}
+		set_country_flag = mot_dhr_dick_wins
+		mark_focus_tree_layout_dirty = yes
+	}
+	#Arcade
+	option = {
+		name = nf_dhr.16.c
+		trigger = {
+			has_completed_focus = mot_dhr_cali_rd
+		}
+		set_country_flag = mot_dhr_arcade_wins
+		mark_focus_tree_layout_dirty = yes
+	}
+}
 
 
 
