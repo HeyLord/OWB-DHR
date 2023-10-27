@@ -29,4 +29,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/advisors/dhr_advisor_dick.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_Portrait_DHR_richardson"
+		textureFile = "gfx/leaders/DHR/potraits_richardson.dds"
+	}
+
 }

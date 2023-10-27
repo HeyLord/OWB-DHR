@@ -46,6 +46,9 @@ characters = {
 			allowed = {
 				original_tag = MOT
 			}
+			available = {
+				is_country_leader = no
+			}
 			visible = {
 				has_country_flag = dhr_arcade_advisor
 			}
@@ -75,6 +78,9 @@ characters = {
 			allowed = {
 				original_tag = MOT
 			}
+			available = {
+				is_country_leader = no
+			}
 			visible = {
 				has_country_flag = dhr_dick_advisor
 			}
@@ -85,6 +91,32 @@ characters = {
 			ai_will_do = {
 				factor = 10
 			}
+		}
+	}
+	DHR_richardson = {
+		name = DHR_richardson_name
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DHR_richardson
+			}
+			army = {
+				large = GFX_Portrait_DHR_richardson
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_country_flag = dhr_richardson_available
+			}
+			traits = {
+				strong_trait
+				enduring_trait
+				gunslinger_trait
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 

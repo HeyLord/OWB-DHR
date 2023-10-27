@@ -1,0 +1,643 @@
+pls_cult_of_vulcan_dec = {
+
+    pls_iracundus_ferro = {
+        icon = GFX_decision_pls_vulcan_logo_medium
+        allowed = { tag = PLS }
+
+        #days_remove = 7
+
+        visible = {
+            has_country_flag = pls_build_empire
+        }
+
+        remove_effect = {
+           add_war_support = 0.1
+           set_cosmetic_tag = PLS_Tempered_Steel
+           clr_country_flag = pls_build_empire
+        }
+    }
+
+    pls_forge_capital = {
+        icon = GFX_decision_caf_factories
+        allowed = { tag = PLS }
+
+        days_remove = 50
+        days_re_enable = 45
+
+        available = {
+          owns_state = 907
+        }
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_vulcan_forge_is_capital
+          }
+        }
+
+        remove_effect = {
+            add_stability = -0.05
+            add_war_support = 0.1
+            set_capital = { state = 907 }
+            907 = {
+                add_core_of = PLS
+                set_temp_variable = {
+                    pop_add = -5162
+                }
+                add_state_population = no
+
+                set_province_name = {
+                   id = 11347
+                   name = pls_camino_de_vulcan
+                }
+
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                        type = arms_factory
+                        level = 2
+                        instant_build = yes
+                }
+            }
+            set_country_flag = pls_vulcan_forge_is_capital
+        }
+    }
+
+    pls_glory_to_vulcan = {
+        icon = GFX_decision_pls_vulcan_logo_medium
+        allowed = { tag = PLS }
+
+        custom_cost_trigger = {
+          has_stability > 0
+        }
+        custom_cost_text = pls_stability_dec
+
+        days_remove = 50
+        days_re_enable = 45
+
+        modifier = {
+           civilian_factory_use = 2
+        }
+
+        complete_effect = {
+          add_stability = -0.05
+        }
+
+        remove_effect = {
+            add_war_support = 0.05
+               random_owned_controlled_state = {
+                limit = {
+                    is_valid_state_for_arms_factory = yes
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    pls_pa_first_buff = {
+        icon = GFX_decision_welding
+        allowed = { tag = PLS }
+
+        visible = {
+           NOT = {
+             has_country_flag = pls_vulcan_first_buffs
+           }
+        }
+
+        cost = 50
+        days_remove = 60
+        #days_re_enable = 45
+
+        modifier = {
+           civilian_factory_use = 2
+        }
+
+        remove_effect = {
+          set_technology = {
+            weight_support_frame_pa_tech_1 = 1
+          }
+          set_country_flag = pls_vulcan_first_buffs
+        }
+    }
+
+    pls_pa_second_buff = {
+        icon = GFX_decision_chip_yellow
+        allowed = { tag = PLS }
+
+        visible = {
+           NOT = {
+             has_tech = weight_support_frame_pa_tech_2
+           }
+        }
+
+        available = {
+          has_tech = weight_support_frame_pa_tech_1
+          owns_state = 755
+        }
+
+        visible	= {
+           NOT = {
+             has_country_flag = pls_vulcan_second_buff
+           }
+        }
+
+        cost = 50
+        days_remove = 60
+        #days_re_enable = 45
+
+        modifier = {
+           civilian_factory_use = 2
+        }
+
+        remove_effect = {
+          set_technology = {
+            weight_support_frame_pa_tech_2  = 1
+          }
+
+          capital_scope = {
+            add_resource = {
+               type = metal
+               amount = 5
+            }
+          }
+          set_country_flag = pls_vulcan_second_buff
+        }
+    }
+
+    pls_alamo_pa_stash = {
+        icon = GFX_decision_container
+        allowed = { tag = PLS }
+
+        visible = {
+           NOT = {
+             has_tech = wasteland_pa_tech
+           }
+        }
+
+        available = {
+           has_tech = weight_support_frame_pa_tech_2
+        }
+
+        custom_cost_trigger = {
+          has_manpower > 57
+        }
+        custom_cost_text = pls_mp_1
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_vulcan_first_found
+          }
+        }
+
+        days_remove = 70
+        days_re_enable = 45
+
+        complete_effect = {
+          add_manpower = -57
+        }
+
+        remove_effect = {
+          add_manpower = 45
+          set_technology = {
+            wasteland_pa_tech = 1
+          }
+          set_country_flag = pls_vulcan_first_found
+        }
+    }
+
+    pls_alamo_scribes = {
+        icon = GFX_decision_knife
+        allowed = { tag = PLS }
+
+        visible = {
+           NOT = {
+             has_tech = simple_servo_tech
+           }
+        }
+
+        modifier = {
+           civilian_factory_use = 2
+        }
+
+        available = {
+          has_tech = wasteland_pa_tech
+        }
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_vulcan_scribes
+          }
+        }
+
+        cost = 60
+        days_remove = 70
+        #days_re_enable = 45
+
+        complete_effect = {
+            908 = {
+               set_temp_variable = {
+                    pop_add = -134
+                }
+               add_state_population = no
+            }
+        }
+
+        remove_effect = {
+          set_technology = {
+            simple_servo_tech = 1
+          }
+          set_country_flag = pls_vulcan_scribes
+        }
+    }
+
+    pls_alamo_pa_stash_2 = {
+        icon = GFX_decision_backpack
+        allowed = { tag = PLS }
+
+        visible = {
+           NOT = {
+             has_tech = scav_pa_tech
+           }
+        }
+
+        available = {
+          has_tech = simple_servo_tech
+        }
+
+        custom_cost_trigger = {
+          has_manpower > 135
+        }
+        custom_cost_text = pls_mp_2
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_vulcan_second_found
+          }
+        }
+
+        days_remove = 70
+        days_re_enable = 50
+
+        complete_effect = {
+            908 = {
+               set_temp_variable = {
+                    pop_add = -268
+                }
+               add_state_population = no
+            }
+        }
+
+        remove_effect = {
+          add_manpower = 60
+          set_technology = {
+            scav_pa_tech = 1
+          }
+          set_country_flag = pls_vulcan_second_found
+        }
+    }
+}
+
+
+pls_cult_of_mercury_dec = {
+
+    pls_sinum_mexico_imperii = {
+        icon = GFX_decision_pls_mercury_logo_medium
+        allowed = { tag = PLS }
+
+        #days_remove = 7
+
+        visible = {
+            has_country_flag = pls_build_empire
+        }
+
+        remove_effect = {
+           add_stability = 0.1
+           set_cosmetic_tag = PLS_Gulf_Empire
+           clr_country_flag = pls_build_empire
+        }
+    }
+
+    pls_temple_of_mercury = {
+        icon = GFX_decision_pls_mercury_logo_medium
+        allowed = { tag = PLS }
+
+        custom_cost_trigger = {
+          has_war_support > 0
+        }
+        custom_cost_text = pls_war_supp_dec
+
+        days_remove = 50
+        days_re_enable = 15
+
+        modifier = {
+           production_speed_buildings_factor = -0.15
+        }
+
+        complete_effect = {
+          add_war_support = -0.05
+        }
+
+        remove_effect = {
+            add_stability = 0.05
+            random_owned_controlled_state = {
+                limit = {
+                    is_valid_state_for_civilian_factory = yes
+                }
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+
+    pls_attack_ironmongers = {
+        icon = GFX_decision_fuse
+        allowed = { tag = PLS }
+
+        available = {
+          has_war = no
+        }
+
+        visible = {
+          NOT = {
+            owns_state = 907
+          }
+        }
+
+        days_remove = 14
+
+        complete_effect = {
+          add_war_support = 0.05
+        }
+
+        remove_effect = {
+              random_neighbor_country = {
+
+                limit = {
+                    owns_state = 907
+                }
+
+                PLS = {
+                  declare_war_on = {
+                    target = PREV
+                    type = annex_everything
+                  }
+                }
+            }
+        }
+    }
+
+    pls_sawjaw_joins = {
+        icon = GFX_decision_pls_smol_sawjaw
+        allowed = { tag = PLS }
+
+        available = {
+          owns_state = 907
+        }
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_mercury_sawjaw
+          }
+        }
+
+        days_remove = 14
+
+        complete_effect = {
+          add_stability = -0.01
+        }
+
+        remove_effect = {
+             add_advisor_role = {
+              character = PLS_Sawjaw
+              advisor = {
+                slot = economic_advisor
+                idea_token = pls_sawjaw_advisor
+                traits = {
+                  PLS_Chariot_Mechanic
+                }
+                cost = 100
+                ai_will_do = {
+                 factor = 10
+                }
+            }
+          }
+          set_country_flag = pls_mercury_sawjaw
+        }
+    }
+
+    pls_red_is_fast = {
+        icon = GFX_decision_flamer
+        allowed = { tag = PLS }
+
+        available = {
+          owns_state = 907
+          PLS_Sawjaw = { is_advisor = yes }
+        }
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_mercury_redfast
+          }
+        }
+
+        days_remove = 14
+
+        complete_effect = {
+          add_stability = -0.03
+        }
+
+        remove_effect = {
+          add_ideas = PLS_red_makes_you_fast
+          set_country_flag = pls_mercury_redfast
+        }
+    }
+
+    pls_repurpose_mongers_tanks = {
+        icon = GFX_decision_tool_box
+        allowed = { tag = PLS }
+
+        available = {
+          owns_state = 907
+          PLS_Sawjaw = { is_advisor = yes }
+        }
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_mercury_more_chariots
+          }
+        }
+
+        days_remove = 14
+
+        modifier = {
+           industrial_capacity_factory = -0.14
+        }
+
+        remove_effect = {
+          add_equipment_to_stockpile = {
+            type = chariot_equipment
+            amount = 650
+            producer = IMO
+          }
+          set_country_flag = pls_mercury_more_chariots
+        }
+    }
+}
+
+pls_cult_of_jupier_dec = {
+
+    pls_tonitrua_tempestatem = {
+        icon = GFX_decision_pls_thunder_dec
+        allowed = { tag = PLS }
+
+        #days_remove = 7
+
+        visible = {
+            has_country_flag = pls_build_empire
+        }
+
+        remove_effect = {
+           add_war_support = 0.15
+           set_cosmetic_tag = PLS_Thunderstorm
+           clr_country_flag = pls_build_empire
+        }
+    }
+
+    pls_dallas_capital = {
+        icon = GFX_decision_caf_factories
+        allowed = { tag = PLS }
+
+        days_remove = 50
+        days_re_enable = 45
+
+        available = {
+          owns_state = 892
+        }
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_dallas_is_olympus
+          }
+        }
+
+        remove_effect = {
+            add_stability = -0.1
+            add_war_support = 0.15
+            set_capital = { state = 892 }
+            892 = {
+                add_core_of = PLS
+                set_temp_variable = {
+                    pop_add = -6253
+                }
+                add_state_population = no
+
+                set_province_name = {
+                   id = 11964
+                   name = pls_dallas_olympus
+                }
+
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                        type = arms_factory
+                        level = 3
+                        instant_build = yes
+                }
+            }
+            set_country_flag = pls_dallas_is_olympus
+        }
+    }
+
+    pls_prayer_to_jupiter = {
+        icon = GFX_decision_pls_jupiter_logo_medium
+        allowed = { tag = PLS }
+
+        days_remove = 14
+        days_re_enable = 50
+
+        modifier = {
+           monthly_population = -0.15
+        }
+
+        complete_effect = {
+          add_war_support = 0.05
+        }
+
+        remove_effect = {
+            add_stability = -0.05
+            add_timed_idea = {
+              idea = PLS_prayer_jupiter
+              days = 45
+            }
+        }
+    }
+
+    pls_decipher_alamo_blueprints = {
+        icon = GFX_decision_blueprint
+        allowed = { tag = PLS }
+
+        available = {
+          owns_state = 908
+        }
+
+        days_remove = 30
+
+        modifier = {
+          research_speed_factor = -0.15
+        }
+
+        visible = {
+          NOT = {
+            has_idea = PLS_alamo_blueprints
+          }
+        }
+
+        remove_effect = {
+            add_ideas = PLS_alamo_blueprints
+        }
+    }
+
+    pls_the_green_devil = {
+        icon = GFX_decision_cartel
+        allowed = { tag = PLS }
+
+        available = {
+          owns_state = 755
+        }
+
+        days_remove = 30
+
+        modifier = {
+          monthly_population = -0.05
+        }
+
+        visible = {
+          NOT = {
+            has_country_flag = pls_green_devil_arrived
+          }
+        }
+
+        remove_effect = {
+           add_stability = -0.1
+           add_manpower = 628
+           add_corps_commander_role = {
+            character = PLS_Viridis_Diabolus
+            skill = 4
+            attack_skill = 3
+            defense_skill = 2
+            planning_skill = 5
+            logistics_skill = 4
+            }
+            set_country_flag = pls_green_devil_arrived
+        }
+    }
+
+
+
+}

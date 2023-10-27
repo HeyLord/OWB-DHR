@@ -149,6 +149,21 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = dhr_cali_rd
+			set_party_name = {
+				ideology = intellectuals
+				long_name = DHR_RD
+				name = DHR_RD
+			}
+			add_country_leader_role = {
+				character = DHR_arcade
+				promote_leader = yes
+				country_leader = {
+					ideology = technocracy
+					expire = "3000.01.01.01"
+					traits = { DHR_primum_non_nocere }
+				}
+			}
+
 		}
 	}
 	focus = {
@@ -1458,10 +1473,12 @@ focus_tree = {
 		prerequisite = {
 			focus = mot_dhr_bear_hug
 		}
+		will_lead_to_war_with = VEG
+
 		relative_position_id = mot_dhr_kill_bos
 
 		completion_reward = {
-			BOS = {
+			VEG = {
 				ROOT = {
 					grant_wargoals_on_core_states_of_prev = yes
 				}
@@ -1474,29 +1491,24 @@ focus_tree = {
 		cost = 28
 		x = -1
 		y = 1
+		available = {
+			owns_state = 252
+		}
 		prerequisite = {
 			focus = mot_dhr_vegas
 		}
-		select_effect = {
-			for_each_loop = {
-				array = dam_turbine_primary
-				if = {
-					limit = { check_variable = { v = 0 } }
-					set_variable = { dam_turbine_primary^i = 1 }
-					set_temp_variable = { break = 1 }
-				}
-			}
-		}
+
 		relative_position_id = mot_dhr_vegas
 
 		completion_reward = {
-			custom_effect_tooltip = moj_activate_a_turbine
-			for_each_loop = {
-				array = dam_turbine_primary
-				if = {
-					limit = { check_variable = { v = 1 } }
-					set_variable = { dam_turbine_primary^i = 2 }
-					set_temp_variable = { break = 1 }
+			253 = {
+				add_resource = {
+					type = water
+					amount = 20
+				}
+				add_resource = {
+					type = energy
+					amount = 15
 				}
 			}
 		}
@@ -1520,4 +1532,407 @@ focus_tree = {
 		}
 	}
 
+
+
+	focus = {
+		id = mot_dhr_wheel_of_fate
+		icon = GFX_goal_MOT_DHR_HUB_Best_Dad_Wheel
+		cost = 14
+		x = -8
+		y = 4
+		available = {
+			has_country_flag = mot_dhr_dick_wins
+			has_completed_focus = mot_dhr_part_of_the_wheel
+		}
+		relative_position_id = mot_dhr_raise_the_flag
+
+		completion_reward = {
+			country_event = nf_dhr.17
+		}
+	}
+	focus = {
+		id = mot_dhr_come_fly_with_me
+		icon = GFX_goal_MOT_DHR_HUB_Round_Rocket
+		cost = 14
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_wheel_of_fate
+		}
+		relative_position_id = mot_dhr_wheel_of_fate
+
+		completion_reward = {
+			set_technology = {
+				high_fighter_tech = 1
+			}
+		}
+	}
+	focus = {
+		id = mot_dhr_similar_brainwaves
+		icon = GFX_goal_MOT_DHR_HUB_Big_Brain
+		cost = 14
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_come_fly_with_me
+		}
+		relative_position_id = mot_dhr_come_fly_with_me
+
+		completion_reward = {
+			add_ideas = dhr_dreamers
+		}
+	}
+	focus = {
+		id = mot_dhr_uplifting
+		icon = GFX_goal_MOT_DHR_HUB_Flying_Guy
+		cost = 14
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_similar_brainwaves
+		}
+		relative_position_id = mot_dhr_similar_brainwaves
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = dhr_dreamers
+				add_idea = dhr_dreamers_2
+			}
+		}
+	}
+	focus = {
+		id = mot_dhr_body_mind_spirit
+		icon = GFX_goal_MOT_DHR_HUB_Abstraction
+		cost = 14
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_wheel_of_fate
+		}
+		relative_position_id = mot_dhr_wheel_of_fate
+
+		completion_reward = {
+			add_ideas = dhr_body_mind_spirit
+		}
+	}
+	focus = {
+		id = mot_dhr_oppressives
+		icon = GFX_goal_MOT_DHR_HUB_Vines
+		cost = 14
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_body_mind_spirit
+		}
+		relative_position_id = mot_dhr_body_mind_spirit
+
+		completion_reward = {
+			add_stability = -0.20
+			253 = {
+				set_temp_variable = { pop_add = -8948}
+				add_state_population_no_state_name = yes
+			}
+			1 = {
+				set_temp_variable = { pop_add = -7482}
+				add_state_population_no_state_name = yes
+			}
+			350 = {
+				set_temp_variable = { pop_add = -3467}
+				add_state_population_no_state_name = yes
+			}
+			591 = {
+				set_temp_variable = { pop_add = -7624}
+				add_state_population_no_state_name = yes
+			}
+		}
+	}
+	focus = {
+		id = mot_dhr_rim_meat
+		icon = GFX_goal_MOT_DHR_HUB_Skull
+		cost = 14
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_oppressives
+		}
+		relative_position_id = mot_dhr_oppressives
+
+		completion_reward = {
+			add_ideas = dhr_rim_meat
+		}
+	}
+	focus = {
+		id = mot_dhr_quetzel
+		icon = GFX_goal_MOT_DHR_HUB_Ufo
+		cost = 14
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_uplifting
+		}
+		prerequisite = {
+			focus = mot_dhr_rim_meat
+		}
+		relative_position_id = mot_dhr_rim_meat
+
+		completion_reward = {
+			country_event = nf_dhr.19
+		}
+	}
+
+
+
+
+
+	focus = {
+		id = mot_dhr_wait_and_see
+		icon = GFX_goal_MOT_DHR_Shield_VB_Oliver
+		cost = 14
+		x = 0
+		y = 4
+		available = {
+			has_country_flag = mot_dhr_oliver_wins
+		}
+		relative_position_id = mot_dhr_raise_the_flag
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_leave_behind
+		icon = GFX_goal_MOT_DHR_Shield_Palm
+		cost = 14
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_wait_and_see
+		}
+		relative_position_id = mot_dhr_wait_and_see
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_dear_cali
+		icon = GFX_goal_MOT_DHR_Shield_Bear_Hug
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_leave_behind
+		}
+		relative_position_id = mot_dhr_leave_behind
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_second_home
+		icon = GFX_goal_MOT_DHR_Shield_Two_Bears
+		cost = 14
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_dear_cali
+		}
+		relative_position_id = mot_dhr_dear_cali
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_fist
+		icon = GFX_goal_MOT_DHR_Shield_Dancing_Bear
+		cost = 14
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_leave_behind
+		}
+		relative_position_id = mot_dhr_leave_behind
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_strong
+		icon = GFX_goal_MOT_DHR_Shield_Bear
+		cost = 14
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_fist
+		}
+		relative_position_id = mot_dhr_fist
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_real_human_bean
+		icon = GFX_goal_MOT_DHR_Shield_Oliver_Hat
+		cost = 14
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_second_home
+		}
+		prerequisite = {
+			focus = mot_dhr_strong
+		}
+		relative_position_id = mot_dhr_strong
+
+		completion_reward = {
+		}
+	}
+
+
+
+
+	focus = {
+		id = mot_dhr_sub_sole
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = 8
+		y = 4
+		available = {
+			has_country_flag = mot_dhr_arcade_wins
+		}
+		relative_position_id = mot_dhr_raise_the_flag
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_vault_of_the_future
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = -3
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_sub_sole
+		}
+		relative_position_id = mot_dhr_sub_sole
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_auld_lang_syne
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_sub_sole
+		}
+		relative_position_id = mot_dhr_sub_sole
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_be_human
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_sub_sole
+		}
+		relative_position_id = mot_dhr_sub_sole
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_definition_of_humanity
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_vault_of_the_future
+		}
+		prerequisite = {
+			focus = mot_dhr_auld_lang_syne
+		}
+		prerequisite = {
+			focus = mot_dhr_be_human
+		}
+		relative_position_id = mot_dhr_vault_of_the_future
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_clean_energy
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_vault_of_the_future
+		}
+		prerequisite = {
+			focus = mot_dhr_auld_lang_syne
+		}
+		prerequisite = {
+			focus = mot_dhr_be_human
+		}
+		select_effect = {
+			for_each_loop = {
+				array = dam_turbine_primary
+				if = {
+					limit = { check_variable = { v = 0 } }
+					set_variable = { dam_turbine_primary^i = 1 }
+					set_temp_variable = { break = 1 }
+				}
+			}
+		}
+		relative_position_id = mot_dhr_be_human
+
+		completion_reward = {
+			custom_effect_tooltip = moj_activate_a_turbine
+			for_each_loop = {
+				array = dam_turbine_primary
+				if = {
+					limit = { check_variable = { v = 1 } }
+					set_variable = { dam_turbine_primary^i = 2 }
+					set_temp_variable = { break = 1 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = mot_dhr_war_never_changes
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = mot_dhr_definition_of_humanity
+		}
+		prerequisite = {
+			focus = mot_dhr_clean_energy
+		}
+		relative_position_id = mot_dhr_auld_lang_syne
+
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = mot_dhr_people_do
+		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		cost = 14
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = mot_dhr_war_never_changes
+		}
+		relative_position_id = mot_dhr_war_never_changes
+
+		completion_reward = {
+		}
+	}
 }

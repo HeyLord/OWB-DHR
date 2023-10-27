@@ -5,6 +5,16 @@
   dhr_bear_hug_tt:0 "§gUnlocks decisions to restore and expand the Californian Sphere§!"
   dhr_mojave_peace_tt:0 "§gThe peace was finally brought to Mojave, all Mojave states will become our cores.§!"
 
+  RICHARDSON_TT:0 "\n§Y$DHR_richardson_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y4§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tStrong§!, §tEnduring§!, §tGunslinger§!\n\n"
+
+  DHR_hubos:0 "§gThe Hubologists§!"
+  DHR_RD:0 "§CCalifornia R&D§!"
+
+  mot_dhr_dick_wins:0 "§gThe California Will Be Blessed By Starfather§!"
+  mot_dhr_oliver_wins:0 "§7Oliver Wins Against All Odds§!"
+  mot_dhr_arcade_wins:0 "§LCalifornia R&D Takes the Lead§!"
+
+
   PHR_puppet_elites:0 "Arizona Administration"
   PHR_puppet_elites_ADJ:0 "The Arizona Administration"
   PHR_puppet_elites_DEF:0 "Arizona Administration"
@@ -17,3 +27,5 @@
   PHR_puppet_intellectuals:0 "Arizona Administration"
   PHR_puppet_intellectuals_ADJ:0 "The Arizona Administration"
   PHR_puppet_intellectuals_DEF:0 "Arizona Administration"
+
+
