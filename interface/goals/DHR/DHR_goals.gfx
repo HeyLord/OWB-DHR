@@ -200,5 +200,65 @@ spriteTypes = {
 		name = "GFX_goal_MOT_DHR_Middle_Flag"
 		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Middle_Flag.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Best_Dad_Wheel"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Best_Dad_Wheel.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Round_Rocket"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Round_Rocket.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Big_Brain"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Big_Brain.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Flying_Guy"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Flying_Guy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Abstraction"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Abstraction.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Vines"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Vines.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Skull"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Skull.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_HUB_Ufo"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_HUB_Ufo.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_VB_Oliver"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_VB_Oliver.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Oliver_Hat"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Oliver_Hat.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Dancing_Bear"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Dancing_Bear.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Bear_Hug"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Bear_Hug.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Bear"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Bear.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Palm"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Palm.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Two_Bears"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Two_Bears.dds"
+	}
 
 }
