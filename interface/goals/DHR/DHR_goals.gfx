@@ -260,5 +260,41 @@ spriteTypes = {
 		name = "GFX_goal_MOT_DHR_Shield_Two_Bears"
 		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Two_Bears.dds"
 	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_Shield_Two_Bears"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_Shield_Two_Bears.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Sun"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Sun.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Flowers"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Flowers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Enc_Bird"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Enc_Bird.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Ghoul"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Ghoul.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Guy"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Guy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Beaver"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Beaver.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Skulls"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Skulls.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_MOT_DHR_ARC_Iris"
+		texturefile = "gfx/interface/goals/DHR/MOT_DHR_ARC_Iris.dds"
+	}
 
 }

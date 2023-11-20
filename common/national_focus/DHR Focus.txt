@@ -1791,7 +1791,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_dhr_sub_sole
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Sun
 		cost = 14
 		x = 8
 		y = 4
@@ -1805,7 +1805,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_vault_of_the_future
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Flowers
 		cost = 14
 		x = -3
 		y = 1
@@ -1819,7 +1819,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_auld_lang_syne
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Enc_Bird
 		cost = 14
 		x = 0
 		y = 1
@@ -1833,7 +1833,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_be_human
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Ghoul
 		cost = 14
 		x = 3
 		y = 1
@@ -1847,7 +1847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_definition_of_humanity
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Guy
 		cost = 14
 		x = 2
 		y = 1
@@ -1867,7 +1867,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_clean_energy
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Beaver
 		cost = 14
 		x = -2
 		y = 1
@@ -1906,7 +1906,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_war_never_changes
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Skulls
 		cost = 14
 		x = 0
 		y = 2
@@ -1923,7 +1923,7 @@ focus_tree = {
 	}
 	focus = {
 		id = mot_dhr_people_do
-		icon = GFX_goal_MOT_DHR_ARC_Arcade
+		icon = GFX_goal_MOT_DHR_ARC_Iris
 		cost = 14
 		x = 0
 		y = 1
