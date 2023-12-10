@@ -1801,6 +1801,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_raise_the_flag
 
 		completion_reward = {
+			country_event = nf_dhr.21
 		}
 	}
 	focus = {
@@ -1815,6 +1816,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_sub_sole
 
 		completion_reward = {
+			add_ideas = dhr_california_greening
 		}
 	}
 	focus = {
@@ -1829,6 +1831,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_sub_sole
 
 		completion_reward = {
+			country_event = nf_dhr.22
 		}
 	}
 	focus = {
@@ -1843,6 +1846,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_sub_sole
 
 		completion_reward = {
+			add_ideas = dhr_we_are_human
 		}
 	}
 	focus = {
@@ -1863,6 +1867,9 @@ focus_tree = {
 		relative_position_id = mot_dhr_vault_of_the_future
 
 		completion_reward = {
+			set_technology = {
+				implant_tech_access_tech = 1
+			}
 		}
 	}
 	focus = {
@@ -1919,6 +1926,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_auld_lang_syne
 
 		completion_reward = {
+			add_ideas = dhr_iustitia_et_pax
 		}
 	}
 	focus = {
@@ -1933,6 +1941,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_war_never_changes
 
 		completion_reward = {
+			country_event = nf_dhr.23
 		}
 	}
 }

@@ -4,6 +4,10 @@ spriteTypes = {
 		name = "GFX_event_dhr_hub_logo"
 		texturefile = "gfx/event_pictures/event_dhr_hub_logo.dds"
 	}
+	spriteType = {
+		name = "GFX_event_dhr_sun"
+		texturefile = "gfx/event_pictures/event_dhr_sun.dds"
+	}
 
 
 }

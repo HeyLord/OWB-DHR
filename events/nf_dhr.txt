@@ -507,6 +507,7 @@ country_event = {
 	#Was this the best option?
 	option = {
 		name = nf_dhr.17.a
+		set_cosmetic_tag = DHR_Dick
 		add_stability = -0.05
 		set_capital = {state = 1}
 	}
@@ -545,6 +546,7 @@ country_event = {
 
 	option = {
 		name = nf_dhr.20.a
+		set_cosmetic_tag = DHR_Dick_final
 		every_country = {
 			limit = {
 				NOT = {
@@ -562,6 +564,77 @@ country_event = {
 #####################
 #####Dick events#####
 #####################
+
+
+
+#####################
+#####Arcade events#####
+#####################
+
+#Arcade is happy
+country_event = {
+	id = nf_dhr.21
+	title = nf_dhr.21.t
+	desc = nf_dhr.21.d
+	picture = GFX_event_dhr_sun
+
+	is_triggered_only = yes
+
+	#A bright day for California
+	option = {
+		name = nf_dhr.21.a
+		add_stability = 0.05
+		set_cosmetic_tag = DHR_Arcade
+		add_research_slot = 1
+		set_capital = {state = 350}
+	}
+}
+
+#Arcade speech about the enclave
+country_event = {
+	id = nf_dhr.22
+	title = nf_dhr.22.t
+	desc = nf_dhr.22.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+    #The son will not bear the punishment for the sin of the father
+	option = {
+		name = nf_dhr.22.a
+		add_political_power = -50
+		add_stability = 0.08
+	}
+}
+
+#Ending event
+country_event = {
+	id = nf_dhr.23
+	title = nf_dhr.23.t
+	desc = nf_dhr.23.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+    #The son will not bear the punishment for the sin of the father
+	option = {
+		name = nf_dhr.23.a
+		swap_ideas = {
+			remove_idea = dhr_iustitia_et_pax
+			add_idea = dhr_iustitia_et_pax_2
+		}
+		set_cosmetic_tag = DHR_Arcade_final
+	}
+}
+
+#####################
+#####Arcade events#####
+#####################
+
+
+
+
+
 
 
 add_namespace = nf_dhr_news

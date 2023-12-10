@@ -558,5 +558,56 @@ ideas = {
 				army_morale_factor = 0.15
 			}
 		}
+
+
+
+		#Arcade
+		dhr_we_are_human = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.08
+				production_speed_buildings_factor = 0.15
+				monthly_population = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		dhr_california_greening = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.25
+				production_speed_industrial_complex_factor = 0.15
+				local_resources_factor = 0.15
+			}
+		}
+		dhr_iustitia_et_pax = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = 1.0
+			}
+		}
+		dhr_iustitia_et_pax_2 = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				justify_war_goal_time = 1.0
+				stability_weekly = 0.05
+				political_power_gain = 0.3
+			}
+		}
 	}
 }
