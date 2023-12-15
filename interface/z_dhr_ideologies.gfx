@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ideology_MOT_hubology"
+		texturefile = "gfx/interface/ideologies/unique/DHR/DHR_hubology.dds"
+	}
+
+}

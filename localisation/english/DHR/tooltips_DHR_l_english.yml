@@ -4,6 +4,7 @@
   dhr_arizona_tt:0 "§OArizona is too big for us to control, so the §2"Arizona Administration"§! will be created to restore order in those wretched lands.§!"
   dhr_bear_hug_tt:0 "§gUnlocks decisions to restore and expand the Californian Sphere§!"
   dhr_mojave_peace_tt:0 "§gThe peace was finally brought to Mojave, all Mojave states will become our cores.§!"
+  dhr_backyard_tt:0 "§gWe will get wargoals on all Nevada nations!§!"
 
   RICHARDSON_TT:0 "\n§Y$DHR_richardson_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y4§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tStrong§!, §tEnduring§!, §tGunslinger§!\n\n"
 
@@ -13,6 +14,8 @@
   mot_dhr_dick_wins:0 "§gThe California Will Be Blessed By Starfather§!"
   mot_dhr_oliver_wins:0 "§7Oliver Wins Against All Odds§!"
   mot_dhr_arcade_wins:0 "§LCalifornia R&D Takes the Lead§!"
+
+  dhr_stagnant_leader:0 "Stagnant Leader"
 
 
   PHR_puppet_elites:0 "Arizona Administration"
@@ -27,5 +30,8 @@
   PHR_puppet_intellectuals:0 "Arizona Administration"
   PHR_puppet_intellectuals_ADJ:0 "The Arizona Administration"
   PHR_puppet_intellectuals_DEF:0 "Arizona Administration"
+
+  hubology:0 "Hubology"
+  hubology_desc:0 "Hubology\n\nThe Hubology cult was founded before the Great War by Dick Hubbell. Seeing the failure of the modern government, religion and medicine, he was inspired by music of the time and his own personal experience with extraterrestrial beings. He set out to help humanity understand existence through the "Great Wheel of Life". Hubology embodies a distinctive fusion of pseudo-scientific principles and spiritual ideologies. Placing paramount importance on the veneration of extraterrestrial entities known as "Zetans," or celestial beings, the Hubology cult ascribes godlike status to these enigmatic creatures who are believed to bestow their adherents with eternal life.\n\nEmbracing an idiosyncratic doctrine, Hubology engenders a reverence for advanced technologies, both real and imagined. This penchant for futurism permeates the cult's rituals and practices, with acolytes donning otherworldly space suits and immersing themselves in virtual reality sessions intended to unlock spiritual enlightenment. Through the blending of fantastical elements and religious devotion, Hubology champions a unique strain of metaphysical exploration that seeks to transcend the mundane nature of existence.\n\nNotably, followers of Hubology seek to expand their ranks, zealously proselytizing and striving to amass esoteric knowledge and cutting-edge technology. Often encountered traversing the post-apocalyptic wasteland, these devotees are driven by an unwavering desire to convert others to their cause."
 
 
