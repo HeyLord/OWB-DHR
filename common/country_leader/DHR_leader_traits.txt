@@ -15,6 +15,16 @@ leader_traits = {
 		}
 	}
 
+	dhr_stagnant_leader = {
+		random = no
+
+		stability_factor = 0.15
+		political_power_factor = -0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	###Advisor traits
 
@@ -32,6 +42,7 @@ leader_traits = {
 
 		monthly_population = 0.12
 		research_speed_factor = 0.05
+		war_support_factor = -0.1
 
 		ai_will_do = {
 			factor = 1
