@@ -4,5 +4,9 @@ spriteTypes = {
 		name = "GFX_Decision_DHR_funny_bear"
 		textureFile = "gfx/interface/decisions/dhr_funny_bear.dds"
 	}
+	spriteType = {
+		name = "GFX_decision_dhr_alien_head"
+		textureFile = "gfx/interface/decisions/dhr_alien_head.dds"
+	}
 
 }

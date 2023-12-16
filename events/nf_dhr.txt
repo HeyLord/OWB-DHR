@@ -569,6 +569,81 @@ country_event = {
 		}
 	}
 }
+
+
+add_namespace = nf_dhr_dick
+
+#Arrival to the Capital Wasteland, looking for the UFO
+country_event = {
+	id = nf_dhr_dick.1
+	title = nf_dhr_dick.1.t
+	desc = nf_dhr_dick.1.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr_dick.1.a
+		country_event = {
+			id = nf_dhr_dick.2
+			days = 7
+		}
+	}
+}
+
+#Found the UFO, got some cool stuff, now we go to Nuka World
+country_event = {
+	id = nf_dhr_dick.2
+	title = nf_dhr_dick.2.t
+	desc = nf_dhr_dick.2.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr_dick.2.a
+		country_event = {
+			id = nf_dhr_dick.3
+			days = 14
+		}
+	}
+}
+
+#Found the Nuka World and met our Hubologist brothers and sisters, time to go back
+country_event = {
+	id = nf_dhr_dick.3
+	title = nf_dhr_dick.3.t
+	desc = nf_dhr_dick.3.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr_dick.3.a
+		country_event = {
+			id = nf_dhr_dick.4
+			days = 20
+		}
+	}
+}
+
+#We are home now, yay. Time to expand our main temple with the things we found
+country_event = {
+	id = nf_dhr_dick.4
+	title = nf_dhr_dick.4.t
+	desc = nf_dhr_dick.4.d
+	picture = GFX_event_TTM_repository
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr_dick.4.a
+		add_manpower = 150
+		add_stability = 0.25
+	}
+}
+
+
 #####################
 #####Dick events#####
 #####################
