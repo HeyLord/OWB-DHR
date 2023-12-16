@@ -8,6 +8,41 @@ spriteTypes = {
 		name = "GFX_event_dhr_sun"
 		texturefile = "gfx/event_pictures/event_dhr_sun.dds"
 	}
-
+	spriteType = {
+		name = "GFX_event_dhr_cw_spaceship"
+		texturefile = "gfx/event_pictures/event_dhr_cw_spaceship.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_cw_rivet_city"
+		texturefile = "gfx/event_pictures/event_dhr_cw_rivet_city.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_nuka_hubos"
+		texturefile = "gfx/event_pictures/event_dhr_nuka_hubos.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_crushed_ufo"
+		texturefile = "gfx/event_pictures/event_dhr_crushed_ufo.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_stars"
+		texturefile = "gfx/event_pictures/event_dhr_stars.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_glass"
+		texturefile = "gfx/event_pictures/event_dhr_glass.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_noose"
+		texturefile = "gfx/event_pictures/event_dhr_noose.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_memorial"
+		texturefile = "gfx/event_pictures/event_dhr_memorial.dds"
+	}
+	spriteType = {
+		name = "GFX_event_dhr_big_three"
+		texturefile = "gfx/event_pictures/event_dhr_big_three.dds"
+	}
 
 }

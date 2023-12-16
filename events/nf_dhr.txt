@@ -199,7 +199,7 @@ country_event = {
 	id = nf_dhr.6
 	title = nf_dhr.6.t
 	desc = nf_dhr.6.d
-	picture = GFX_event_dhr_hub_logo
+	picture = GFX_event_dhr_stars
 
 	is_triggered_only = yes
 
@@ -219,7 +219,7 @@ country_event = {
 	id = nf_dhr.7
 	title = nf_dhr.7.t
 	desc = nf_dhr.7.d
-	picture = GFX_event_generic_ufo_crash
+	picture = GFX_event_dhr_crushed_ufo
 
 	is_triggered_only = yes
 
@@ -283,7 +283,7 @@ country_event = {
 	id = nf_dhr.101
 	title = nf_dhr.101.t
 	desc = nf_dhr.101.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_glass
 
 	is_triggered_only = yes
 
@@ -297,7 +297,7 @@ country_event = {
 	id = nf_dhr.102
 	title = nf_dhr.102.t
 	desc = nf_dhr.102.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_glass
 
 	is_triggered_only = yes
 
@@ -311,7 +311,7 @@ country_event = {
 	id = nf_dhr.11
 	title = nf_dhr.11.t
 	desc = nf_dhr.11.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_noose
 
 	is_triggered_only = yes
 
@@ -418,7 +418,7 @@ country_event = {
 	id = nf_dhr.141
 	title = nf_dhr.141.t
 	desc = nf_dhr.141.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_sub_generic_war_room
 
 	is_triggered_only = yes
 
@@ -432,7 +432,7 @@ country_event = {
 	id = nf_dhr.142
 	title = nf_dhr.142.t
 	desc = nf_dhr.142.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_sub_generic_war_room
 
 	is_triggered_only = yes
 
@@ -446,7 +446,7 @@ country_event = {
 	id = nf_dhr.15
 	title = nf_dhr.15.t
 	desc = nf_dhr.15.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_memorial
 
 	is_triggered_only = yes
 
@@ -463,18 +463,13 @@ country_event = {
 	id = nf_dhr.16
 	title = nf_dhr.16.t
 	desc = nf_dhr.16.d
-	picture = GFX_event_NCR_congress
+	picture = GFX_event_dhr_big_three
 
 	is_triggered_only = yes
 
-	#Oliver
-	option = {
-		name = nf_dhr.16.a
-		set_country_flag = mot_dhr_oliver_wins
-	}
 	#Dick
 	option = {
-		name = nf_dhr.16.b
+		name = nf_dhr.16.a
 		trigger = {
 			has_completed_focus = mot_dhr_spin_the_wheel
 		}
@@ -484,6 +479,13 @@ country_event = {
 			elections_allowed = no
 		}
 	}
+
+	#Oliver
+	option = {
+		name = nf_dhr.16.b
+		set_country_flag = mot_dhr_oliver_wins
+	}
+
 	#Arcade
 	option = {
 		name = nf_dhr.16.c
@@ -508,7 +510,7 @@ country_event = {
 	id = nf_dhr.17
 	title = nf_dhr.17.t
 	desc = nf_dhr.17.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_hub_logo
 
 	is_triggered_only = yes
 
@@ -573,12 +575,12 @@ country_event = {
 
 add_namespace = nf_dhr_dick
 
-#Arrival to the Capital Wasteland, looking for the UFO
+#Arrival to the Capital Wasteland, looking for the UFO stopped in the Rivet City
 country_event = {
 	id = nf_dhr_dick.1
 	title = nf_dhr_dick.1.t
 	desc = nf_dhr_dick.1.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_cw_rivet_city
 
 	is_triggered_only = yes
 
@@ -596,7 +598,7 @@ country_event = {
 	id = nf_dhr_dick.2
 	title = nf_dhr_dick.2.t
 	desc = nf_dhr_dick.2.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_cw_spaceship
 
 	is_triggered_only = yes
 
@@ -614,7 +616,7 @@ country_event = {
 	id = nf_dhr_dick.3
 	title = nf_dhr_dick.3.t
 	desc = nf_dhr_dick.3.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_nuka_hubos
 
 	is_triggered_only = yes
 
@@ -632,7 +634,7 @@ country_event = {
 	id = nf_dhr_dick.4
 	title = nf_dhr_dick.4.t
 	desc = nf_dhr_dick.4.d
-	picture = GFX_event_TTM_repository
+	picture = GFX_event_dhr_hub_logo
 
 	is_triggered_only = yes
 
