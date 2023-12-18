@@ -5,6 +5,8 @@
   dhr_bear_hug_tt:0 "§gUnlocks decisions to restore and expand the Californian Sphere§!"
   dhr_mojave_peace_tt:0 "§gThe peace was finally brought to Mojave, all Mojave states will become our cores.§!"
   dhr_backyard_tt:0 "§gWe will get wargoals on all Nevada nations!§!"
+  dhr_eatcoat_tt:0 "§gOur travelers have arrived to the Capital Wasteland!§!"
+  dhr_decision_tt:0 "§7I haven't made a decision on this yet.§!"
 
   RICHARDSON_TT:0 "\n§Y$DHR_richardson_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y4§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tStrong§!, §tEnduring§!, §tGunslinger§!\n\n"
 
@@ -16,6 +18,8 @@
   mot_dhr_arcade_wins:0 "§LCalifornia R&D Takes the Lead§!"
 
   dhr_stagnant_leader:0 "Stagnant Leader"
+
+
 
 
   PHR_puppet_elites:0 "Arizona Administration"

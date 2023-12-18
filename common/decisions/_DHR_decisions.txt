@@ -66,7 +66,11 @@ dhr_bear_hug_dec = {
 			add_manpower = -256
 		}
 		remove_effect = {
-			country_event = nf_dhr_dick.1
+			custom_effect_tooltip = dhr_eatcoat_tt
+			hidden_effect = {
+				country_event = nf_dhr_dick.1
+			}
+
 		}
 	}
 }
