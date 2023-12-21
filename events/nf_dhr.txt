@@ -737,7 +737,7 @@ country_event = {
 
 
 #####################
-#####Arcade events#####
+#####Oliver events#####
 #####################
 
 
@@ -774,7 +774,7 @@ country_event = {
 	id = nf_dhr.26
 	title = nf_dhr.26.t
 	desc = nf_dhr.26.d
-	picture = GFX_event_ENC_dark
+	picture = GFX_event_dhr_hub_logo
 
 	is_triggered_only = yes
 
