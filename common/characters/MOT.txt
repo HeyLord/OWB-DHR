@@ -325,10 +325,10 @@ characters = {
 		name = MOT_AUGUSTINE_PERRY_NAME
 		portraits = {
 			army = {
-				small = GFX_idea_generic_political_advisor_europe_1
+				small = GFX_Portrait_MOT_Perry
 			}
 			civilian = {
-				small = GFX_idea_generic_political_advisor_europe_1
+				small = GFX_Portrait_MOT_Perry
 			}
 		}
 		advisor = {
@@ -355,10 +355,10 @@ characters = {
 		name = MOT_ASH_WINTERS_NAME
 		portraits = {
 			army = {
-				small = GFX_idea_generic_political_advisor_europe_2
+				small = GFX_Portrait_MOT_Ash_Winters
 			}
 			civilian = {
-				small = GFX_idea_generic_political_advisor_europe_2
+				small = GFX_Portrait_MOT_Ash_Winters
 			}
 		}
 		advisor = {
@@ -534,10 +534,10 @@ characters = {
 		name = MOT_mike_lawson_name
 		portraits = {
 			army = {
-				small = GFX_idea_generic_advisor24
+				small = GFX_Portrait_MOT_Mike_Lawson
 			}
 			civilian = {
-				small = GFX_idea_generic_advisor24
+				small = GFX_Portrait_MOT_Mike_Lawson
 			}
 		}
 		advisor = {
@@ -560,10 +560,10 @@ characters = {
 		name = MOT_warden_nathan_name
 		portraits = {
 			army = {
-				small = GFX_idea_generic_advisor21
+				small = GFX_Portrait_MOT_Nathan
 			}
 			civilian = {
-				small = GFX_idea_generic_advisor21
+				small = GFX_Portrait_MOT_Nathan
 			}
 		}
 		advisor = {
@@ -591,10 +591,10 @@ characters = {
 			gender = female
 			portraits = {
 				army = {
-					small = GFX_idea_generic_advisor1
+					small = GFX_Portrait_MOT_Elizabeth
 				}
 				civilian = {
-					small = GFX_idea_generic_advisor1
+					small = GFX_Portrait_MOT_Elizabeth
 				}
 			}
 			advisor = {
@@ -650,10 +650,10 @@ characters = {
 		name = MOT_major_steyn_name
 		portraits = {
 			army = {
-				small = GFX_idea_generic_advisor27
+				small = GFX_Portrait_MOT_Steyn
 			}
 			civilian = {
-				small = GFX_idea_generic_advisor27
+				small = GFX_Portrait_MOT_Steyn
 			}
 		}
 		advisor = {

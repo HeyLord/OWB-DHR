@@ -35,4 +35,31 @@ spriteTypes = {
 		textureFile = "gfx/leaders/DHR/potraits_richardson.dds"
 	}
 
+
+	#Advisors
+    spriteType = {
+		name = "GFX_Portrait_MOT_Ash_Winters"
+		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_ash_winters.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_MOT_Perry"
+		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_perry.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_MOT_Nathan"
+		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_nathan.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_MOT_Mike_Lawson"
+		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_mike_lawson.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_MOT_Elizabeth"
+		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_elizabeth.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_MOT_Steyn"
+		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_steyn.dds"
+	}
+
 }
