@@ -452,8 +452,7 @@ country_event = {
 
 	option = {
 		name = nf_dhr.15.a
-		add_stability = 0.1
-		add_political_power = 50
+		add_stability = 0.05
 	}
 }
 
@@ -780,6 +779,8 @@ country_event = {
 
 	option = {
 		name = nf_dhr.26.a
+		add_stability = -0.1
+		add_ideas = dhr_hubo_influence
 	}
 }
 
@@ -794,6 +795,128 @@ country_event = {
 
 	option = {
 		name = nf_dhr.27.a
+		add_war_support = -0.1
+		add_ideas = dhr_followers_influence
+	}
+}
+
+#Mojave event
+country_event = {
+	id = nf_dhr.28
+	title = nf_dhr.28.t
+	desc = nf_dhr.28.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.28.a
+
+	}
+}
+
+#Army event (PA)
+country_event = {
+	id = nf_dhr.29
+	title = nf_dhr.29.t
+	desc = nf_dhr.29.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.29.a
+
+	}
+}
+
+#Army event (Police)
+country_event = {
+	id = nf_dhr.30
+	title = nf_dhr.30.t
+	desc = nf_dhr.30.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.30.a
+
+	}
+}
+
+#Arizona event
+country_event = {
+	id = nf_dhr.31
+	title = nf_dhr.31.t
+	desc = nf_dhr.31.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.31.a
+
+	}
+}
+
+#Ending (Dick + Armor)
+country_event = {
+	id = nf_dhr.32
+	title = nf_dhr.32.t
+	desc = nf_dhr.32.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.32.a
+
+	}
+}
+
+#Ending (Dick + Police)
+country_event = {
+	id = nf_dhr.33
+	title = nf_dhr.33.t
+	desc = nf_dhr.33.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.33.a
+
+	}
+}
+
+#Ending (Arcade + Armor)
+country_event = {
+	id = nf_dhr.34
+	title = nf_dhr.34.t
+	desc = nf_dhr.34.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.34.a
+
+	}
+}
+
+#Ending (Arcade + Armor)
+country_event = {
+	id = nf_dhr.35
+	title = nf_dhr.35.t
+	desc = nf_dhr.35.d
+	picture = GFX_event_ENC_dark
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr.35.a
+
 	}
 }
 

@@ -7,6 +7,7 @@
   dhr_backyard_tt:0 "§gWe will get wargoals on all Nevada nations!§!"
   dhr_eatcoat_tt:0 "§gOur travelers have arrived to the Capital Wasteland!§!"
   dhr_decision_tt:0 "§7I haven't made a decision on this yet.§!"
+  dhr_fate_tt:0 "§7What fate awaits me?§!"
 
   RICHARDSON_TT:0 "\n§Y$DHR_richardson_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y4§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tStrong§!, §tEnduring§!, §tGunslinger§!\n\n"
 

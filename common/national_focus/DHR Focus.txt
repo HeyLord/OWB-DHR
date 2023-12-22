@@ -1733,8 +1733,8 @@ focus_tree = {
 		y = 1
 		available = {
 			OR = {
-				has_completed_focus = mot_dhr_spin_the_wheel
-				has_completed_focus = mot_dhr_cali_rd
+				has_completed_focus = mot_dhr_part_of_the_wheel
+				has_completed_focus = mot_dhr_brighter_day
 			}
 		}
 		prerequisite = {
@@ -1772,6 +1772,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_dear_cali
 
 		completion_reward = {
+			country_event = nf_dhr.28
 		}
 	}
 	focus = {
@@ -1780,12 +1781,27 @@ focus_tree = {
 		cost = 14
 		x = 1
 		y = 1
+		available = {
+			OR = {
+				has_completed_focus = mot_dhr_dream_come_true
+				has_completed_focus = mot_dhr_against_all_evil
+			}
+		}
 		prerequisite = {
 			focus = mot_dhr_leave_behind
 		}
 		relative_position_id = mot_dhr_leave_behind
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = mot_dhr_NCPD
+				}
+				country_event = nf_dhr.30
+			}
+			else = {
+				country_event = nf_dhr.29
+			}
 		}
 	}
 	focus = {
@@ -1800,6 +1816,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_fist
 
 		completion_reward = {
+			country_event = nf_dhr.31
 		}
 	}
 	focus = {
@@ -1817,6 +1834,37 @@ focus_tree = {
 		relative_position_id = mot_dhr_strong
 
 		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = mot_dhr_part_of_the_wheel
+					has_completed_focus = mot_dhr_dream_come_true
+				}
+				country_event = nf_dhr.32
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = mot_dhr_part_of_the_wheel
+					has_completed_focus = mot_dhr_against_all_evil
+				}
+				country_event = nf_dhr.33
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = mot_dhr_brighter_day
+					has_completed_focus = mot_dhr_dream_come_true
+				}
+				country_event = nf_dhr.34
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = mot_dhr_brighter_day
+					has_completed_focus = mot_dhr_against_all_evil
+				}
+				country_event = nf_dhr.35
+			}
+			else = {
+				custom_effect_tooltip = dhr_fate_tt
+			}
 		}
 	}
 

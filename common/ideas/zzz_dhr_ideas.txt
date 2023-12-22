@@ -620,5 +620,32 @@ ideas = {
 				political_power_gain = 0.3
 			}
 		}
+
+		#Oliver
+		dhr_hubo_influence = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.1
+				political_power_gain = -0.2
+			}
+		}
+
+		dhr_followers_influence = {
+			picture = rejection_of_automation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.1
+				conscription_factor = -0.15
+				research_speed_factor = 0.1
+			}
+		}
 	}
 }
