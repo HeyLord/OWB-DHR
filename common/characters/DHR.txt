@@ -80,8 +80,7 @@ characters = {
 		}
 		advisor = {
 			slot = cultural_advisor
-			idea_token = DHR_arcade_cultural_advisor
-			desc = DHR_arcade_name_desc
+			idea_token = DHR_dick_cultural_advisor
 			allowed = {
 				original_tag = MOT
 			}
@@ -124,6 +123,31 @@ characters = {
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 2
+		}
+	}
+	DHR_flynn = {
+		name = DHR_flynn_name
+		portraits = {
+			army = {
+				small = GFX_Portrait_DHR_advisor_flynn
+			}
+		}
+		advisor = {
+			slot = economic_advisor
+			idea_token = DHR_flynn_economic_advisor
+			allowed = {
+				original_tag = MOT
+			}
+			visible = {
+				has_country_flag = dhr_flynn_advisor
+			}
+			traits = {
+				DHR_the_last_baron
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
 		}
 	}
 

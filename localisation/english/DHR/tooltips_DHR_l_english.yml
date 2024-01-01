@@ -8,6 +8,10 @@
   dhr_eatcoat_tt:0 "§gOur travelers have arrived to the Capital Wasteland!§!"
   dhr_decision_tt:0 "§7I haven't made a decision on this yet.§!"
   dhr_fate_tt:0 "§7What fate awaits me?§!"
+  dhr_flynn_tt:0 "Can hire §YAnton Flynn§! as an economic advisor:"
+  dhr_wendell_tt:0 "Can hire §YWendell Peterson§! as a cultural advisor:"
+  dhr_arcade_tt:0 "Can hire §YArcade Gannon§! as a cultural advisor:"
+  dhr_dick_tt:0 "Can hire §YRichard Goldman§! as a cultural advisor:"
 
   RICHARDSON_TT:0 "\n§Y$DHR_richardson_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y4§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tStrong§!, §tEnduring§!, §tGunslinger§!\n\n"
 

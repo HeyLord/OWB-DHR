@@ -175,6 +175,7 @@ recruit_character = DHR_wendell_peterson
 recruit_character = DHR_arcade
 recruit_character = DHR_dick
 recruit_character = DHR_richardson
+recruit_character = DHR_flynn
 
 create_equipment_variant = {
 	name = "River Boat"

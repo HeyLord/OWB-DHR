@@ -104,15 +104,13 @@ focus_tree = {
 		relative_position_id =  mot_dhr_followers_decree
 
 		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = dhr_broken_republic_3
-					add_idea = dhr_broken_republic_4
-				}
+			swap_ideas = {
+				remove_idea = dhr_broken_republic_3
+				add_idea = dhr_broken_republic_4
 			}
-			hidden_effect = {
-				country_event = nf_dhr.5
-			}
+			set_country_flag = dhr_flynn_advisor
+			custom_effect_tooltip = dhr_flynn_tt
+			show_ideas_tooltip = DHR_flynn_economic_advisor
 		}
 	}
 	focus = {
@@ -131,6 +129,25 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = dhr_spin_the_wheel
+			effect_tooltip = {
+				set_party_name = {
+					ideology = elites
+					long_name = DHR_hubos
+					name = DHR_hubos
+				}
+				add_country_leader_role = {
+					character = DHR_dick
+					promote_leader = yes
+					country_leader = {
+						ideology = hubology
+						expire = "3000.01.01.01"
+						traits = { DHR_good_samarithan }
+					}
+				}
+			}
+			hidden_effect = {
+				country_event = nf_dhr.5
+			}
 		}
 	}
 	focus = {

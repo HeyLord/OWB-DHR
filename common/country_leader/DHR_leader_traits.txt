@@ -58,5 +58,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	DHR_the_last_baron = {
+		random = no
+
+		political_power_gain = 0.05
+		industrial_capacity_factory = 0.08
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 }

@@ -36,6 +36,8 @@ spriteTypes = {
 	}
 
 
+
+
 	#Advisors
     spriteType = {
 		name = "GFX_Portrait_MOT_Ash_Winters"
@@ -60,6 +62,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_MOT_Steyn"
 		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_steyn.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_MOT_Steyn"
+		textureFile = "gfx/interface/ideas/ministers/mojave/mot_advisor_steyn.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_advisor_flynn"
+		textureFile = "gfx/interface/ideas/advisors/dhr_advisor_flynn.dds"
 	}
 
 }

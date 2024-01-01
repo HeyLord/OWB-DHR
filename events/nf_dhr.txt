@@ -63,9 +63,8 @@ country_event = {
 			set_temp_variable = { pop_add = 11184 }
 			add_state_population_no_state_name = yes
 		}
-		effect_tooltip = {
-			activate_advisor = DHR_arcade_cultural_advisor
-		}
+		custom_effect_tooltip = dhr_arcade_tt
+		show_ideas_tooltip = DHR_arcade_cultural_advisor
 		set_country_flag = dhr_arcade_advisor
 	}
 }
@@ -85,9 +84,8 @@ country_event = {
 			remove_idea = dhr_broken_republic
 			add_idea = dhr_broken_republic_2
 		}
-		effect_tooltip = {
-			activate_advisor = DHR_wendell_peterson_cultural_advisor
-		}
+		custom_effect_tooltip = dhr_wendell_tt
+		show_ideas_tooltip = DHR_wendell_peterson_cultural_advisor
 		set_country_flag = dhr_wendell_advisor
 	}
 }
@@ -172,10 +170,6 @@ country_event = {
 
 	option = {
 		name = nf_dhr.5.a
-		swap_ideas = {
-			remove_idea = dhr_broken_republic_3
-			add_idea = dhr_broken_republic_4
-		}
 		set_country_flag = dhr_dick_advisor
 		set_party_name = {
 			ideology = elites
@@ -191,6 +185,8 @@ country_event = {
 				traits = { DHR_good_samarithan }
 			}
 		}
+		custom_effect_tooltip = dhr_dick_tt
+		show_ideas_tooltip = DHR_dick_cultural_advisor
 	}
 }
 #UFO crash
