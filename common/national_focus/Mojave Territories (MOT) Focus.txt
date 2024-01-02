@@ -3609,8 +3609,8 @@ focus_tree = {
 		y = 2
 		available = {
 			owns_state = 253
-			owns_state = 350
-			owns_state = 141
+			#owns_state = 350
+			#owns_state = 141
 			has_completed_focus = mot_oliv_rival_paladins
 			has_completed_focus = mot_oliv_pardon_powder_gangers
 		}
