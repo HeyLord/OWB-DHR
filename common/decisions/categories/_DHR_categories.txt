@@ -4,6 +4,6 @@ dhr_bear_hug_dec = {
 	visible_when_empty = yes
 	visible = {
 		tag = MOT
-		#has_completed_focus = mot_dhr_bear_hug
+		has_completed_focus = mot_dhr_bear_hug
 	}
 }
