@@ -327,7 +327,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	#Van Graffs
+	#Own industry
 	option = {
 		name = nf_dhr.12.a
 		add_tech_bonus = {
@@ -337,7 +337,7 @@ country_event = {
 		}
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 3500
+			amount = 1500
 			producer = ROOT
 		}
 	}
@@ -352,7 +352,7 @@ country_event = {
 		}
 		add_equipment_to_stockpile = {
 			type = energy_equipment_1
-			amount = 3500
+			amount = 1500
 			producer = USA
 		}
 	}
@@ -500,83 +500,6 @@ country_event = {
 #####Dick events#####
 #####################
 
-#Dick is happy
-country_event = {
-	id = nf_dhr.17
-	title = nf_dhr.17.t
-	desc = nf_dhr.17.d
-	picture = GFX_event_dhr_hub_logo
-
-	is_triggered_only = yes
-
-	#Was this the best option?
-	option = {
-		name = nf_dhr.17.a
-		set_cosmetic_tag = DHR_Dick
-		add_stability = -0.05
-		set_capital = {state = 1}
-		1 = {
-			set_state_name = "Starfather's Church"
-			hidden_effect = {
-				set_province_name = {
-					id = 2409
-					name = "Starfather's Church"
-				}
-			}
-		}
-	}
-}
-
-#UFO crash 2
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
-	id = nf_dhr.19
-	title = nf_dhr.19.t
-	desc = nf_dhr.19.d
-	picture = GFX_event_dhr_hub_logo
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_dhr.19.a
-		add_stability = -0.01
-		hidden_effect = {
-			country_event = {
-				id = nf_dhr.20
-				days = 7
-			}
-		}
-	}
-}
-#War on the world
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
-	id = nf_dhr.20
-	title = nf_dhr.20.t
-	desc = nf_dhr.20.d
-	picture = GFX_event_dhr_hub_logo
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_dhr.20.a
-		set_cosmetic_tag = DHR_Dick_final
-		every_country = {
-			limit = {
-				NOT = {
-					is_in_faction_with = MOT
-				}
-				NOT = { tag = MOT }
-				NOT = { is_puppet_of = MOT }
-			}
-			MOT = {
-				grant_wargoals_on_core_states_of_prev = yes
-			}
-		}
-	}
-}
-
-
 add_namespace = nf_dhr_dick
 
 #Arrival to the Capital Wasteland, looking for the UFO stopped in the Rivet City
@@ -656,6 +579,84 @@ country_event = {
 		}
 	}
 }
+
+#Dick is happy
+country_event = {
+	id = nf_dhr_dick.5
+	title = nf_dhr_dick.5.t
+	desc = nf_dhr_dick.5.d
+	picture = GFX_event_dhr_hub_logo
+
+	is_triggered_only = yes
+
+	#Was this the best option?
+	option = {
+		name = nf_dhr_dick.5.a
+		set_cosmetic_tag = DHR_Dick
+		add_stability = -0.05
+		set_capital = {state = 1}
+		1 = {
+			set_state_name = "Starfather's Church"
+			hidden_effect = {
+				set_province_name = {
+					id = 2409
+					name = "Starfather's Church"
+				}
+			}
+		}
+	}
+}
+
+#UFO crash 2
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr_dick.6
+	title = nf_dhr_dick.6.t
+	desc = nf_dhr_dick.6.d
+	picture = GFX_event_dhr_hub_logo
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr_dick.6.a
+		add_stability = -0.01
+		hidden_effect = {
+			country_event = {
+				id = nf_dhr_dick.7
+				days = 7
+			}
+		}
+	}
+}
+
+#War on the world
+country_event = {
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	id = nf_dhr_dick.7
+	title = nf_dhr_dick.7.t
+	desc = nf_dhr_dick.7.d
+	picture = GFX_event_dhr_hub_logo
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_dhr_dick.7.a
+		set_cosmetic_tag = DHR_Dick_final
+		every_country = {
+			limit = {
+				NOT = {
+					is_in_faction_with = MOT
+				}
+				NOT = { tag = MOT }
+				NOT = { is_puppet_of = MOT }
+			}
+			MOT = {
+				grant_wargoals_on_core_states_of_prev = yes
+			}
+		}
+	}
+}
+
 
 
 #####################

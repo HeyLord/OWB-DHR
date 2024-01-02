@@ -1575,7 +1575,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_raise_the_flag
 
 		completion_reward = {
-			country_event = nf_dhr.17
+			country_event = nf_dhr_dick.5
 		}
 	}
 	focus = {
