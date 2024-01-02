@@ -11085,7 +11085,7 @@ focus = {
             value = GFX_goal_NCR_kimball
         }
 		dynamic = yes
-		cost = 7
+		cost = 20
 		cancelable = no
 		prerequisite = { focus = ncr_electoral_deadlock }
 		x = 0
