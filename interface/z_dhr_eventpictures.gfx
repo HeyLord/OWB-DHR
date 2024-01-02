@@ -44,5 +44,9 @@ spriteTypes = {
 		name = "GFX_event_dhr_big_three"
 		texturefile = "gfx/event_pictures/event_dhr_big_three.dds"
 	}
+	spriteType = {
+		name = "GFX_event_dhr_observatory"
+		texturefile = "gfx/event_pictures/event_dhr_observatory.dds"
+	}
 
 }

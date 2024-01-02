@@ -195,7 +195,7 @@ country_event = {
 	id = nf_dhr.6
 	title = nf_dhr.6.t
 	desc = nf_dhr.6.d
-	picture = GFX_event_dhr_stars
+	picture = GFX_event_dhr_observatory
 
 	is_triggered_only = yes
 
