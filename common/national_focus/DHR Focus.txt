@@ -54,6 +54,7 @@ focus_tree = {
 		available = {
 			owns_state = 350
 			owns_state = 141
+			has_completed_focus = mot_dhr_hibernation
 		}
 		prerequisite = {
 			focus = mot_dhr_republic_call
@@ -891,6 +892,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		available = {
+			has_completed_focus = mot_dhr_hibernation
 			#owns_state = 350
 			#owns_state = 141
 		}

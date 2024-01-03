@@ -337,7 +337,7 @@ country_event = {
 		}
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
-			amount = 1500
+			amount = 800
 			producer = ROOT
 		}
 	}
@@ -352,7 +352,7 @@ country_event = {
 		}
 		add_equipment_to_stockpile = {
 			type = energy_equipment_1
-			amount = 1500
+			amount = 800
 			producer = USA
 		}
 	}
