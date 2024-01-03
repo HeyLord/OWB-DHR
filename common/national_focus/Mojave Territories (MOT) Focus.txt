@@ -33,7 +33,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_the_battle_for_nipton
-		icon = GFX_goal_NCR_Mojave
+		icon = GFX_goal_NCR_Raider
 		cost = 7
 		prerequisite = {
 			focus = mot_preparing_the_expedition
@@ -111,7 +111,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_melt_their_steel
-		icon = GFX_goal_generic_handy_fuel
+		icon = GFX_goal_NCR_Generic_Ranger
 		cost = 30
 		available = {
 			NOT = {
@@ -138,7 +138,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_strength_in_numbers
-		icon = GFX_goal_NCR_Urban_Draft
+		icon = GFX_goal_NCR_Army_Big_Jim_March
 		cost = 30
 		available = {
 			NOT = {
@@ -161,7 +161,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_make_our_final_preparations
-		icon = GFX_goal_NCR_Military_March
+		icon = GFX_goal_NCR_Army_Big_Jim_Draft
 		cost = 30
 		available = {
 			NOT = {
@@ -206,7 +206,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_secure_the_west
-		icon = GFX_goal_generic_western
+		icon = GFX_goal_NCR_Sentry
 		cost = 30
 		available = {
 			NOT = {
@@ -239,7 +239,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_solidify_military_leadership
-		icon = GFX_goal_generic_land_doctrines_focus
+		icon = GFX_goal_NCR_Kimball_Expansion_Plateau
 		cost = 30
 		available = {
 			NOT = {
@@ -268,7 +268,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_protect_route_95
-		icon = GFX_goal_generic_protectron_conceptart_primm_slimm
+		icon = GFX_goal_NCR_Army_Big_Jim_Combined
 		cost = 30
 		available = {
 			NOT = {
@@ -301,7 +301,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_promote_major_moore
-		icon = GFX_goal_NCR_Weapon_Standardization
+		icon = GFX_goal_NCR_Moore
 		available = {
 			NOT = {
 				has_country_flag = mot_crisis_in_california
@@ -340,7 +340,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_dealing_with_capitol_hill
-		icon = GFX_goal_NCR_Council_Hill
+		icon = GFX_goal_NCR_Well
 		cost = 30
 		available = {
 			NOT = {
@@ -397,7 +397,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_deploy_the_fresh_battalions
-		icon = GFX_goal_NCR_Urban_Draft
+		icon = GFX_goal_NCR_Mojave_Redeploy
 		cost = 30
 		available = {
 			NOT = {
@@ -419,7 +419,7 @@ focus_tree = {
 					}
 					division_template = {
 						name = "Mojave Troopers"
-						template_counter= 68
+						template_counter = 68
 						division_names_group = _NCR_INF_01
 						regiments = {
 							infantry = { x = 0 y = 0 }
@@ -456,7 +456,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_guns_from_back_home
-		icon = GFX_goal_generic_ballastic_patch
+		icon = GFX_goal_NCR_Weapons
 		cost = 30
 		available = {
 			NOT = {
@@ -484,7 +484,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_form_up_the_first_recon
-		icon = GFX_goal_generic_focus_magazine_aat_sniper
+		icon = GFX_goal_NCR_Generic_Rangers
 		cost = 30
 		available = {
 			NOT = {
@@ -502,8 +502,8 @@ focus_tree = {
 			hidden_effect = {
 				division_template = {
 					name = "Reconnaissance Battalion"
+					template_counter = 74
 
-					is_locked = yes
 					priority = 2
 
 					regiments = {
@@ -520,7 +520,7 @@ focus_tree = {
 					}
 					support = {
 						anti_tank_company = { x = 0 y = 0 }
-						recon_company = { x = 0 y = 1 }
+						recon_company = { x = 1 y = 0 }
 					}
 				}
 				77 = {
@@ -587,7 +587,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_baker_militarisation_act
-		icon = GFX_goal_NCR_Military_March
+		icon = GFX_goal_NCR_GI
 		cost = 30
 		available = {
 			NOT = {
@@ -619,7 +619,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_divert_planners
-		icon = GFX_goal_generic_outpost
+		icon = GFX_goal_NCR_Ranger_Steals_Food
 		cost = 30
 		available = {
 			NOT = {
@@ -659,7 +659,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_local_call_to_arms
-		icon = GFX_goal_generic_NCR_diplomatic_focus
+		icon = GFX_goal_NCR_Guy
 		cost = 30
 		available = {
 			NOT = {
@@ -901,7 +901,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_the_bulls_soft_bellow
-		icon = GFX_goal_CES_generic_focus
+		icon = GFX_goal_NCR_Legion_1
 		cost = 30
 		available = {
 			NOT = {
@@ -933,7 +933,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_assemble_the_mojave_defence_committee
-		icon = GFX_goal_generic_focus_magazine_gunsandbullets_take_aim
+		icon = GFX_goal_NCR_Golden_Ranger
 		cost = 30
 		available = {
 			NOT = {
@@ -1202,7 +1202,7 @@ focus_tree = {
 	## NCR Diplo Subtree Kinda ##
 	focus = {
 		id = mot_an_encouraging_victory
-		icon = GFX_goal_NCR_Ranger_Can_Openers
+		icon = GFX_goal_NCR_Moore_Expansion_Toaster
 		cost = 30
 		prerequisite = {
 			focus = mot_operation_sunburst
@@ -1239,7 +1239,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_tools_left_behind
-		icon = GFX_goal_BOS_tesla_cannon
+		icon = GFX_goal_NCR_Army_PA_BOS_Teachings
 		cost = 30
 		prerequisite = {
 			focus = mot_an_encouraging_victory
@@ -1306,7 +1306,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_the_heavy_corps
-		icon = GFX_goal_NCR_Heavy_Troops
+		icon = GFX_goal_NCR_Army_PA_Masters
 		cost = 30
 		prerequisite = {
 			focus = mot_an_encouraging_victory
@@ -1326,7 +1326,6 @@ focus_tree = {
 				division_template = {
 					name = "NCR Heavy Corps"
 
-					is_locked = yes
 					priority = 2
 
 					regiments = {
@@ -1358,7 +1357,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_lessons_from_the_war
-		icon = GFX_goal_generic_focus_magazine_gunsandbullets_gun_laws
+		icon = GFX_goal_NCR_Army_PA_Pet_Project
 		cost = 30
 		available = {
 			NOT = {
@@ -1744,7 +1743,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_mp_deployments
-		icon = GFX_goal_NEW_New_Reno_Police_Department
+		icon = GFX_goal_NCR_Moore_Police
 		cost = 30
 		available = {
 			NOT = {
@@ -2631,7 +2630,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_cement_olivers_authority
-		icon = GFX_goal_NCR_Buyout
+		icon = GFX_goal_NCR_Oliver_Hat
 		cost = 7
 		prerequisite = {
 			focus = mot_the_great_debate
@@ -4866,7 +4865,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_ncrs_finest
-		icon = GFX_goal_NCR_Urban_Draft
+		icon = GFX_goal_NCR_Army_Big_Jim_Drills
 		cost = 30
 		prerequisite = {
 			focus = mot_cement_olivers_authority
@@ -4898,7 +4897,7 @@ focus_tree = {
 
 	focus = {
 		id = mot_demilitarisation_of_baker
-		icon = GFX_goal_NCR_MojaveOutpost
+		icon = GFX_goal_NCR_Standard_Weapons
 		cost = 30
 		prerequisite = {
 			focus = mot_ncrs_finest
