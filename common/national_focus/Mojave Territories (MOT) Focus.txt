@@ -3726,7 +3726,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
-			has_tech = scav_pa_tech
+			#has_tech = scav_pa_tech
 		}
 		relative_position_id = mot_oliv_bear_armor
 		prerequisite = {
