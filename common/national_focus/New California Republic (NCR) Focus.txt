@@ -14990,9 +14990,18 @@ focus = {
 					damage = 0.8
 				}
 			}
-			custom_effect_tooltip = ncr_calhoun_shady_workers_tt
-			hidden_effect = {
-				load_oob = BON_shady_workers
+			if = {
+				limit = {
+					NOT = {
+						253 = {
+							is_owned_by = MOT
+						}
+					}
+				}
+				custom_effect_tooltip = ncr_calhoun_shady_workers_tt
+				hidden_effect = {
+					load_oob = BON_shady_workers
+				}
 			}
 		}
 	}

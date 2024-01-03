@@ -253,7 +253,7 @@ characters = {
 		}
 		corps_commander = {
 			visible = {
-				has_completed_focus = mot_oliv_pull_vegas_troops
+				has_country_flag = moj_pappas_general
 			}
 			traits = {
 				charismatic_trait

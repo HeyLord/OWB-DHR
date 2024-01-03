@@ -3474,6 +3474,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = PAPPAS_TT
 			custom_effect_tooltip = mot_oliv_mp_tt
+			set_country_flag = moj_pappas_general
 			hidden_effect = {
 				load_oob = MOT_vegas_mp
 			}

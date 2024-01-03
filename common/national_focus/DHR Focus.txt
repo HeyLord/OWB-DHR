@@ -891,8 +891,8 @@ focus_tree = {
 		x = 4
 		y = 1
 		available = {
-			owns_state = 350
-			owns_state = 141
+			#owns_state = 350
+			#owns_state = 141
 		}
 		prerequisite = {
 			focus = mot_dhr_republic_call
