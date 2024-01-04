@@ -454,7 +454,7 @@ country_event = {
 
 #Elections
 country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
+	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.16" }
 	id = nf_dhr.16
 	title = nf_dhr.16.t
 	desc = nf_dhr.16.d
@@ -531,9 +531,6 @@ country_event = {
 
 	option = {
 		name = nf_dhr_dick.2.a
-		set_technology = {
-			plasma_weaponry_1 = 1
-		}
 		country_event = {
 			id = nf_dhr_dick.3
 			days = 14
@@ -552,7 +549,9 @@ country_event = {
 
 	option = {
 		name = nf_dhr_dick.3.a
-		add_political_power = 100
+		set_technology = {
+			plasma_weaponry_1 = 1
+		}
 		country_event = {
 			id = nf_dhr_dick.4
 			days = 20
