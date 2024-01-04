@@ -573,6 +573,9 @@ characters = {
 			allowed = {
 				original_tag = MOT
 			}
+			available = {
+				controls_state = 552
+			}
 			traits = {
 				MOT_Warden_trait
 			}
@@ -662,6 +665,9 @@ characters = {
 			desc = MOT_major_steyn_desc
 			allowed = {
 				original_tag = MOT
+			}
+			available = {
+				controls_state = 47
 			}
 			traits = {
 				MOT_Steyn_trait

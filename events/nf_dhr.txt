@@ -857,37 +857,22 @@ country_event = {
 	}
 }
 
-#Ending (Dick + Armor)
+#Ending (Dick)
 country_event = {
 	id = nf_dhr.32
 	title = nf_dhr.32.t
 	desc = nf_dhr.32.d
-	picture = GFX_event_ENC_dark
+	picture = GFX_event_dhr_literally_me_oliver
 
 	is_triggered_only = yes
 
 	option = {
 		name = nf_dhr.32.a
-
+		set_cosmetic_tag = NCR
 	}
 }
 
-#Ending (Dick + Police)
-country_event = {
-	id = nf_dhr.33
-	title = nf_dhr.33.t
-	desc = nf_dhr.33.d
-	picture = GFX_event_ENC_dark
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_dhr.33.a
-
-	}
-}
-
-#Ending (Arcade + Armor)
+#Ending (Arcade)
 country_event = {
 	id = nf_dhr.34
 	title = nf_dhr.34.t
@@ -898,21 +883,6 @@ country_event = {
 
 	option = {
 		name = nf_dhr.34.a
-
-	}
-}
-
-#Ending (Arcade + Armor)
-country_event = {
-	id = nf_dhr.35
-	title = nf_dhr.35.t
-	desc = nf_dhr.35.d
-	picture = GFX_event_ENC_dark
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_dhr.35.a
 
 	}
 }
@@ -948,7 +918,7 @@ news_event = {
 			level = 8
 		}
 		add_offsite_building = {
-			type = industrial_complex
+			type = arms_factory
 			level = 8
 		}
 		hidden_effect = {

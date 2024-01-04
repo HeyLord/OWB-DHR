@@ -1077,7 +1077,7 @@ focus_tree = {
 				producer = BOS
 			}
 			set_technology = {
-				t45d_pa_tech = 1
+				t51b_pa_tech = 1
 			}
 		}
 	}
@@ -1384,7 +1384,9 @@ focus_tree = {
 						ideology = constitutional_republic
 						traits = { po_loyal_puppet }
 					}
-					set_ruling_party = people
+					set_party_rule = {
+						ideology = people
+					}
 					set_cosmetic_tag = PHR_puppet
 					load_focus_tree = ncr_puppet_nf
 				}
@@ -1864,16 +1866,8 @@ focus_tree = {
 			if = {
 				limit = {
 					has_completed_focus = mot_dhr_part_of_the_wheel
-					has_completed_focus = mot_dhr_dream_come_true
 				}
 				country_event = nf_dhr.32
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = mot_dhr_part_of_the_wheel
-					has_completed_focus = mot_dhr_against_all_evil
-				}
-				country_event = nf_dhr.33
 			}
 			else_if = {
 				limit = {
@@ -1881,13 +1875,6 @@ focus_tree = {
 					has_completed_focus = mot_dhr_dream_come_true
 				}
 				country_event = nf_dhr.34
-			}
-			else_if = {
-				limit = {
-					has_completed_focus = mot_dhr_brighter_day
-					has_completed_focus = mot_dhr_against_all_evil
-				}
-				country_event = nf_dhr.35
 			}
 			else = {
 				custom_effect_tooltip = dhr_fate_tt
