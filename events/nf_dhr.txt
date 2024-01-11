@@ -876,13 +876,18 @@ country_event = {
 	id = nf_dhr.34
 	title = nf_dhr.34.t
 	desc = nf_dhr.34.d
-	picture = GFX_event_ENC_dark
+	picture = GFX_event_dhr_drive_oliver
 
 	is_triggered_only = yes
 
 	option = {
 		name = nf_dhr.34.a
-
+		custom_effect_tooltip = dhr_retirement_tt
+		hidden_effect = {
+			retire_character = MOT_general_lee_oliver
+			promote_character = DHR_wendell_peterson
+			set_cosmetic_tag = NCR
+		}
 	}
 }
 
