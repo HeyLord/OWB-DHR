@@ -2244,7 +2244,7 @@ focus_tree = {
 				caps_cost_trigger = yes
 			}
 		}
-		x = -3
+		x = -5
 		y = 1
 		relative_position_id = ncr_kimball_vindication
 		prerequisite = {
@@ -3032,14 +3032,72 @@ focus = {
 		NOT = { has_country_flag = ncr_crisis }
 	}
 	prerequisite = { focus = ncr_kimball_vindication }
-	x = -12
+	x = -14
 	y = 1
 	relative_position_id = ncr_new_hand_on_the_tiller
 	completion_reward = {
-			add_to_variable = { ncr_arms_factory_efficiency = 0.05 }
-			add_to_variable = { ncr_war_support = 0.1 }
-			force_update_dynamic_modifier = yes
-			custom_effect_tooltip = ncr_forceful_empire_tt
+		# Old effect pre 4.2.14
+
+		# add_to_variable = { ncr_arms_factory_efficiency = 0.05 }
+		# add_to_variable = { ncr_war_support = 0.1 }
+		# force_update_dynamic_modifier = yes
+		# custom_effect_tooltip = ncr_forceful_empire_tt
+
+		if = {
+			limit = {
+				has_idea = ncr_war_exhausted_economy
+			}
+			swap_ideas = {
+				remove_idea = ncr_war_exhausted_economy
+				add_idea = ncr_deregulated_markets
+			}
+		}
+		else = {
+			random_owned_state = {
+				limit = {
+					is_valid_state_for_civilian_factory = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_valid_state_for_civilian_factory = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_valid_state_for_civilian_factory = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_valid_state_for_civilian_factory = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 }
 focus = {
@@ -3330,6 +3388,146 @@ focus = {
 		custom_effect_tooltip = ncr_stockmen_association_promises_tt
 	}
 }
+
+focus = {
+	id = ncr_strength_and_security
+	icon = GFX_goal_NCR_Standards
+	cost = 45
+	available = {
+		NOT = { has_country_flag = ncr_crisis }
+	}
+	prerequisite = { focus = ncr_kimball_vindication }
+	x = -7
+	y = 1
+	relative_position_id = ncr_kimball_vindication
+	completion_reward = {
+		add_ideas = ncr_idea_war_ready_economy
+	}
+}
+
+focus = {
+	id = ncr_diversified_weapons_contracts
+	icon = GFX_goal_NCR_Weapons
+	cost = 30
+	available = {
+		NOT = { has_country_flag = ncr_crisis }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = { caps_diff = -50 }
+			caps_cost_trigger = yes
+		}
+	}
+	prerequisite = { focus = ncr_kimball_vindication }
+	x = -3
+	y = 1
+	relative_position_id = ncr_kimball_vindication
+	completion_reward = {
+		add_to_variable = { ncr_diversified_weapons_contracts_tt = -0.15 }
+		custom_effect_tooltip = ncr_diversified_weapons_contracts_tt
+		force_update_dynamic_modifier = yes
+		add_timed_idea = {
+			idea = ncr_diversified_weapons_contracts_idea
+			days = 365
+		}
+		set_temp_variable = { caps_to_add = -50 }
+		add_caps = yes
+	}
+}
+
+focus = {
+	id = ncr_shock_troopers
+	icon = GFX_goal_NCR_Heavy_Trooper
+	cost = 30
+	available = {
+		253 = { is_owned_and_controlled_by = ROOT }
+		NOT = { has_country_flag = ncr_crisis }
+	}
+	prerequisite = { focus = ncr_diversified_weapons_contracts }
+	x = 0
+	y = 1
+	relative_position_id = ncr_diversified_weapons_contracts
+	completion_reward = {
+		custom_effect_tooltip = load_ncrheavytroops
+		hidden_effect = {
+			load_oob = ncrheavytroops
+		}
+		custom_effect_tooltip = spacer_tt
+		if = {
+			limit = {
+				has_tech = stripped_pa_tech
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = power_armor_tech_category
+			}
+		}
+		else = {
+			set_technology = {
+				stripped_pa_tech = 1
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = power_armor_equipment_1
+			amount = 250
+			producer = USA
+		}
+		custom_effect_tooltip = spacer_tt
+		set_technology = {
+			ncr_shocktroopers_tech = 1
+		}
+	}
+}
+
+focus = {
+	id = ncr_the_shared_imperative
+	icon = GFX_goal_ncr_cowboy
+	cost = 30
+	available = {
+		NOT = { has_country_flag = ncr_crisis }
+		has_completed_focus = ncr_baja_annexation
+	}
+	prerequisite = { focus = ncr_shock_troopers }
+	x = 0
+	y = 1
+	relative_position_id = ncr_shock_troopers
+	completion_reward = {
+		custom_effect_tooltip = ncr_the_shared_imperative_tt
+		# Skips Complacent Hegemony and Market Deregulation then stops
+		if = {
+			limit = {
+				has_idea = ncr_war_exhausted_economy
+			}
+			effect_tooltip = {	# This if statement should never be true when the focus is actually taken, but we use a hidden effect here in case something breaks
+				swap_ideas = {
+					remove_idea = ncr_deregulated_markets
+					add_idea = ncr_giant_awakes
+				}
+			}
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = ncr_war_exhausted_economy
+					add_idea = ncr_giant_awakes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = ncr_deregulated_markets
+			}
+			swap_ideas = {
+				remove_idea = ncr_deregulated_markets
+				add_idea = ncr_giant_awakes
+			}
+		}
+		else = {
+			add_political_power = 150
+		}
+	}
+}
+
 
 	############################
 	#   Kimball Re-Election    #
@@ -3689,7 +3887,7 @@ focus = {
 		relative_position_id = ncr_kimball_address
 		completion_reward = {
 			add_to_variable = { ncr_caps_modifier = 0.08 }
-			add_to_variable = { ncr_consumer_goods = -0.03 }
+			add_to_variable = { ncr_resources_local = 0.05 }
 			force_update_dynamic_modifier = yes
 			custom_effect_tooltip = ncr_kimball_ranchers_tt
 		}
@@ -3894,6 +4092,13 @@ focus = {
 		cost = 30
 		cancelable = no
 		prerequisite = { focus = ncr_to_bridge_the_great_divide }
+		available = {
+			OR = {
+				has_completed_focus = ncr_the_shared_imperative
+				has_idea = ncr_giant_awakes
+				has_idea = ncr_remilitarised_economy
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = ncr_to_bridge_the_great_divide
@@ -3906,9 +4111,17 @@ focus = {
 				limit = {
 					has_idea = ncr_war_exhausted_economy
 				}
-				swap_ideas = {
-					remove_idea = ncr_war_exhausted_economy
-					add_idea = ncr_remilitarised_economy
+				effect_tooltip = {	# This if statement should never be true when the focus is actually taken, but we use a hidden effect here in case something breaks
+					swap_ideas = {
+						remove_idea = ncr_giant_awakes
+						add_idea = ncr_remilitarised_economy
+					}
+				}
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = ncr_war_exhausted_economy
+						add_idea = ncr_remilitarised_economy
+					}
 				}
 			}
 			else_if = {
@@ -3918,6 +4131,23 @@ focus = {
 				swap_ideas = {
 					remove_idea = ncr_rural_revitalisation
 					add_idea = ncr_remilitarised_economy
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ncr_deregulated_markets
+				}
+				effect_tooltip = {	# This if statement should never be true when the focus is actually taken, but we use a hidden effect here in case something breaks
+					swap_ideas = {
+						remove_idea = ncr_giant_awakes
+						add_idea = ncr_remilitarised_economy
+					}
+				}
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = ncr_deregulated_markets
+						add_idea = ncr_remilitarised_economy
+					}
 				}
 			}
 			else_if = {
@@ -4069,7 +4299,7 @@ focus = {
 		y = 1
 		relative_position_id = ncr_van_graff
 		completion_reward = {
-			add_to_variable = { ncr_consumer_goods = -0.05 }
+			add_to_variable = { ncr_consumer_goods = -0.03 }
 			add_to_variable = { ncr_building_speed = 0.05 }
 			force_update_dynamic_modifier = yes
 			custom_effect_tooltip = ncr_commercial_economy_tt
@@ -4139,6 +4369,13 @@ focus = {
 		}
 		prerequisite = {
 			focus = ncr_osi_expanded
+		}
+		available = {
+			OR = {
+				has_completed_focus = ncr_the_shared_imperative
+				has_idea = ncr_giant_awakes
+				has_idea = ncr_remilitarised_economy
+			}
 		}
 		x = -1
 		y = 1
@@ -4229,12 +4466,19 @@ focus = {
 		search_filters = { FOCUS_FILTER_NCR_ELECTION }
 		available = {
 			NOT = { has_country_flag = ncr_crisis }
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_political_power > 50
+			}
 		}
 		prerequisite = { focus = ncr_new_hand_on_the_tiller }
 		x = 5
 		y = 1
 		relative_position_id = ncr_new_hand_on_the_tiller
 		completion_reward = {
+			add_political_power = -50
 			retire_character = NCR_mama_van_graff
 			custom_effect_tooltip = ncr_expose_van_graff_tt
 			NEW = { news_event = ncr_murphy.5 }
@@ -4315,8 +4559,6 @@ focus = {
 		prerequisite = { focus = ncr_new_hand_on_the_tiller  }
 		relative_position_id = ncr_new_hand_on_the_tiller
 		completion_reward = {
-			add_stability = -0.05
-			add_political_power = -50
 			if = {
 				limit = {
 					has_idea = ncr_war_exhausted_economy
@@ -4372,6 +4614,7 @@ focus = {
 					}
 				}
 			}
+			custom_effect_tooltip = ncr_rural_revitalisation_act_tt
 		}
 	}
 	focus = {
@@ -4459,48 +4702,6 @@ focus = {
 				}
 			}
 			set_country_flag = murphy_support_industry_maxson
-		}
-	}
-	focus = {
-		id = ncr_slumbering_giant_waking
-		icon = GFX_goal_NCR_Rangers_Lead_the_War
-		cost = 45
-		search_filters = { FOCUS_FILTER_IDEAS }
-		available = {
-			NOT = { has_country_flag = ncr_crisis }
-		}
-		prerequisite = { focus = ncr_urban_industry_hubs }
-		x = 0
-		y = 1
-		relative_position_id = ncr_urban_industry_hubs
-		completion_reward = {
-			add_to_variable = { ncr_consumer_goods = -0.03 }
-			add_to_variable = { ncr_pp_support = 0.05 }
-			add_to_variable = { ncr_resources_local = 0.05 }
-			force_update_dynamic_modifier = yes
-			custom_effect_tooltip = ncr_slumbering_giant_waking_tt
-			# Skips Complacent Hegemony and Rural Revitalization then stops
-			if = {
-				limit = {
-					has_idea = ncr_war_exhausted_economy
-				}
-				swap_ideas = {
-					remove_idea = ncr_war_exhausted_economy
-					add_idea = ncr_giant_awakes
-				}
-			}
-			else_if = {
-				limit = {
-					has_idea = ncr_rural_revitalisation
-				}
-				swap_ideas = {
-					remove_idea = ncr_rural_revitalisation
-					add_idea = ncr_giant_awakes
-				}
-			}
-			else = {
-				add_political_power = 150
-			}
 		}
 	}
 	focus = {
@@ -4627,6 +4828,11 @@ focus = {
 		y = 1
 		completion_reward = {
 			set_technology = { ncr_reorgranger_tech = 1 }
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = spec_force_equipment_tech_category
+			}
 		}
 	}
 	focus = {
@@ -4723,17 +4929,15 @@ focus = {
 		available = {
 			has_completed_focus = ncr_baja_trade_agreement
 			NOT = { has_country_flag = ncr_crisis }
-		}
-		prerequisite = { focus = ncr_slumbering_giant_waking }
-		x = 0
-		y = 1
-		available = {
 			NOT = {
 				has_war_with = BLP
 				has_war_with = BVC
 			}
 		}
-		relative_position_id = ncr_slumbering_giant_waking
+		prerequisite = { focus = ncr_urban_industry_hubs }
+		x = 0
+		y = 1
+		relative_position_id = ncr_urban_industry_hubs
 		completion_reward = {
 			hidden_effect = {
 				176 = {
@@ -4809,6 +5013,8 @@ focus = {
 					set_political_power = 500
 					set_research_slots = 4
 				}
+				BJS = { change_tag_from = BVC }
+				BJS = { change_tag_from = BLP }
 			}
 			if = {
 				limit = {
@@ -4830,7 +5036,61 @@ focus = {
 			}
 		}
 	}
-
+	focus = {
+		id = ncr_slumbering_giant_waking
+		icon = GFX_goal_NCR_Rangers_Lead_the_War
+		cost = 45
+		search_filters = { FOCUS_FILTER_IDEAS }
+		available = {
+			NOT = { has_country_flag = ncr_crisis }
+			custom_trigger_tooltip = {
+				tooltip = ncr_finished_rural_revitalisation_tt
+				has_country_flag = ncr_rural_revitalisation_act_started_flag
+				NOT = { has_country_flag = ncr_rural_revitalisation_act_ongoing_flag }
+			}
+		}
+		prerequisite = { focus = ncr_baja_republic }
+		x = 0
+		y = 1
+		relative_position_id = ncr_baja_republic
+		completion_reward = {
+			add_to_variable = { ncr_consumer_goods = -0.03 }
+			add_to_variable = { ncr_pp_support = 0.05 }
+			add_to_variable = { ncr_resources_local = 0.05 }
+			force_update_dynamic_modifier = yes
+			custom_effect_tooltip = ncr_slumbering_giant_waking_tt
+			# Skips Complacent Hegemony and Rural Revitalization then stops
+			if = {
+				limit = {
+					has_idea = ncr_war_exhausted_economy
+				}
+				effect_tooltip = {	# This if statement should never be true when the focus is actually taken, but we use a hidden effect here in case something breaks
+					swap_ideas = {
+						remove_idea = ncr_rural_revitalisation
+						add_idea = ncr_giant_awakes
+					}
+				}
+				hidden_effect = {
+					swap_ideas = {
+						remove_idea = ncr_war_exhausted_economy
+						add_idea = ncr_giant_awakes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = ncr_rural_revitalisation
+				}
+				swap_ideas = {
+					remove_idea = ncr_rural_revitalisation
+					add_idea = ncr_giant_awakes
+				}
+			}
+			else = {
+				add_political_power = 150
+			}
+		}
+	}
 
 
 
