@@ -150,5 +150,31 @@ characters = {
 			}
 		}
 	}
+	DHR_citizen = {
+		name = DHR_citizen_name
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DHR_citizen
+			}
+			army = {
+				large = GFX_Portrait_DHR_citizen
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_country_flag = dhr_citizen_available
+			}
+			traits = {
+				enduring_trait
+				pain_train_trait
+				survivalist_trait
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
 
 }

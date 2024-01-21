@@ -933,30 +933,30 @@ country_event = { # California Civil War
 		hidden_effect = {
 			set_country_flag = mot_cali_civil_war
 			mark_focus_tree_layout_dirty = yes
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				random_list = {
-					90 = {
-					}
-					10 = {
-						country_event = {
-							id = nf_mot.43
-							days = 14
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					is_ai = no
-				}
-				country_event = {
-					id = nf_mot.43
-					days = 14
-				}
-			}
+			#if = {
+			#	limit = {
+			#		is_ai = yes
+			#	}
+			#	random_list = {
+			#		90 = {
+			#		}
+			#		10 = {
+			#			country_event = {
+			#				id = nf_mot.43
+			#				days = 14
+			#			}
+			#		}
+			#	}
+			#}
+			#else_if = {
+			#	limit = {
+			#		is_ai = no
+			#	}
+			#	country_event = {
+			#		id = nf_mot.43
+			#		days = 14
+			#	}
+			#}
 		}
 	}
 

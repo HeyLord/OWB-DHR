@@ -34,7 +34,10 @@ spriteTypes = {
 		name = "GFX_Portrait_DHR_richardson"
 		textureFile = "gfx/leaders/DHR/potraits_richardson.dds"
 	}
-
+	spriteType = {
+		name = "GFX_Portrait_DHR_citizen"
+		textureFile = "gfx/leaders/DHR/portrait_dhr_citizen.dds"
+	}
 
 
 

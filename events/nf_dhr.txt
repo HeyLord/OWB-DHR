@@ -333,7 +333,7 @@ country_event = {
 		add_tech_bonus = {
 			bonus = 0.8
 			uses = 2
-			category = infantry_weapons_tech_category
+			category = ballistic_weaponry_tech_category
 		}
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
@@ -700,7 +700,7 @@ country_event = {
 	option = {
 		name = nf_dhr.22.a
 		add_political_power = -50
-		add_stability = 0.08
+		add_stability = -0.1
 	}
 }
 
@@ -837,21 +837,6 @@ country_event = {
 
 	option = {
 		name = nf_dhr.30.a
-
-	}
-}
-
-#Arizona event
-country_event = {
-	id = nf_dhr.31
-	title = nf_dhr.31.t
-	desc = nf_dhr.31.d
-	picture = GFX_event_ENC_dark
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_dhr.31.a
 
 	}
 }

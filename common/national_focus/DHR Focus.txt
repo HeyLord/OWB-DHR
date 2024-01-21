@@ -408,6 +408,9 @@ focus_tree = {
 		cost = 35
 		x = 0
 		y = 2
+		available = {
+			has_idea = dhr_spin_the_wheel_3
+		}
 		prerequisite = {
 			focus = mot_dhr_first_church
 		}
@@ -1192,7 +1195,6 @@ focus_tree = {
 		relative_position_id = mot_dhr_kickstart_machine
 
 		completion_reward = {
-			add_political_power = -100
 			add_stability = -0.05
 			if = {
 				limit = {
@@ -1209,6 +1211,9 @@ focus_tree = {
 					add_idea = mot_oliv_waiting_is_good_actually_4
 				}
 			}
+			custom_effect_tooltip = CITIZEN_TT
+			set_country_flag = dhr_citizen_available
+			custom_effect_tooltip = dhr_citizen_tt
 		}
 	}
 	focus = {
@@ -1242,7 +1247,7 @@ focus_tree = {
 				}
 			}
 			set_technology = {
-				power_armour_tech_level_scientific = 1
+				ncr_shocktroopers_tech = 1
 			}
 		}
 	}
@@ -1845,7 +1850,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_fist
 
 		completion_reward = {
-			country_event = nf_dhr.31
+
 		}
 	}
 	focus = {
