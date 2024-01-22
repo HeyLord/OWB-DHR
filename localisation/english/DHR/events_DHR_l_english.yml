@@ -9,8 +9,8 @@
   nf_dhr.2.a:0 ""
 
   nf_dhr.3.t:0 "The Old Senator" #Meeting Wendell
-  nf_dhr.3.d:0 ""
-  nf_dhr.3.a:0 ""
+  nf_dhr.3.d:0 "Wendell Peterson took off his glasses and began to slowly wipe them.\n\nHe had wanted to retire for a long time, but fate as usual had its own plans for everything.\n\nWendell was shocked by the civil war in California, how could the democracy of the NCR, of which he was so proud, collapse from a single push like a sandcastle? Along with other congressmen and bureaucrats, he fled to Redding, which remained far from the bloodbath, but Wendell didn't know what fate awaited his California next.\n\nBut something even more unexpected happened when Wendell heard that General Lee Oliver had decided to intervene in the Civil War. Wendell did not know the "protégé of the Hero of the Mojave" well, he knew Kimball better, and Wendell had strong doubts about the success of this campaign.\n\nAnd here Oliver sits before him, asking  for Wendell's help in rebuilding California.\n\nRetirement sounds good, but Wendell loved his country, even if that love was one-sided.\n\nWendell put his glasses back on and held out his hand to Oliver."
+  nf_dhr.3.a:0 ""Let's save California together.""
 
   nf_dhr.4.t:0 "No Way to Follow" #Arcade and followers ban
   nf_dhr.4.d:0 ""
@@ -25,16 +25,16 @@
   nf_dhr.6.a:0 ""Wake everyone up; Star Father brought his blessing to us.""
 
   nf_dhr.7.t:0 "Identified Flying Object" #Dick finds a UFO
-  nf_dhr.7.d:0 ""
-  nf_dhr.7.a:0 ""
+  nf_dhr.7.d:0 "And there it lay in all its glory, a shiny round ship straight out of Richard's childhood! He had never been happier(Though the successful infiltration of NCR power fought it very zealously for first place)!\n\nThe Hubologists are charlatans then? Let's see what they say when they see this now.\n\nProof of our faith.\n\nProof that he, Richard Goldman, has been chosen by the Star Father as a prophet."
+  nf_dhr.7.a:0 "And, Oh Star Father, a prophet will not fail you."
 
   nf_dhr.8.t:0 "A Message From California" #Diana
-  nf_dhr.8.d:0 ""
-  nf_dhr.8.a:0 ""
+  nf_dhr.8.d:0 "I feel very lazy to write event here, sorry"
+  nf_dhr.8.a:0 "Let's send them our samples."
 
   nf_dhr.9.t:0 "Plant Samples Arrive!" #Answer from Diana
-  nf_dhr.9.d:0 ""
-  nf_dhr.9.a:0 ""
+  nf_dhr.9.d:0 "Arcade and Hayes did not expect a response to come, but Diane did respond to our request and sent us a large supply of seeds.\n\nThe project to green California at this rate seems much more realistic."
+  nf_dhr.9.a:0 "One step closer!"
 
   nf_dhr.101.t:0 "Future, Present and Past" #Oliver thinks about Richard
   nf_dhr.101.d:0 ""
@@ -49,13 +49,13 @@
   nf_dhr.11.a:0 ""
 
   nf_dhr.12.t:0 "Means of War"
-  nf_dhr.12.d:0 ""
-  nf_dhr.12.a:0 "We'll make our own guns."
-  nf_dhr.12.b:0 "Let's make a deal with Van Graffs"
+  nf_dhr.12.d:0 "After the victory, I faced an acute issue of arms production. And this problem was more urgent than ever, as many factories had been damaged during the harsh battles.\n\nFortunately, I was approached by the Van Graffs, who offered me a new contract to buy their laser weapons. It was a tempting offer, but some production still survived, and so did the Mohave branch of the Gunrunners, offering to reoccupy the niche of weapons production in California.\n\nGunrunners and Van Graffs, which poison will I choose?"
+  nf_dhr.12.a:0 "I'm more of a classic guns guy."
+  nf_dhr.12.b:0 "But laser weapons doesn't sound too bad"
 
   nf_dhr.13.t:0 "Green is Good" #Richardson comes from reno
-  nf_dhr.13.d:0 ""
-  nf_dhr.13.a:0 ""
+  nf_dhr.13.d:0 "Oliver personally didn't understand why people had a problem with mutants, especially ghouls. Yes, they looked like walking corpses, smelled like decomposing flesh, and occasionally could even go feral and attack everyone around them, but that's not big of an issue! All Oliver cared about as a military man was that you could hold a gun and follow orders, and everything else was secondary.\n\nBut the supermutants...\n\nOliver had some doubts about them. He had heard stories that an army of super mutants had threatened California in the past, and were generally unfriendly to all other species. But Oliver still decided to give them a chance as well, announcing that absolutely any able-bodied human or mutant could volunteer to join the California army.\n\n"I am extremely grateful to you, President General!"\n\nSupermutant Richardson was one of the first mutants to arrive to join the army as a volunteer.\n\n"As you know, the treatment of mutants and super mutants in the wastelands is extremely poor, but your move has impressed me and the organization I represent."\n\n"I am a member of the Broken Brothers of Reno, where we fight together for equal rights for all mutants. And when I heard of your call for help I came, so did my brethren."\n\n"My brethren tried to destroy California, and the past cannot be reversed. But let us not dwell on past grievances and together rebuild California, a truly New California.""
+  nf_dhr.13.a:0 "Let the past stay in the past."
 
   nf_dhr.141.t:0 "Presidnet Visits Our Eggheads"
   nf_dhr.141.d:0 ""
