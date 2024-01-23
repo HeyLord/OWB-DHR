@@ -45,8 +45,8 @@
   nf_dhr.102.a:0 ""
 
   nf_dhr.11.t:0 "To-Moore-ow You'll Be Gone" #Moore execution
-  nf_dhr.11.d:0 ""
-  nf_dhr.11.a:0 ""
+  nf_dhr.11.d:0 "Oliver respected Moore, who like him had a great deal of patriotism for California, though she often overreached.\n\nBut what he couldn't just turn a blind eye to was what Moore was doing during her short term as "President General" in her "California State."\n\nNightmare civilians and crush the disgruntled with tanks? Let scumbags like Ratboy out of jail and let him command soldiers? Oliver even had heard that Moore wanted to massacre the ghouls, but later it turned out to be just Boneyard propaganda.\n\nThe people demanded a trial for Moore, and Oliver agreed. And the only punishment people wanted for her was execution. Oliver personally didn't know how he felt about it. Did he feel bad for her or just didn't want to lose a good soldier?\n\nWhen Oliver tried to talk to Moore before her sentencing, he didn't get a word out of her, and so he never got to know what was on this woman's mind."
+  nf_dhr.11.a:0 ""Goodbye""
 
   nf_dhr.12.t:0 "Means of War"
   nf_dhr.12.d:0 "After the victory, I faced an acute issue of arms production. And this problem was more urgent than ever, as many factories had been damaged during the harsh battles.\n\nFortunately, I was approached by the Van Graffs, who offered me a new contract to buy their laser weapons. It was a tempting offer, but some production still survived, and so did the Mohave branch of the Gunrunners, offering to reoccupy the niche of weapons production in California.\n\nGunrunners and Van Graffs, which poison will I choose?"
@@ -57,20 +57,12 @@
   nf_dhr.13.d:0 "Oliver personally didn't understand why people had a problem with mutants, especially ghouls. Yes, they looked like walking corpses, smelled like decomposing flesh, and occasionally could even go feral and attack everyone around them, but that's not big of an issue! All Oliver cared about as a military man was that you could hold a gun and follow orders, and everything else was secondary.\n\nBut the supermutants...\n\nOliver had some doubts about them. He had heard stories that an army of super mutants had threatened California in the past, and were generally unfriendly to all other species. But Oliver still decided to give them a chance as well, announcing that absolutely any able-bodied human or mutant could volunteer to join the California army.\n\n"I am extremely grateful to you, President General!"\n\nSupermutant Richardson was one of the first mutants to arrive to join the army as a volunteer.\n\n"As you know, the treatment of mutants and super mutants in the wastelands is extremely poor, but your move has impressed me and the organization I represent."\n\n"I am a member of the Broken Brothers of Reno, where we fight together for equal rights for all mutants. And when I heard of your call for help I came, so did my brethren."\n\n"My brethren tried to destroy California, and the past cannot be reversed. But let us not dwell on past grievances and together rebuild California, a truly New California.""
   nf_dhr.13.a:0 "Let the past stay in the past."
 
-  nf_dhr.141.t:0 "Presidnet Visits Our Eggheads"
-  nf_dhr.141.d:0 ""
-  nf_dhr.141.a:0 ""
-
-  nf_dhr.142.t:0 "President Visits the NCPD HQ"
-  nf_dhr.142.d:0 ""
-  nf_dhr.142.a:0 ""
-
   nf_dhr.15.t:0 "Californian Son"
   nf_dhr.15.d:0 "Oh, warm Mojave air, that turns your throat into a desert, Oliver didn't expect to miss this hell on earth. But this was where he had realized himself as a general and later as a leader during the chaos in California.\n\nOliver coughed, pushing the nostalgia away from him and looked at the people who had gathered to await the unveiling of the new monument that stood behind Oliver, and he looked proudly at the culprit of the celebration.\n\nBefore there had been a monument to the friendship between the NCR and the Desert Rangers, but after the betrayal of Ranger General Mossman (and most likely Oliver's personal dislike of the Rangers), all the current Rangers had been recognized as traitors and disbanded, and the new Rapid Reaction Force under Oliver’s personal control had taken their place. And so one of Oliver's first acts after the Mojave was returned to NCR control was to destroy the monument and begin planning a new memorial worthy of California.\n\n"Californian Son", was how Oliver decided to call it. The monument depicted an NCR soldier with a little slave girl in his arms, that was one of the many victims of the Legion that our soldiers found. Oliver didn't consider himself an art person, but he was proud of how well his idea for the monument came to life.\n\nOliver coughed again, he had been in his musings for too long, you can't keep people waiting too long after all. Oliver adjusted his cap, and began his speech."
   nf_dhr.15.a:0 "§7"My fellow Californians..."§!"
 
   nf_dhr.16.t:0 "I Love Democracy" #Elections
-  nf_dhr.16.d:0 ""
+  nf_dhr.16.d:0 "And now the Congress building has finally been restored, and California finally returned to its long-awaited tranquility after the Republics greatest enemy was defeated.\n\nOliver had always believed in democracy, and he considered his role as "President General" to be only temporary. He wasn't going to be a dictator, let the people choose.\n\nAlthough Oliver doubted that anyone would be willing to vote for him, he was not blind or deaf, and he realized that many people disliked him, he still decided to run for office at Wendell's suggestion.\n\nChoose California! The future is in your hands! "
   nf_dhr.16.a:0 "Star Father predicted my victory."
   nf_dhr.16.b:0 "I doubt people want me at the helm again."
   nf_dhr.16.c:0 "Nivil Nove Sub Sole"
@@ -132,8 +124,8 @@
   nf_dhr_dick.3.a:0 "What a great find it was!"
 
   nf_dhr_dick.4.t:0 "Entry Four: The Glory of Hubology"
-  nf_dhr_dick.4.d:0 ""
-  nf_dhr_dick.4.a:0 ""
+  nf_dhr_dick.4.d:0 "And finally after our long pilgrimage we arrived home, some brothers and sisters we certainly lost on the way, but much we gained, both spiritual and material. All in all, the money spent on the pilgrimage and the purchase of the Vertibirds paid off handsomely.\n\nOur wonderful leader, Richard Goldman, greeted our return with a celebration, handing out awards to outstanding members of the expedition. Dara Hubbell also nailed it with us, and some Hubologists suggested we make her our new leader, she is after all a relative of our founder! But Richard replied with a smile that although we are Hubologists, we are in democratic California, and we can only elect a leader democratically, at the end of his term, which quieted the desire to make Dara a new leader here and now.\n\nToward the end of the celebration, Richard announced the creation of a Museum of Hubology, where a detailed history of our religion will be on display, as well as many of the artifacts we have found in California and on our pilgrimage."
+  nf_dhr_dick.4.a:0 "Glory to Hubology! Glory to the Star Father!"
 
   nf_dhr_dick.5.t:0 "As It Supposed to Be" #Dick victory
   nf_dhr_dick.5.d:0 ""
