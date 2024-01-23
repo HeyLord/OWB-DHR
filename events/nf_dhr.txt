@@ -20,6 +20,14 @@ country_event = {
 			}
 			add_resistance = 20
 		}
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = mot_khan_raiders
+				}
+				remove_ideas = mot_khan_raiders
+			}
+		}
 	}
 }
 
@@ -202,7 +210,7 @@ country_event = {
 	option = {
 		name = nf_dhr.6.a
 		hidden_effect = {
-			country_event = {
+			news_event = {
 				id = nf_dhr.7
 				days = 14
 			}
@@ -210,7 +218,7 @@ country_event = {
 	}
 }
 #UFO found
-country_event = {
+news_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
 	id = nf_dhr.7
 	title = nf_dhr.7.t
@@ -285,6 +293,7 @@ country_event = {
 
 	option = {
 		name = nf_dhr.101.a
+		add_war_support = 0.05
 	}
 }
 #Oliver drinks (Arcade)
@@ -299,6 +308,7 @@ country_event = {
 
 	option = {
 		name = nf_dhr.102.a
+		add_stability = 0.05
 	}
 }
 #Moore execution
@@ -406,34 +416,6 @@ country_event = {
 		else = {
 			add_manpower = 495
 		}
-	}
-}
-#Oliver visit (PA)
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
-	id = nf_dhr.141
-	title = nf_dhr.141.t
-	desc = nf_dhr.141.d
-	picture = GFX_event_sub_generic_war_room
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_dhr.141.a
-	}
-}
-#Oliver visit (NCPD)
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
-	id = nf_dhr.142
-	title = nf_dhr.142.t
-	desc = nf_dhr.142.d
-	picture = GFX_event_sub_generic_war_room
-
-	is_triggered_only = yes
-
-	option = {
-		name = nf_dhr.142.a
 	}
 }
 #Oliver opens new memorial
@@ -705,24 +687,18 @@ country_event = {
 }
 
 #Ending event
-country_event = {
-	id = nf_dhr.23
-	title = nf_dhr.23.t
-	desc = nf_dhr.23.d
-	picture = GFX_event_ENC_dark
-
-	is_triggered_only = yes
-
-    #The son will not bear the punishment for the sin of the father
-	option = {
-		name = nf_dhr.23.a
-		swap_ideas = {
-			remove_idea = dhr_iustitia_et_pax
-			add_idea = dhr_iustitia_et_pax_2
-		}
-		set_cosmetic_tag = DHR_Arcade_final
-	}
-}
+#country_event = {
+#	id = nf_dhr.23
+#	title = nf_dhr.23.t
+#	desc = nf_dhr.23.d
+#	picture = GFX_event_ENC_dark
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = nf_dhr.23.a
+#	}
+#}
 
 #####################
 #####Arcade events#####
@@ -822,7 +798,9 @@ country_event = {
 
 	option = {
 		name = nf_dhr.29.a
-
+		set_technology = {
+			power_armour_tech_level_scientific = 1
+		}
 	}
 }
 
@@ -837,7 +815,9 @@ country_event = {
 
 	option = {
 		name = nf_dhr.30.a
-
+		set_technology = {
+			support_tech_level_scientific = 1
+		}
 	}
 }
 

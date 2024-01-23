@@ -972,6 +972,10 @@ focus_tree = {
 					add_idea = mot_oliv_waiting_is_good_actually_2
 				}
 			}
+			custom_effect_tooltip = dhr_steel_bears_oob_tt
+			hidden_effect = {
+				load_oob = dhr_steel_bears
+			}
 		}
 	}
 	focus = {
@@ -990,6 +994,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = mot_oliv_ncpd
+			custom_effect_tooltip = dhr_NCPD_oob_tt
+			hidden_effect = {
+				load_oob = dhr_ncpd
+			}
 		}
 	}
 	focus = {
@@ -1304,11 +1312,22 @@ focus_tree = {
 				limit = {
 					has_completed_focus = mot_dhr_NCPD
 				}
-				country_event = nf_dhr.142
+				custom_effect_tooltip = dhr_mutant_tt
+				add_equipment_to_stockpile = {
+					type = heavy_infantry_equipment
+					amount = 300
+					producer = ROOT
+				}
 			}
 			else = {
-				country_event = nf_dhr.141
+				custom_effect_tooltip = dhr_eggheads_tt
+				add_equipment_to_stockpile = {
+					type = power_armor_equipment
+					amount = 300
+					producer = ROOT
+				}
 			}
+
 		}
 	}
 	focus = {
@@ -1844,13 +1863,19 @@ focus_tree = {
 		cost = 14
 		x = 0
 		y = 1
+		available = {
+			owns_state = 211
+		}
 		prerequisite = {
 			focus = mot_dhr_fist
 		}
 		relative_position_id = mot_dhr_fist
 
 		completion_reward = {
-
+			custom_effect_tooltip = dhr_vegas_core_tt
+			211 = {
+				add_core_of = ROOT
+			}
 		}
 	}
 	focus = {
@@ -2042,7 +2067,11 @@ focus_tree = {
 		relative_position_id = mot_dhr_war_never_changes
 
 		completion_reward = {
-			country_event = nf_dhr.23
+			swap_ideas = {
+				remove_idea = dhr_iustitia_et_pax
+				add_idea = dhr_iustitia_et_pax_2
+			}
+			set_cosmetic_tag = DHR_Arcade_final
 		}
 	}
 }

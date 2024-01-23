@@ -1,0 +1,32 @@
+﻿division_template = {
+	name = "NCPD"
+	regiments = {
+		heavy_infantry = { x = 0 y = 0 }
+		heavy_infantry = { x = 0 y = 1 }
+		heavy_infantry = { x = 0 y = 2 }
+		heavy_infantry = { x = 1 y = 0 }
+		heavy_infantry = { x = 1 y = 1 }
+		heavy_infantry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		location = 8825
+		division_template = "NCPD"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.85
+	}
+	division = {
+		location = 8827
+		division_template = "NCPD"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.85
+	}
+	division = {
+		location = 8833
+		division_template = "NCPD"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.85
+	}
+}

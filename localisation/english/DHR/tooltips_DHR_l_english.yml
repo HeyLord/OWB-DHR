@@ -14,6 +14,12 @@
   dhr_dick_tt:0 "Can hire §YRichard Goldman§! as a cultural advisor:"
   dhr_retirement_tt:0 "§gSatisfied with the state of restored California, President Oliver resigns, leaving the running of the country in the hands of his vice president, Wendell Peterson.§!"
   dhr_citizen_tt:0 "\n§gDon't ask me where I got this guy from§!"
+  dhr_eggheads_tt:0 "§gWould you look at that! Our eggheads don't get their funding for nothing, that's a fine suit of power armor!§!"
+  dhr_mutant_tt:0 "§gI didn't know you can make a supermutant sized police armor. Great work, Richardson!§!"
+  dhr_vegas_core_tt:0 "§gI bet House didn't expect New Vegas to become a new state of the Republic.§!"
+  dhr_steel_bears_oob_tt:0 "§gThree Divisions of newly formed 'Steel Bears' divisions will proudly march from Shady Sands.§!"
+  dhr_NCPD_oob_tt:0 "\n\n§gThree NCPD Divisions will march from Shady Sands to protect and serve.§!"
+
 
   RICHARDSON_TT:0 "\n§Y$DHR_richardson_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y4§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tStrong§!, §tEnduring§!, §tGunslinger§!\n\n"
   CITIZEN_TT:0 "§Y$DHR_citizen_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y2§!\n§GDefense Skill§!: §Y3§!\n§PPlanning Skill§!: §Y4§!\n§MLogistics Skill§!: §Y3§!\n§gTraits§!: §tEnduring§!, §tPain Train§!, §tSurvivalist§!\n\n"
