@@ -84,8 +84,8 @@
   nf_dhr.26.a:0 "§7"What nonsense I'm listening to."§!"
 
   nf_dhr.27.t:0 "The Greenery"
-  nf_dhr.27.d:0 ""
-  nf_dhr.27.a:0 ""
+  nf_dhr.27.d:0 "The California Greening Project was a project that Oliver didn't fully understand, although he had listened to many of Arcade's speeches about it and had even allocated funds for the project. But one thing Oliver remembered from all those speeches. Arcade said something about a §G'Greenery'§!, a place where not only pre-war plants would be collected and grown, but also post-war plants, pre-cleaned from possible radiation.\n\nAnd so he stood in front of the "Greenery", Oliver didn't know what he expected to see, but he swung the door open in front of him.\n\nOliver had never seen so much greenery in his life. Trees, flowers that were familiar to Oliver and those he was seeing for the first time in his life. It all mesmerized Oliver's eyes. It seemed like all the problems Oliver had were gone.\n\nThere was no civil war, no death of Kimball, there was only peace inside Oliver, a feeling that had never before been encountered in Oliver's life, and once he felt it, he didn't want to let it go anymore.\n\n"Good afternoon President, welcome to the §G'Greenery'§!"\n\nBut life brought him back down to earth when one of the scientists called out to him. A wave of disappointment washed over Oliver, but he brushed it away. He turned at the voice and exclaimed:"
+  nf_dhr.27.a:0 "§7"Can I take that palm tree? "§!"
 
   nf_dhr.28.t:0 "Californian Son"
   nf_dhr.28.d:0 "Mojave. Again. Something kept pulling the general back to this place. This time Oliver needed to go to Hoover Dam, but something stirred in him that made him want to make one stop along the way.\n\n"Californian Son" was more than just a name for a monument to the general. It was the ideal of a man, a true protector of California that Oliver had looked up to his entire life. Whether it was his appointment as commander-in-chief of the Mojave operation, his rescue of California from extremists, or his subsequent leadership and rebuilding of the country, Oliver always felt that he was getting closer and closer to being that "Californian Son" even a little bit.\n\nHowever, standing in front of the monument now, Oliver realized exactly how he really felt. Inferiority. Oliver felt inferior in the face of the monument, the ideal he had created. How far he was from the ordinary soldier depicted on the monument, hell, from any soldier in California. What was the point of everything Oliver had done anyway, if the ideal was still so far away from him?\n\nSomeone touched his shoulder and Oliver snapped out of his trance.\n\n"Are you okay Mr. President? We're late for the dam.""
@@ -128,16 +128,16 @@
   nf_dhr_dick.4.a:0 "Glory to Hubology! Glory to the Star Father!"
 
   nf_dhr_dick.5.t:0 "As It Supposed to Be" #Dick victory
-  nf_dhr_dick.5.d:0 ""
-  nf_dhr_dick.5.a:0 ""
+  nf_dhr_dick.5.d:0 ""Brothers and sisters, as we know the ways of the Star Father are inscrutable, but he always rewards those who believe.\n\nOur predecessors were banished from San Francisco many years ago, so punished by Star Father for their greed and ambition, and their sins nearly destroyed the Hubologists.\n\nBut the Star Father, in his infinite wisdom, did not forsake us. Instead, He bestowed upon us His visionary, Richard Goldman. Under his guidance, we have surmounted enumerable adversities that once impeded our path.\n\nThe gracious citizens of California have perceived the merits of our altruistic deeds, a recognition reflected in the honor they have endowed upon me by conferring the mantle of President. Rest assured, ladies and gentlemen, under my stewardship, Hubology will ascend to unprecedented heights of enlightenment. May our radiance illuminate even the darkest corners, and may those who have yet to embrace our truths be awestruck by our divine luminescence."
+  nf_dhr_dick.5.a:0 ""By Star Father's Will""
 
   nf_dhr_dick.6.t:0 "Today We Fly Away" #UFO test crash
-  nf_dhr_dick.6.d:0 ""
-  nf_dhr_dick.6.a:0 ""
+  nf_dhr_dick.6.d:0 ""All systems are ready for the launch."\n\nTo lift a UFO into the air is impossible, but Richard Goldman had faith, and faith is the basis of any religion. But he didn't use his faith alone, Richard gathered the best of the best: various scientists from the NCR, nations all across the wastelands, the Enclave remnants, everyone likes money and money was no problem for the Hubologists. Richard spared no expense to launch this saucer into the air.\n\nDara Hubbell volunteered to pilot the UFO during this test flight, and even though Richard was discouraged from doing so, the ship was untested and it would be extremly dangerous.  But Richard agreed, after all if something went wrong, he would have one less problem to deal with.\n\nAnd so she climbed into the cockpit, and Richard looked at the saucer, and at Dara in particular. Finally Dara took her position in the cockpit.\n\nRichard picked up the walkie-talkie.\n\n"Start it."\n\nWith a loud sound, a UFO rose a couple of meters above the ground....\n\n...And then it exploded in a, knocking out all the scientists and Richard in the observation booth.\n\nRichard lay in the middle of the glass shards on the floor and stared up at the ceiling with a smile on his face. Yes, it was a failure, but..."
+  nf_dhr_dick.6.a:0 ""...no more loose ends.""
 
   nf_dhr_dick.7.t:0 "The New Purpose, As Star Father Willed" #War on the world
-  nf_dhr_dick.7.d:0 ""
-  nf_dhr_dick.7.a:0 ""
+  nf_dhr_dick.7.d:0 ""Friends, I hasten to tell you that our sister, Dara Hubbell, has achieved exaltation, by his will she deserves to live on the planet, for her good deeds and those of our founder.\n\nYet, our journey towards transcendence is far from over. It is our collective duty to strive relentlessly for our own spiritual upliftment.\n\nHow could we possibly conceive of soaring to the heavens while leaving countless souls groping in the shadows? There exist many who have yet to witness the luminous grace of the Star Father, with some even spurning His radiant wisdom. It would be inconceivable for us, in our compassion, to forsake these individuals to a fate devoid of light. To this I say, my dear brothers and sisters, abandonment is not our path. We will endeavor tirelessly to ensure that every stretch of earth, every single soul, is bathed in the Star Father’s incandescent embrace.\n\nWhat will happen to those who will not accept the light no matter what? A foolish question, brothers and sisters, you know what we do to the Rim Meat.\n\nCome on brothers and sisters, we have a lot of work to do.""
+  nf_dhr_dick.7.a:0 ""And so a ray of light appeared in the darkness.""
 
 
   #####Arcade events#####
@@ -149,10 +149,6 @@
   nf_dhr.22.t:0 "Objectively Evil" #Enclave
   nf_dhr.22.d:0 ""
   nf_dhr.22.a:0 ""The son will not bear the punishment for the sin of the father""
-
-  nf_dhr.23.t:0 "Wind of Changes" #Ending
-  nf_dhr.23.d:0 ""
-  nf_dhr.23.a:0 ""
 
 
   nf_dhr_news.1.t:0 "Withdrawal from Mojave"

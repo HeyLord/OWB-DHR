@@ -66,7 +66,7 @@ ideas = {
 		####
 
 		dhr_broken_republic = {
-			picture = rejection_of_automation
+			picture = construction_penalty
 			allowed = {
 				always = no
 			}
@@ -79,7 +79,7 @@ ideas = {
 			}
 		}
 		dhr_broken_republic_2 = {
-			picture = rejection_of_automation
+			picture = construction_penalty
 			allowed = {
 				always = no
 			}
@@ -92,7 +92,7 @@ ideas = {
 			}
 		}
 		dhr_broken_republic_3 = {
-			picture = rejection_of_automation
+			picture = construction_penalty
 			allowed = {
 				always = no
 			}
@@ -105,7 +105,7 @@ ideas = {
 			}
 		}
 		dhr_broken_republic_4 = {
-			picture = rejection_of_automation
+			picture = construction_penalty
 			allowed = {
 				always = no
 			}
@@ -124,7 +124,7 @@ ideas = {
 
 
 		dhr_not_pass = {
-			picture = rejection_of_automation
+			picture = generic_baddass
 			allowed = {
 				always = no
 			}
@@ -135,7 +135,7 @@ ideas = {
 			}
 		}
 		dhr_attack_buff = {
-			picture = rejection_of_automation
+			picture = generic_baddass
 			allowed = {
 				always = no
 			}
@@ -148,7 +148,7 @@ ideas = {
 
 
 		dhr_spin_the_wheel = {
-			picture = rejection_of_automation
+			picture = str_watchers_of_the_stars
 			allowed = {
 				always = no
 			}
@@ -160,7 +160,7 @@ ideas = {
 			}
 		}
 		dhr_spin_the_wheel_2 = {
-			picture = rejection_of_automation
+			picture = str_watchers_of_the_stars
 			allowed = {
 				always = no
 			}
@@ -172,7 +172,7 @@ ideas = {
 			}
 		}
 		dhr_spin_the_wheel_3 = {
-			picture = rejection_of_automation
+			picture = str_watchers_of_the_stars
 			allowed = {
 				always = no
 			}
@@ -186,7 +186,7 @@ ideas = {
 			}
 		}
 		dhr_spin_the_wheel_4 = {
-			picture = rejection_of_automation
+			picture = str_watchers_of_the_stars
 			allowed = {
 				always = no
 			}
@@ -202,7 +202,7 @@ ideas = {
 
 
 		dhr_cali_rd = {
-			picture = rejection_of_automation
+			picture = idea_twin_mothers
 			allowed = {
 				always = no
 			}
@@ -214,7 +214,7 @@ ideas = {
 			}
 		}
 		dhr_cali_rd_2 = {
-			picture = rejection_of_automation
+			picture = idea_twin_mothers
 			allowed = {
 				always = no
 			}
@@ -227,7 +227,7 @@ ideas = {
 			}
 		}
 		dhr_cali_rd_3 = {
-			picture = rejection_of_automation
+			picture = idea_twin_mothers
 			allowed = {
 				always = no
 			}
@@ -244,7 +244,7 @@ ideas = {
 			}
 		}
 		dhr_cali_rd_4 = {
-			picture = rejection_of_automation
+			picture = idea_twin_mothers
 			allowed = {
 				always = no
 			}
@@ -291,7 +291,7 @@ ideas = {
 		}
 
 		mot_oliv_ncpd = {
-			picture = generic_power_armour_t45
+			picture = han_mr_beepskys
 			removal_cost = -1
 			modifier = {
 				resistance_growth = -0.1
@@ -307,7 +307,7 @@ ideas = {
 			}
 		}
 		mot_oliv_ncpd_2 = {
-			picture = generic_power_armour_t45
+			picture = han_mr_beepskys
 			removal_cost = -1
 			modifier = {
 				resistance_growth = -0.15
@@ -324,7 +324,7 @@ ideas = {
 			}
 		}
 		mot_oliv_ncpd_3 = {
-			picture = generic_power_armour_t45
+			picture = han_mr_beepskys
 			removal_cost = -1
 			modifier = {
 				resistance_growth = -0.25
@@ -341,7 +341,7 @@ ideas = {
 			}
 		}
 		mot_oliv_ncpd_4 = {
-			picture = generic_power_armour_t45
+			picture = han_mr_beepskys
 			removal_cost = -1
 			modifier = {
 				resistance_growth = -0.25
@@ -506,7 +506,7 @@ ideas = {
 
         #Dick
 		dhr_rim_meat = {
-			picture = rejection_of_automation
+			picture = tvt_the_directors_vision
 			allowed = {
 				always = no
 			}
@@ -519,7 +519,7 @@ ideas = {
 		}
 
 		dhr_dreamers = {
-			picture = rejection_of_automation
+			picture = white_moon
 			allowed = {
 				always = no
 			}
@@ -531,7 +531,7 @@ ideas = {
 			}
 		}
 		dhr_dreamers_2 = {
-			picture = rejection_of_automation
+			picture = white_moon
 			allowed = {
 				always = no
 			}
@@ -547,7 +547,7 @@ ideas = {
 		}
 
 		dhr_body_mind_spirit = {
-			picture = rejection_of_automation
+			picture = lurker_land_of_coral
 			allowed = {
 				always = no
 			}
@@ -560,7 +560,7 @@ ideas = {
 		}
 
 		dhr_spreading_the_hubology = {
-			picture = rejection_of_automation
+			picture = generic_satellite
 			allowed = {
 				always = no
 			}
@@ -574,7 +574,7 @@ ideas = {
 
 		#Arcade
 		dhr_we_are_human = {
-			picture = rejection_of_automation
+			picture = idea_chc_mastery_of_nature
 			allowed = {
 				always = no
 			}
@@ -587,7 +587,7 @@ ideas = {
 			}
 		}
 		dhr_california_greening = {
-			picture = rejection_of_automation
+			picture = EDN_paradise
 			allowed = {
 				always = no
 			}
@@ -599,7 +599,7 @@ ideas = {
 			}
 		}
 		dhr_iustitia_et_pax = {
-			picture = rejection_of_automation
+			picture = generic_medicine
 			allowed = {
 				always = no
 			}
@@ -609,7 +609,7 @@ ideas = {
 			}
 		}
 		dhr_iustitia_et_pax_2 = {
-			picture = rejection_of_automation
+			picture = generic_medicine
 			allowed = {
 				always = no
 			}
@@ -623,7 +623,7 @@ ideas = {
 
 		#Oliver
 		dhr_hubo_influence = {
-			picture = rejection_of_automation
+			picture = hin_science
 			allowed = {
 				always = no
 			}
@@ -636,7 +636,7 @@ ideas = {
 		}
 
 		dhr_followers_influence = {
-			picture = rejection_of_automation
+			picture = idea_chc_mastery_of_nature
 			allowed = {
 				always = no
 			}
