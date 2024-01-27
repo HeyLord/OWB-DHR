@@ -773,4 +773,32 @@ characters = {
 			}
 		}
 	}
+	MOT_chris_haversam = {
+		name = MOT_chris_haversam_name
+		gender = female
+		portraits = {
+			army = {
+				small = GFX_Portrait_DHR_advisor_chris_haversam
+			}
+			civilian = {
+				small = GFX_Portrait_DHR_advisor_chris_haversam
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = NCR_air_chief
+			#desc = MOT_chris_haversam_desc
+			ledger = air
+			allowed = {
+				original_tag = MOT
+			}
+			traits = {
+				DHR_aerospace_engineer
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 4
+			}
+		}
+	}
 }

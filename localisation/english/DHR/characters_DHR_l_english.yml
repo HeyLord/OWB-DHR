@@ -5,6 +5,7 @@
   DHR_richardson_name:0 "Richardson"
   DHR_flynn_name:0 "Anton Flynn"
   DHR_citizen_name:0 "Citizen"
+  MOT_chris_haversam_name:0 "Chris Haversam"
 
 
 
@@ -14,6 +15,6 @@
   DHR_primum_non_nocere:0 "Primum Non Nocere"
   DHR_good_samarithan:0 "Good Samaritan"
   DHR_the_last_baron:0 "The Last Brahmin Baron"
-
+  DHR_aerospace_engineer:0 "Aerospace Engineer"
 
 

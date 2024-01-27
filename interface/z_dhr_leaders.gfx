@@ -74,5 +74,9 @@ spriteTypes = {
 		name = "GFX_Portrait_DHR_advisor_flynn"
 		textureFile = "gfx/interface/ideas/advisors/dhr_advisor_flynn.dds"
 	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_advisor_chris_haversam"
+		textureFile = "gfx/interface/ideas/advisors/dhr_mot_advisor_chris_haversam.dds"
+	}
 
 }
