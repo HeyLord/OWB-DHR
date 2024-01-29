@@ -74,8 +74,8 @@ leader_traits = {
 			fighter_equipment = {
 				instant = yes
 				build_cost_ic = -0.05
-				air_agility = 0.05
-				air_defence = 0.05
+				air_agility = -0.05
+				air_range = 0.15
 			}
 		}
 		ai_will_do = {

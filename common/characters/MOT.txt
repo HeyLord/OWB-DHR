@@ -786,7 +786,7 @@ characters = {
 		}
 		advisor = {
 			slot = air_chief
-			idea_token = NCR_air_chief
+			idea_token = MOT_chris_haversam_air_chief
 			#desc = MOT_chris_haversam_desc
 			ledger = air
 			allowed = {
