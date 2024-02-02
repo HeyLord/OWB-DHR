@@ -19,10 +19,16 @@
   dhr_vegas_core_tt:0 "§gI bet House didn't expect New Vegas to become a new state of the Republic.§!"
   dhr_steel_bears_oob_tt:0 "§gThree Divisions of newly formed 'Steel Bears' divisions will proudly march from Shady Sands.§!"
   dhr_NCPD_oob_tt:0 "\n\n§gThree NCPD Divisions will march from Shady Sands to protect and serve.§!"
+  dhr_brigade_tt:0 "§2The gang is back together again! Altough one member short.§!"
+  dhr_henry_tt:0 "\nCan hire §YDoctor Henry§! as a cultural advisor:"
+  dhr_daisy_tt:0 "\nCan hire §YDaisy Whitman§! as a cultural advisor:"
 
 
   RICHARDSON_TT:0 "\n§Y$DHR_richardson_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y4§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tStrong§!, §tEnduring§!, §tGunslinger§!\n\n"
   CITIZEN_TT:0 "§Y$DHR_citizen_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y2§!\n§GDefense Skill§!: §Y3§!\n§PPlanning Skill§!: §Y4§!\n§MLogistics Skill§!: §Y3§!\n§gTraits§!: §tEnduring§!, §tPain Train§!, §tSurvivalist§!\n\n"
+  CITIZEN_TT:0 "§Y$DHR_citizen_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y2§!\n§GDefense Skill§!: §Y3§!\n§PPlanning Skill§!: §Y4§!\n§MLogistics Skill§!: §Y3§!\n§gTraits§!: §tEnduring§!, §tPain Train§!, §tSurvivalist§!\n\n"
+  CANNIBAL_TT:0 "\n§Y$DHR_cannibal_name$§! becomes a Unit Leader.\n§LLevel§!: §Y3§!\n§RAttack Skill§!: §Y3§!\n§GDefense Skill§!: §Y1§!\n§PPlanning Skill§!: §Y2§!\n§MLogistics Skill§!: §Y2§!\n§gTraits§!: §tLucky§!, §tGunslinger§!\n\n"
+  JUDAH_TT:0 "§Y$DHR_judah_name$§! becomes a Unit Leader.\n§LLevel§!: §Y4§!\n§RAttack Skill§!: §Y2§!\n§GDefense Skill§!: §Y2§!\n§PPlanning Skill§!: §Y4§!\n§MLogistics Skill§!: §Y3§!\n§gTraits§!: §tPerceptive§!, §tCharismatic§!, §tLocal Leader§!\n\n"
 
   DHR_hubos:0 "§gThe Hubologists§!"
   DHR_RD:0 "§CCalifornia R&D§!"

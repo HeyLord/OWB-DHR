@@ -38,8 +38,14 @@ spriteTypes = {
 		name = "GFX_Portrait_DHR_citizen"
 		textureFile = "gfx/leaders/DHR/portrait_dhr_citizen.dds"
 	}
-
-
+	spriteType = {
+		name = "GFX_Portrait_DHR_cannibal_johnson"
+		textureFile = "gfx/leaders/DHR/portrait_dhr_cannibal_johnson.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_judah"
+		textureFile = "gfx/leaders/DHR/portrait_dhr_judah.dds"
+	}
 
 	#Advisors
     spriteType = {
@@ -77,6 +83,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Portrait_DHR_advisor_chris_haversam"
 		textureFile = "gfx/interface/ideas/advisors/dhr_mot_advisor_chris_haversam.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_advisor_henry"
+		textureFile = "gfx/interface/ideas/advisors/dhr_advisor_henry.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_DHR_advisor_daisy"
+		textureFile = "gfx/interface/ideas/advisors/dhr_advisor_daisy.dds"
 	}
 
 }

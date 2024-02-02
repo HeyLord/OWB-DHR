@@ -281,7 +281,7 @@ country_event = {
 		}
 	}
 }
-#Oliver drinks (Dick)
+#Oliver drinks
 country_event = {
 	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
 	id = nf_dhr.101
@@ -292,24 +292,20 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = nf_dhr.101.a
+		name = nf_dhr.10.a
 		add_war_support = 0.05
+		trigger = {
+			has_completed_focus = mot_dhr_spin_the_wheel
+		}
 	}
-}
-#Oliver drinks (Arcade)
-country_event = {
-	immediate = { log = "[GetDateText]: [Root.GetName]: event nf_dhr.3" }
-	id = nf_dhr.102
-	title = nf_dhr.102.t
-	desc = nf_dhr.102.d
-	picture = GFX_event_dhr_glass
-
-	is_triggered_only = yes
-
 	option = {
-		name = nf_dhr.102.a
+		name = nf_dhr.10.b
 		add_stability = 0.05
+		trigger = {
+			has_completed_focus = mot_dhr_cali_rd
+		}
 	}
+
 }
 #Moore execution
 country_event = {
@@ -681,8 +677,14 @@ country_event = {
     #The son will not bear the punishment for the sin of the father
 	option = {
 		name = nf_dhr.22.a
-		add_political_power = -50
-		add_stability = -0.1
+		custom_effect_tooltip = dhr_brigade_tt
+		set_country_flag = dhr_devils_brigade
+		custom_effect_tooltip = dhr_daisy_tt
+		show_ideas_tooltip = DHR_daisy_whitman_air_chief
+		custom_effect_tooltip = dhr_henry_tt
+		show_ideas_tooltip = dhr_henry_cultural_advisor
+		custom_effect_tooltip = CANNIBAL_TT
+		custom_effect_tooltip = JUDAH_TT
 	}
 }
 
@@ -752,7 +754,10 @@ country_event = {
 	option = {
 		name = nf_dhr.26.a
 		add_stability = -0.1
-		add_ideas = dhr_hubo_influence
+		swap_ideas = {
+			remove_idea = dhr_olivers_legacy
+			add_idea = dhr_hubo_influence
+		}
 	}
 }
 
@@ -767,8 +772,10 @@ country_event = {
 
 	option = {
 		name = nf_dhr.27.a
-		#add_war_support = -0.1
-		add_ideas = dhr_followers_influence
+		swap_ideas = {
+			remove_idea = dhr_olivers_legacy
+			add_idea = dhr_followers_influence
+		}
 	}
 }
 
@@ -783,7 +790,6 @@ country_event = {
 
 	option = {
 		name = nf_dhr.28.a
-
 	}
 }
 
@@ -792,7 +798,7 @@ country_event = {
 	id = nf_dhr.29
 	title = nf_dhr.29.t
 	desc = nf_dhr.29.d
-	picture = GFX_event_ENC_dark
+	picture = GFX_event_ncr_bos_relations
 
 	is_triggered_only = yes
 
@@ -809,7 +815,7 @@ country_event = {
 	id = nf_dhr.30
 	title = nf_dhr.30.t
 	desc = nf_dhr.30.d
-	picture = GFX_event_ENC_dark
+	picture = GFX_event_generic_mutant
 
 	is_triggered_only = yes
 
@@ -817,6 +823,7 @@ country_event = {
 		name = nf_dhr.30.a
 		set_technology = {
 			support_tech_level_scientific = 1
+			super_mutant_aux_infantry_tech = 1
 		}
 	}
 }

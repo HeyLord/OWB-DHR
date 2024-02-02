@@ -622,6 +622,16 @@ ideas = {
 		}
 
 		#Oliver
+		dhr_olivers_legacy = {
+			picture = idea_chc_mastery_of_nature
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.15
+			}
+		}
 		dhr_hubo_influence = {
 			picture = hin_science
 			allowed = {
@@ -629,6 +639,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				experience_gain_army = 0.2
 				stability_factor = -0.1
 				consumer_goods_factor = -0.1
 				political_power_gain = -0.2
@@ -642,6 +653,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				experience_gain_army = 0.05
 				war_support_factor = -0.1
 				conscription_factor = -0.15
 				research_speed_factor = 0.1

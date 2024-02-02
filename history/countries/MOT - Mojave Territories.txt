@@ -178,6 +178,10 @@ recruit_character = DHR_richardson
 recruit_character = DHR_flynn
 recruit_character = DHR_citizen
 recruit_character = MOT_chris_haversam
+recruit_character = DHR_cannibal
+recruit_character = DHR_dr_henry
+recruit_character = DHR_daisy_whitman
+recruit_character = DHR_judah
 
 create_equipment_variant = {
 	name = "River Boat"

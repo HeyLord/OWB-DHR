@@ -1775,7 +1775,7 @@ focus_tree = {
 		relative_position_id = mot_dhr_wait_and_see
 
 		completion_reward = {
-			country_event = nf_dhr.25
+			add_ideas = dhr_olivers_legacy
 		}
 	}
 	focus = {

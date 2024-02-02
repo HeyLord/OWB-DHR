@@ -36,13 +36,10 @@
   nf_dhr.9.d:0 "Arcade and Hayes did not expect a response to come, but Diane did respond to our request and sent us a large supply of seeds.\n\nThe project to green California at this rate seems much more realistic."
   nf_dhr.9.a:0 "One step closer!"
 
-  nf_dhr.101.t:0 "Future, Present and Past" #Oliver thinks about Richard
-  nf_dhr.101.d:0 ""
-  nf_dhr.101.a:0 ""
-
-  nf_dhr.102.t:0 "Future, Present and Past" #Oliver thinks about Arcade
-  nf_dhr.102.d:0 ""
-  nf_dhr.102.a:0 ""
+  nf_dhr.10.t:0 "Future, Present and Past" #Oliver thinks about Richard
+  nf_dhr.10.d:0 "Silence.\n\nOliver missed it. Despite Wendell taking the reins on much of the administrative tasks, a mountain of obligations still awaited Oliver. In a moment of rebellion against the endless cycle of work, he carved out time to sink into the tranquility of his office for a well-deserved break.\n\nReaching into his desk drawer, Oliver retrieved a bottle of wine, its label a testament to the legacy of the Wright family. Then Oliver extracted two glasses from the same drawer and filled them with the wine.\n\nHolding a glass aloft, Oliver gazed through its contents at the shadow-draped ceiling of his office. Kimball's appreciation for the Wrights' wine had been unmistakable, and its distinctive taste had nearly swayed Aaron to side with the Wrights against Bishop in Reno's power struggles.\n\nA wistful grin spread across Oliver’s face as he toasted to the air.\n\n"Cheers, Aaron...""
+  nf_dhr.10.a:0 ""For the great past!""
+  nf_dhr.10.b:0 ""For the bright future.""
 
   nf_dhr.11.t:0 "To-Moore-ow You'll Be Gone" #Moore execution
   nf_dhr.11.d:0 "Oliver respected Moore, who like him had a great deal of patriotism for California, though she often overreached.\n\nBut what he couldn't just turn a blind eye to was what Moore was doing during her short term as "President General" in her "California State."\n\nNightmare civilians and crush the disgruntled with tanks? Let scumbags like Ratboy out of jail and let him command soldiers? Oliver even had heard that Moore wanted to massacre the ghouls, but later it turned out to be just Boneyard propaganda.\n\nThe people demanded a trial for Moore, and Oliver agreed. And the only punishment people wanted for her was execution. Oliver personally didn't know how he felt about it. Did he feel bad for her or just didn't want to lose a good soldier?\n\nWhen Oliver tried to talk to Moore before her sentencing, he didn't get a word out of her, and so he never got to know what was on this woman's mind."
@@ -142,13 +139,13 @@
 
   #####Arcade events#####
 
-  nf_dhr.21.t:0 "As It Can Be" #Arcade victory
-  nf_dhr.21.d:0 ""
-  nf_dhr.21.a:0 ""
+  nf_dhr.21.t:0 "Electioneering" #Arcade victory
+  nf_dhr.21.d:0 "The results had come in. In a resounding landslide not seen since the Tandi era, the leader of California Research and Development, Arcade Israel Gannon, had won. He had never anticipated to be on the ballot, let alone win. But it seemed as though his intelligent nature and the high regards both refugees, intellectuals, and the common man alike, had seen an unprecedented call by the Followers for his leadership. Had he wished, he'd have abdicated the position to Hayes, but he was away on another 'expedition'.\n\nHe thought back to the various holovids of Roman leadership, to his readings of various history books. He wouldn't become another Caesar, but what was he in comparison to Octavian, Caesarion, or even Edward Sallow?\n\nHis eyes fell on a portrait of Kimball. The warhawk. The male domineering President. Would he stand to be better than him? He knew well of the realities of the wasteland, that even the Followers had to admit at one point that pacifism simply wasn't an option. He was sure Tandi had been in a similar bind herself, after all, she had to deal with Vault City xenophobes and New Reno mafia dons.\n\nUltimately, he placed his hand down on something that had been consistent to him his entire life: His heart. All he could tell himself is that he would do his best."
+  nf_dhr.21.a:0 ""Homo faber fortunae suae. Man makes his own destiny.""
 
-  nf_dhr.22.t:0 "Objectively Evil" #Enclave
-  nf_dhr.22.d:0 ""
-  nf_dhr.22.a:0 ""The son will not bear the punishment for the sin of the father""
+  nf_dhr.22.t:0 "A Brigade of Devils?" #Enclave
+  nf_dhr.22.d:0 "Westside was bustling with activity. Ever since the defeat of the Fiends, the fall of the NCR, and the Legion finally being gone for good, the outside of what was once House's Strip was now in a mix of fearing the end of days, and celebrating a newly independent Mojave.\nHowever, nobody paid attention as President-Elect (or simply President) Gannon strolled through the district. Watching for a distinctive red baseball cap, Gannon surveyed the area.\n\n"Never thought I'd get to say these words again, but... what can I do you for, Mr. President?"\n\nTurning around, Gannon witnessed as the aged Captain put a hand up to his cap in a formal salute.\nArcade sighed. "I'm thinking about getting the Brigade back together."\n\nPlacing his fingers on his white-haired lip, Judah Kreger twirled it. "I seem to recall a certain man, now President-Elect, remarking about how us Enclave folk were nothing more than a... what was it? Ah, right. 'Fascist paramilitary organization'."\n\nArcade rolled his eyes. "I'm very well aware of how I think about things. But it's in that thinking that I realized something. Good, evil, light, dark. It's relative. You strived to be good people in service of bringing a dead dream, a dead nation, back to live. You kept the band together alongside my father for years. I turned you all away in fear that you were the objective evil spoken about in centuries-old textbooks and holotapes."\n\nJudah side-eyed the Follower. "And now Mr. California needs us fascist paramilitary men in his service?"\n\nRolling his eyes once more, Arcade indicated to the bustling crowd of Westside. "Legion isn't around anymore, neither is House. And neither is Kimball. I'm their leader now. Even if I have a face too generic to recognize out in public. I know how much of a hypocrite this makes me sound, but think about it. You're not serving the NCR, you're not serving the Enclave, you're serving me. Like you served my father."\n\n"And what makes you think that'll be enough to bring Moreno or Daisy or Johnson back?"\n\nArcade turned around, the sun's glare reflecting off the lens of his glasses."
+  nf_dhr.22.a:0 ""You kept the Devil's together. It's time for me to return the favor.""
 
 
   nf_dhr_news.1.t:0 "Withdrawal from Mojave"

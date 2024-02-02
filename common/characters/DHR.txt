@@ -150,31 +150,102 @@ characters = {
 			}
 		}
 	}
-	DHR_citizen = {
-		name = DHR_citizen_name
+	DHR_cannibal = {
+		name = DHR_cannibal_name
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_DHR_citizen
+				large = GFX_Portrait_DHR_cannibal_johnson
 			}
 			army = {
-				large = GFX_Portrait_DHR_citizen
+				large = GFX_Portrait_DHR_cannibal_johnson
 			}
 		}
 		corps_commander = {
 			visible = {
-				has_country_flag = dhr_citizen_available
+				has_country_flag = dhr_devils_brigade
 			}
 			traits = {
-				enduring_trait
-				pain_train_trait
-				survivalist_trait
+				lucky_trait
+				gunslinger_trait
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	DHR_judah = {
+		name = DHR_judah_name
+		portraits = {
+			civilian = {
+				large = GFX_Portrait_DHR_judah
+			}
+			army = {
+				large = GFX_Portrait_DHR_judah
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_country_flag = dhr_devils_brigade
+			}
+			traits = {
+				perceptive_trait
+				charismatic_trait
+				local_leader_trait
 			}
 			skill = 4
 			attack_skill = 2
-			defense_skill = 3
+			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 3
 		}
 	}
-
+	DHR_dr_henry = {
+		name = dr_henry_name
+		portraits = {
+			army = {
+				small = GFX_Portrait_DHR_advisor_henry
+			}
+		}
+		advisor = {
+			slot = cultural_advisor
+			idea_token = dhr_henry_cultural_advisor
+			allowed = {
+				original_tag = MOT
+			}
+			visible = {
+				has_country_flag = dhr_devils_brigade
+			}
+			traits = {
+				compassionate_doctor
+			}
+		}
+	}
+	DHR_daisy_whitman = {
+		name = NEW_daisy_whitman
+		portraits = {
+			army = {
+				small = GFX_Portrait_DHR_advisor_daisy
+			}
+		}
+		advisor = {
+			slot = air_chief
+			idea_token = DHR_daisy_whitman_air_chief
+			ledger = air
+			allowed = {
+				original_tag = MOT
+			}
+			visible = {
+				has_country_flag = dhr_devils_brigade
+			}
+			traits = {
+				air_close_air_support_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 10
+			}
+		}
+	}
 }
