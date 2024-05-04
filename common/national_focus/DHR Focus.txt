@@ -1902,7 +1902,6 @@ focus_tree = {
 			else_if = {
 				limit = {
 					has_completed_focus = mot_dhr_brighter_day
-					has_completed_focus = mot_dhr_dream_come_true
 				}
 				country_event = nf_dhr.34
 			}
