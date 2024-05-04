@@ -772,6 +772,36 @@ ARR_ai_behavior = {
 	}
 }
 
+# Bone Dancers
+BDT_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_BDT"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_BDT_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_BDT_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ROAD_WARRIORS"
+		text = "RULE_AI_BEHAVIOR_BDT_ROAD_WARRIORS"
+		desc = "RULE_AI_BEHAVIOR_BDT_ROAD_WARRIORS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "SERAPH_LORDS"
+		text = "RULE_AI_BEHAVIOR_BDT_SERAPH_LORDS"
+		desc = "RULE_AI_BEHAVIOR_BDT_SERAPH_LORDS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ODIOUS_KING"
+		text = "RULE_AI_BEHAVIOR_BDT_ODIOUS_KING"
+		desc = "RULE_AI_BEHAVIOR_BDT_ODIOUS_KING_DESC"
+		allow_achievements = yes
+	}
+}
+
 # Broken Coast
 BRK_ai_behavior = {
 	name = "RULE_AI_BEHAVIOR_BRK"
@@ -806,18 +836,42 @@ CES_ai_behavior = {
 		desc = "RULE_AI_BEHAVIOR_CES_DEFAULT_DESC"
 		allow_achievements = yes
 	}
-	# option = {
-	# 	name = "NOBOM"
-	# 	text = "RULE_AI_BEHAVIOR_CES_NOBOM"
-	# 	desc = "RULE_AI_BEHAVIOR_CES_NOBOM_DESC"
-	# 	allow_achievements = yes
-	# }
-	# option = {
-	# 	name = "BOM"
-	# 	text = "RULE_AI_BEHAVIOR_CES_BOM"
-	# 	desc = "RULE_AI_BEHAVIOR_CES_BOM_DESC"
-	# 	allow_achievements = yes
-	# }
+	option = {
+		name = "AURELIUS"
+		text = "RULE_AI_BEHAVIOR_CES_AURELIUS"
+		desc = "RULE_AI_BEHAVIOR_CES_AURELIUS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "LUCIUS"
+		text = "RULE_AI_BEHAVIOR_CES_LUCIUS"
+		desc = "RULE_AI_BEHAVIOR_CES_LUCIUS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "MALPAIS"
+		text = "RULE_AI_BEHAVIOR_CES_MALPAIS"
+		desc = "RULE_AI_BEHAVIOR_CES_MALPAIS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "VULPES"
+		text = "RULE_AI_BEHAVIOR_CES_VULPES"
+		desc = "RULE_AI_BEHAVIOR_CES_VULPES_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "LANIUS"
+		text = "RULE_AI_BEHAVIOR_CES_LANIUS"
+		desc = "RULE_AI_BEHAVIOR_CES_LANIUS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HEIRLESS"
+		text = "RULE_AI_BEHAVIOR_CES_HEIRLESS"
+		desc = "RULE_AI_BEHAVIOR_CES_HEIRLESS_DESC"
+		allow_achievements = yes
+	}
 }
 
 #The Chained Choir
@@ -922,6 +976,53 @@ DES_ai_behavior = {
 	}
 }
 
+DLN_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_DLN"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_DLN_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_DLN_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "LEIF"
+		text = "RULE_AI_BEHAVIOR_DLN_LEIF"
+		desc = "RULE_AI_BEHAVIOR_DLN_LEIF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ELEANOR"
+		text = "RULE_AI_BEHAVIOR_DLN_ELEANOR"
+		desc = "RULE_AI_BEHAVIOR_DLN_ELEANOR_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Dundurn
+DUN_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_DUN"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_DUN_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_DUN_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "JAKOB"
+		text = "RULE_AI_BEHAVIOR_DUN_JAKOB"
+		desc = "RULE_AI_BEHAVIOR_DUN_JAKOB_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "GLORIA"
+		text = "RULE_AI_BEHAVIOR_DUN_GLORIA"
+		desc = "RULE_AI_BEHAVIOR_DUN_GLORIA_DESC"
+		allow_achievements = yes
+	}
+}
+
 # OLD Desert Rangers
 #
 # DES_ai_behavior = {
@@ -952,6 +1053,37 @@ DES_ai_behavior = {
 # 		allow_achievements = yes
 # 	}
 # }
+
+#Eagle Rock
+# Eighties
+EAG_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_EAG"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_EAG_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_EAG_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ELITE_COUNCIL"
+		text = "RULE_AI_BEHAVIOR_EAG_ELITE_COUNCIL"
+		desc = "RULE_AI_BEHAVIOR_EAG_ELITE_COUNCIL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "PEOPLE_COUNCIL"
+		text = "RULE_AI_BEHAVIOR_EAG_PEOPLE_COUNCIL"
+		desc = "RULE_AI_BEHAVIOR_EAG_PEOPLE_COUNCIL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "AIR_MARSHALL"
+		text = "RULE_AI_BEHAVIOR_EAG_AIR_MARSHALL"
+		desc = "RULE_AI_BEHAVIOR_EAG_AIR_MARSHALL_DESC"
+		allow_achievements = yes
+	}
+}
 
 # Eighties
 EHT_ai_behavior = {
@@ -1085,29 +1217,30 @@ GDH_ai_behavior = {
 	}
 }
 
-# Great Khans
-KHA_ai_behavior = {
-	name = "RULE_AI_BEHAVIOR_KHA"
+# Kingdom of Manitoba
+BRA_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_BRA"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
 		name = "DEFAULT"
-		text = "RULE_AI_BEHAVIOR_KHA_DEFAULT"
-		desc = "RULE_AI_BEHAVIOR_KHA_DEFAULT_DESC"
+		text = "RULE_AI_BEHAVIOR_BRA_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_BRA_DEFAULT_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "PAPA"
-		text = "RULE_AI_BEHAVIOR_KHA_PAPA"
-		desc = "RULE_AI_BEHAVIOR_KHA_PAPA_DESC"
+		name = "GUNN"
+		text = "RULE_AI_BEHAVIOR_BRA_GUNN"
+		desc = "RULE_AI_BEHAVIOR_BRA_GUNN_DESC"
 		allow_achievements = yes
 	}
 	option = {
-		name = "REGIS"
-		text = "RULE_AI_BEHAVIOR_KHA_REGIS"
-		desc = "RULE_AI_BEHAVIOR_KHA_REGIS_DESC"
+		name = "TANNER"
+		text = "RULE_AI_BEHAVIOR_BRA_TANNER"
+		desc = "RULE_AI_BEHAVIOR_BRA_TANNER_DESC"
 		allow_achievements = yes
 	}
 }
+
 # Lanius
 LAC_ai_behavior = {
 	name = "RULE_AI_BEHAVIOR_LAC"
@@ -1116,6 +1249,12 @@ LAC_ai_behavior = {
 		name = "DEFAULT"
 		text = "RULE_AI_BEHAVIOR_LAC_DEFAULT"
 		desc = "RULE_AI_BEHAVIOR_LAC_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "WEST"
+		text = "RULE_AI_BEHAVIOR_LAC_WEST"
+		desc = "RULE_AI_BEHAVIOR_LAC_WEST_DESC"
 		allow_achievements = yes
 	}
 	option = {
@@ -1132,6 +1271,65 @@ LAC_ai_behavior = {
 	}
 }
 
+# MacArthur
+MCA_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_MCA"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_MCA_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_MCA_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "LIBERTY"
+		text = "RULE_AI_BEHAVIOR_MCA_LIBERTY"
+		desc = "RULE_AI_BEHAVIOR_MCA_LIBERTY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "SANTIAGO"
+		text = "RULE_AI_BEHAVIOR_MCA_SANTIAGO"
+		desc = "RULE_AI_BEHAVIOR_MCA_SANTIAGOY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ENCLAVE"
+		text = "RULE_AI_BEHAVIOR_MCA_ENCLAVE"
+		desc = "RULE_AI_BEHAVIOR_MCA_ENCLAVE_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Metis Congress
+MTC_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_MTC"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_MTC_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_MTC_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "COALITION"
+		text = "RULE_AI_BEHAVIOR_MTC_COALITION"
+		desc = "RULE_AI_BEHAVIOR_MTC_COALITION_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "CONGRESS"
+		text = "RULE_AI_BEHAVIOR_MTC_CONGRESS"
+		desc = "RULE_AI_BEHAVIOR_MTC_CONGRESS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "CONFEDERALIST"
+		text = "RULE_AI_BEHAVIOR_MTC_CONFEDERALIST"
+		desc = "RULE_AI_BEHAVIOR_MTC_CONFEDERALIST_DESC"
+		allow_achievements = yes
+	}
+}
 
 # Mojave Chapter
 MOJ_ai_behavior = {
@@ -1201,6 +1399,12 @@ MNC_ai_behavior = {
 		name = "PATROCOLUS"
 		text = "RULE_AI_BEHAVIOR_MNC_PATROCOLUS"
 		desc = "RULE_AI_BEHAVIOR_MNC_PATROCOLUS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HAYMAN"
+		text = "RULE_AI_BEHAVIOR_MNC_HAYMAN"
+		desc = "RULE_AI_BEHAVIOR_MNC_HAYMAN_DESC"
 		allow_achievements = yes
 	}
 	option = {
@@ -1337,6 +1541,66 @@ NEW_ai_behavior = {
 	}
 }
 
+# Pleasantdale
+PLT_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_PLT"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_PLT_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_PLT_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "HOPE"
+		text = "RULE_AI_BEHAVIOR_PLT_HOPE"
+		desc = "RULE_AI_BEHAVIOR_PLT_HOPE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "SENSE"
+		text = "RULE_AI_BEHAVIOR_PLT_SENSE"
+		desc = "RULE_AI_BEHAVIOR_PLT_SENSE_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Strathcommune
+STC_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_STC"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_STC_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_STC_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "TERESEE"
+		text = "RULE_AI_BEHAVIOR_STC_TERESEE"
+		desc = "RULE_AI_BEHAVIOR_STC_TERESEE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "THAO"
+		text = "RULE_AI_BEHAVIOR_STC_THAO"
+		desc = "RULE_AI_BEHAVIOR_STC_THAO_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "SOREL"
+		text = "RULE_AI_BEHAVIOR_STC_SOREL"
+		desc = "RULE_AI_BEHAVIOR_STC_SOREL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "BLACK_FLAG"
+		text = "RULE_AI_BEHAVIOR_STC_BLACK_FLAG"
+		desc = "RULE_AI_BEHAVIOR_STC_BLACK_FLAG_DESC"
+		allow_achievements = yes
+	}
+}
+
 # New Vegas
 VEG_ai_behavior = {
 	name = "RULE_AI_BEHAVIOR_VEG"
@@ -1363,6 +1627,36 @@ VEG_ai_behavior = {
 		name = "KING"
 		text = "RULE_AI_BEHAVIOR_VEG_KING"
 		desc = "RULE_AI_BEHAVIOR_VEG_KING_DESC"
+		allow_achievements = yes
+	}
+}
+
+# Northern Khans
+KHA_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_KHA"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_KHA_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_KHA_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "AMGALAN"
+		text = "RULE_AI_BEHAVIOR_KHA_AMGALAN"
+		desc = "RULE_AI_BEHAVIOR_KHA_AMGALAN_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "REGIS"
+		text = "RULE_AI_BEHAVIOR_KHA_REGIS"
+		desc = "RULE_AI_BEHAVIOR_KHA_REGIS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ESEN"
+		text = "RULE_AI_BEHAVIOR_KHA_ESEN"
+		desc = "RULE_AI_BEHAVIOR_KHA_ESEN_DESC"
 		allow_achievements = yes
 	}
 }
@@ -1517,6 +1811,36 @@ SHI_ai_behavior = {
 	}
 }
 
+#The Cause
+TCA_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_TCA"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_TCA_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_TCA_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "DAN"
+		text = "RULE_AI_BEHAVIOR_TCA_DAN"
+		desc = "RULE_AI_BEHAVIOR_TCA_DAN_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ABEL"
+		text = "RULE_AI_BEHAVIOR_TCA_ABEL"
+		desc = "RULE_AI_BEHAVIOR_TCA_ABEL_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "BETTY"
+		text = "RULE_AI_BEHAVIOR_TCA_BETTY"
+		desc = "RULE_AI_BEHAVIOR_TCA_BETTY_DESC"
+		allow_achievements = yes
+	}
+}
+
 # Tierra de los Tzotzil
 TDT_ai_behavior = {
 	name = "RULE_AI_BEHAVIOR_TDT"
@@ -1621,6 +1945,34 @@ VLT_ai_behavior = {
 		name = GORDON
 		text = "RULE_AI_BEHAVIOR_VLT_GORDON"
 		desc = "RULE_AI_BEHAVIOR_VLT_GORDON_DESC"
+		allow_achievements = yes
+	}
+}
+WPG_ai_behavior = {
+	name = "RULE_AI_BEHAVIOR_WPG"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = "DEFAULT"
+		text = "RULE_AI_BEHAVIOR_WPG_DEFAULT"
+		desc = "RULE_AI_BEHAVIOR_WPG_DEFAULT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = STEELE
+		text = "RULE_AI_BEHAVIOR_WPG_STEELE"
+		desc = "RULE_AI_BEHAVIOR_WPG_STEELE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SENATE
+		text = "RULE_AI_BEHAVIOR_WPG_SENATE"
+		desc = "RULE_AI_BEHAVIOR_WPG_SENATE_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = AIR_BARON
+		text = "RULE_AI_BEHAVIOR_WPG_AIR_BARON"
+		desc = "RULE_AI_BEHAVIOR_WPG_AIR_BARON_DESC"
 		allow_achievements = yes
 	}
 }
@@ -2488,13 +2840,13 @@ winter_wonder_wasteland = {
 		desc = "RULE_EVENTS_WINTER_WONDER_WASTELAND_NORTH_POLE_ENCLAVE_DESC"
 		allow_achievements = yes
 	}
-	default = {
+	option = {
 		name = "POLAR_SOVIET"
 		text = "RULE_EVENTS_WINTER_WONDER_WASTELAND_POLAR_SOVIET"
 		desc = "RULE_EVENTS_WINTER_WONDER_WASTELAND_POLAR_SOVIET_DESC"
 		allow_achievements = yes
 	}
-	option = {
+	default = {
 		name = "DISABLED"
 		text = "RULE_EVENTS_WINTER_WONDER_WASTELAND_DISABLED"
 		desc = "RULE_EVENTS_WINTER_WONDER_WASTELAND_DISABLED_DESC"
@@ -2514,6 +2866,22 @@ SHI_emperor_norton = {
 		name = "DISABLED"
 		text = "RULE_EVENTS_SHI_EMPEROR_NORTON_DISABLED"
 		desc = "RULE_EVENTS_SHI_EMPEROR_NORTON_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+minecraft_april_2024 = {
+	name = "RULE_MINECRAFT_2024"
+	group = "RULE_GROUP_EVENTS"
+	default = {
+		name = "DISABLED"
+		text = "RULE_MINECRAFT_2024_DISABLED"
+		desc = "RULE_MINECRAFT_2024_DISABLED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = "ENABLED"
+		text = "RULE_MINECRAFT_2024_ENABLED"
+		desc = "RULE_MINECRAFT_2024_ENABLED_DESC"
 		allow_achievements = yes
 	}
 }

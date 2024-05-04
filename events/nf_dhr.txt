@@ -13,6 +13,7 @@ country_event = {
 	option = {
 		name = nf_dhr.1.a
 		set_stability = 0
+		set_country_flag = dhr_mot_flag
 		add_ideas = dhr_broken_republic
 		every_owned_state = {
 			limit = {

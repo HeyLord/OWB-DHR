@@ -19,6 +19,8 @@ ideologies = {
 			}
 			kings_way = {
 			}
+			revolutionary_democracy = {
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_PEOPLE_1"
@@ -104,6 +106,12 @@ ideologies = {
 			}
 			mercantile_elite = {
 			}
+			divine_right = {
+			}
+			theocractic_council = {
+			}
+			cult_leadership = {
+			}
 			hubology = {
 			}
 		}
@@ -154,6 +162,10 @@ ideologies = {
 			cartel = {
 			}
 			triarchy = {
+			}
+			red_monarchy = {
+			}
+			divine_right_ruler = {
 			}
 		}
 		dynamic_faction_names = {

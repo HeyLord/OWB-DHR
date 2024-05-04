@@ -398,6 +398,13 @@ country_event = {
 		hidden_effect = {
 			load_oob = "legion_siege_battalion"
 		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_malpais = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.5.b
@@ -417,6 +424,13 @@ country_event = {
 		}
 		set_country_flag = ces_malpais_friend
 		custom_effect_tooltip = legion_malpais_friend_tt
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_malpais = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.5.c
@@ -441,6 +455,13 @@ country_event = {
 		}
 		hidden_effect = {
 			load_oob = "legion_chariots"
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_malpais = yes
+				factor = 0
+			}
 		}
 	}
 	option = {
@@ -468,6 +489,9 @@ country_event = {
 			CES_stress_level = 1
 		}
 		set_country_flag = malpais_buddy
+		ai_chance = {
+			base = 25
+		}
 	}
 }
 
@@ -652,6 +676,17 @@ country_event = {
 		add_to_variable = {
 			CES_lucius_glory = 2
 		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_vulpes = yes
+				}
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.21.b
@@ -662,6 +697,17 @@ country_event = {
 		custom_effect_tooltip = nf_legion.20.a_tt
 		add_to_variable = {
 			CES_vulpes_glory = 1
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_aurelius = yes
+				}
+				factor = 0
+			}
 		}
 	}
 	option = {
@@ -675,6 +721,17 @@ country_event = {
 			CES_aurelius_glory = 1
 		}
 		set_country_flag = aurelius_won
+		ai_chance = {
+			base = 25
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_vulpes = yes
+				}
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.21.e
@@ -683,6 +740,17 @@ country_event = {
 		}
 		custom_effect_tooltip = nf_legion.20.a_tt
 		set_country_flag = phx_doused
+		ai_chance = {
+			base = 25
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_vulpes = yes
+				}
+				factor = 0
+			}
+		}
 	}
 }
 
@@ -939,6 +1007,13 @@ country_event = {
 				}
 			}
 		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_vulpes = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.29.b
@@ -959,6 +1034,13 @@ country_event = {
 					level = 2
 					instant_build = yes
 				}
+			}
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_aurelius = yes
+				factor = 0
 			}
 		}
 	}
@@ -996,6 +1078,13 @@ country_event = {
 			NAV.NAV_loyalty = 1
 		}
 		custom_effect_tooltip = NAV_good_friends_tt
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_malpais = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.30.b
@@ -1009,6 +1098,13 @@ country_event = {
 			NAV.NAV_resistance = 1
 		}
 		custom_effect_tooltip = NAV_plotting_tt
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_lucius = yes
+				factor = 0
+			}
+		}
 	}
 }
 
@@ -1047,6 +1143,13 @@ country_event = {
 			}
 		}
 		set_capital = { state = 518 }
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_lucius = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.31.b
@@ -1073,6 +1176,13 @@ country_event = {
 				modifier = {
 					caps_trade_node_route_limit = 1
 				}
+			}
+		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				CES_has_ai_behavior_aurelius = yes
+				factor = 0
 			}
 		}
 	}
@@ -1106,6 +1216,13 @@ country_event = {
 		}
 		custom_effect_tooltip = nf_legion.vulpes_glory
 		set_country_flag = lucius_friend_two_sun
+		ai_chance = {
+			base = 50
+			modifier = {
+				CES_has_ai_behavior_malpais = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.32.b
@@ -1140,6 +1257,13 @@ country_event = {
 		}
 		custom_effect_tooltip = nf_legion.malpais_glory
 		set_country_flag = two_sun_hate_legion
+		ai_chance = {
+			base = 50
+			modifier = {
+				CES_has_ai_behavior_vulpes = yes
+				factor = 0
+			}
+		}
 	}
 }
 
@@ -2433,12 +2557,25 @@ country_event = {
 	option = {
 		name = nf_legion.80.a
 		trigger = {
-			check_variable = {
-				CES_lucius_glory > 3
+			OR = {
+				check_variable = {
+					CES_lucius_glory > 3
+				}
+				CES_has_ai_behavior_lucius = yes
 			}
 		}
 		ai_chance = {
-			base = 5
+			base = 20
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_vulpes = yes
+					CES_has_ai_behavior_lanius = yes
+					CES_has_ai_behavior_heirless = yes
+				}
+				factor = 0
+			}
 		}
 		country_event = nf_legion.76
 		every_other_country = {
@@ -2448,12 +2585,25 @@ country_event = {
 	option = {
 		name = nf_legion.80.b
 		trigger = {
-			check_variable = {
-				CES_vulpes_glory > 3
+			OR = {
+				check_variable = {
+					CES_vulpes_glory > 3
+				}
+				CES_has_ai_behavior_vulpes = yes
 			}
 		}
 		ai_chance = {
-			base = 5
+			base = 20
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_lanius = yes
+					CES_has_ai_behavior_heirless = yes
+				}
+				factor = 0
+			}
 		}
 		country_event = nf_legion.77
 		every_other_country = {
@@ -2463,12 +2613,25 @@ country_event = {
 	option = {
 		name = nf_legion.80.c
 		trigger = {
-			check_variable = {
-				CES_aurelius_glory > 3
+			OR = {
+				check_variable = {
+					CES_aurelius_glory > 3
+				}
+				CES_has_ai_behavior_aurelius = yes
 			}
 		}
 		ai_chance = {
-			base = 5
+			base = 20
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_vulpes = yes
+					CES_has_ai_behavior_lanius = yes
+					CES_has_ai_behavior_heirless = yes
+				}
+				factor = 0
+			}
 		}
 		country_event = nf_legion.81
 		every_other_country = {
@@ -2478,12 +2641,25 @@ country_event = {
 	option = {
 		name = nf_legion.80.e
 		trigger = {
-			check_variable = {
-				CES_malp_glory > 3
+			OR = {
+				check_variable = {
+					CES_malp_glory > 3
+				}
+				CES_has_ai_behavior_malpais = yes
 			}
 		}
 		ai_chance = {
-			base = 5
+			base = 20
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_vulpes = yes
+					CES_has_ai_behavior_lanius = yes
+					CES_has_ai_behavior_heirless = yes
+				}
+				factor = 0
+			}
 		}
 		country_event = nf_legion.78
 		every_other_country = {
@@ -2499,7 +2675,17 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 10
+			base = 20
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_vulpes = yes
+					CES_has_ai_behavior_heirless = yes
+				}
+				factor = 0
+			}
 		}
 		news_event = nf_legion.126
 		every_other_country = {
@@ -2509,6 +2695,19 @@ country_event = {
 	option = {
 		name = nf_legion.80.f
 		country_event = nf_legion.82
+		ai_chance = {
+			base = 20
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_malpais = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_vulpes = yes
+					CES_has_ai_behavior_lanius = yes
+				}
+				factor = 0
+			}
+		}
 	}
 }
 
@@ -3152,6 +3351,9 @@ country_event = {
 				}
 				MOT = {
 					exists = no
+					NOT = {
+						has_country_flag = dhr_mot_flag
+					}
 				}
 			}
 			country_event = {
@@ -3429,7 +3631,7 @@ country_event = {
 					}
 				}
 				transfer_units_fraction = {
-					target = MAL
+					target = CAU
 					size = 0.25
 					stockpile_ratio = 0.25
 					army_ratio = 0.25
@@ -3696,6 +3898,9 @@ country_event = {
 					army_ratio = 0.25
 					navy_ratio = 0.25
 					air_ratio = 0.25
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = MAL
@@ -3704,6 +3909,9 @@ country_event = {
 					army_ratio = 0.33
 					navy_ratio = 0.33
 					air_ratio = 0.33
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = AUR
@@ -3712,6 +3920,9 @@ country_event = {
 					army_ratio = 0.5
 					navy_ratio = 0.5
 					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 			}
 			else_if = {
@@ -3731,14 +3942,20 @@ country_event = {
 					army_ratio = 0.25
 					navy_ratio = 0.25
 					air_ratio = 0.25
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
-					target = MAL
+					target = CAU
 					size = 0.33
 					stockpile_ratio = 0.33
 					army_ratio = 0.33
 					navy_ratio = 0.33
 					air_ratio = 0.33
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = AUR
@@ -3747,6 +3964,9 @@ country_event = {
 					army_ratio = 0.5
 					navy_ratio = 0.5
 					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 			}
 			else_if = {
@@ -3768,6 +3988,9 @@ country_event = {
 					army_ratio = 0.20
 					navy_ratio = 0.20
 					air_ratio = 0.20
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = MAL
@@ -3784,6 +4007,9 @@ country_event = {
 					army_ratio = 0.34
 					navy_ratio = 0.34
 					air_ratio = 0.34
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = CAU
@@ -3792,6 +4018,9 @@ country_event = {
 					army_ratio = 0.5
 					navy_ratio = 0.5
 					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 			}
 			else_if = {
@@ -3810,6 +4039,9 @@ country_event = {
 					army_ratio = 0.25
 					navy_ratio = 0.25
 					air_ratio = 0.25
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = VLP
@@ -3818,6 +4050,9 @@ country_event = {
 					army_ratio = 0.33
 					navy_ratio = 0.33
 					air_ratio = 0.33
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = CAU
@@ -3826,6 +4061,9 @@ country_event = {
 					army_ratio = 0.5
 					navy_ratio = 0.5
 					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 			}
 			else_if = {
@@ -3847,6 +4085,9 @@ country_event = {
 					army_ratio = 0.20
 					navy_ratio = 0.20
 					air_ratio = 0.20
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = MAL
@@ -3855,6 +4096,9 @@ country_event = {
 					army_ratio = 0.25
 					navy_ratio = 0.25
 					air_ratio = 0.25
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = VLP
@@ -3863,6 +4107,9 @@ country_event = {
 					army_ratio = 0.34
 					navy_ratio = 0.34
 					air_ratio = 0.34
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = LAN
@@ -3871,6 +4118,9 @@ country_event = {
 					army_ratio = 0.5
 					navy_ratio = 0.5
 					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 			}
 			else_if = {
@@ -3892,14 +4142,20 @@ country_event = {
 					army_ratio = 0.20
 					navy_ratio = 0.20
 					air_ratio = 0.20
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
-					target = MAL
+					target = CAU
 					size = 0.25
 					stockpile_ratio = 0.25
 					army_ratio = 0.25
 					navy_ratio = 0.25
 					air_ratio = 0.25
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = VLP
@@ -3908,6 +4164,9 @@ country_event = {
 					army_ratio = 0.34
 					navy_ratio = 0.34
 					air_ratio = 0.34
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 				transfer_units_fraction = {
 					target = LAN
@@ -3916,6 +4175,9 @@ country_event = {
 					army_ratio = 0.5
 					navy_ratio = 0.5
 					air_ratio = 0.5
+					keep_unit_leaders_trigger = {
+						always = yes
+					}
 				}
 			}
 		}
@@ -4801,8 +5063,10 @@ country_event = {
 				}
 				AND = {
 					NOT = {
-						LAC = { has_focus_tree = lac_revolter_focus_tree }
-						owns_state = 5
+						AND = {
+							LAC = { has_focus_tree = lac_revolter_focus_tree }
+							owns_state = 5
+						}
 					}
 					has_country_flag = CES_burned_man
 				}
@@ -5313,6 +5577,13 @@ country_event = {
 		}
 		custom_effect_tooltip = CES_stress_decrease
 		retire_character = CES_malpais
+		ai_chance = {
+			base = 50
+			modifier = {
+				CES_has_ai_behavior_malpais = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.90.b
@@ -5320,6 +5591,9 @@ country_event = {
 			CES_malp_glory = 1
 		}
 		custom_effect_tooltip = nf_legion.malpais_glory
+		ai_chance = {
+			base = 50
+		}
 	}
 }
 
@@ -5419,7 +5693,7 @@ country_event = {
 		ai_chance = {
 			base = 4
 			modifier = {
-				has_global_flag = death_of_caesar_enabled_flag
+				CES_has_ai_behavior_caesar_death = yes
 				factor = 0
 			}
 		}
@@ -5435,7 +5709,7 @@ country_event = {
 		ai_chance = {
 			base = 1
 			modifier = {
-				has_global_flag = life_of_caesar_enabled_flag
+				CES_has_ai_behavior_caesar_lives = yes
 				factor = 0
 			}
 		}
@@ -5611,6 +5885,13 @@ country_event = {
 		}
 		custom_effect_tooltip = CES_stress_decrease
 		retire_character = CES_malpais
+		ai_chance = {
+			base = 50
+			modifier = {
+				CES_has_ai_behavior_malpais = yes
+				factor = 0
+			}
+		}
 	}
 	option = {
 		trigger = {
@@ -5621,6 +5902,9 @@ country_event = {
 			CES_stress_level = 1
 		}
 		custom_effect_tooltip = nf_legion.104.b_tt
+		ai_chance = {
+			base = 50
+		}
 	}
 }
 
@@ -5776,6 +6060,16 @@ country_event = {
 				add_max_trait = 1
 			}
 		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_vulpes = yes
+					CES_has_ai_behavior_aurelius = yes
+				}
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.111.b
@@ -5813,6 +6107,16 @@ country_event = {
 				logistics_skill = 3
 			}
 		}
+		ai_chance = {
+			base = 25
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_aurelius = yes
+				}
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.111.c
@@ -5829,6 +6133,16 @@ country_event = {
 			}
 		}
 		set_country_flag = aurelius_won
+		ai_chance = {
+			base = 25
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_vulpes = yes
+				}
+				factor = 0
+			}
+		}
 	}
 	option = {
 		name = nf_legion.111.e
@@ -5858,10 +6172,18 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			base = 2
+			base = 50
 			modifier = {
-				add = 3
+				add = 75
 				has_character = LAC_lanius	# Bonus chance if Lanius already joined the Legion
+			}
+			modifier = {
+				OR = {
+					CES_has_ai_behavior_lucius = yes
+					CES_has_ai_behavior_aurelius = yes
+					CES_has_ai_behavior_vulpes = yes
+				}
+				factor = 0
 			}
 		}
 	}

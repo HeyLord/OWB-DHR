@@ -976,7 +976,7 @@ country_event = { # California Civil War
 			}
 			add_country_leader_role = {
 				character = MOT_general_lee_oliver
-				promote_character = yes
+				promote_leader = yes
 				country_leader = {
 					ideology = constitutional_republic
 					traits = {
@@ -986,7 +986,6 @@ country_event = { # California Civil War
 					id = -1
 				}
 			}
-			retire_country_leader = yes
 		}
 		ai_chance = {
             base = 1
@@ -1018,7 +1017,7 @@ country_event = { # California Civil War
 			}
 			add_country_leader_role = {
 				character = MOT_josh_hanlon
-				promote_character = yes
+				promote_leader = yes
 				country_leader = {
 					desc = MOT_JOSH_HANLON_DESC
 					ideology = constitutional_republic
@@ -1030,7 +1029,6 @@ country_event = { # California Civil War
 					id = -1
 				}
 			}
-			retire_country_leader = yes
 		}
 		ai_chance = {
             base = 1
@@ -1045,7 +1043,7 @@ country_event = { # California Civil War
 		#end_puppet = yes
 		add_country_leader_role = {
 			character = MOT_julie_farkas
-			promote_character = yes
+			promote_leader = yes
 			country_leader = {
 				ideology = peoples_militia
 				traits = {
@@ -1062,7 +1060,6 @@ country_event = { # California Civil War
                 add = 45
             }
         }
-		retire_country_leader = yes
 		set_country_flag = MOT_civil_war_decided
 		leave_new_california = yes
 		NCR = {
@@ -1140,7 +1137,7 @@ country_event = {
 			limit = {
 				is_core_of = NCR
 			}
-			add_compliance = 15
+			add_compliance = 25
 		}
 		swap_ideas = {
 			remove_idea = mot_oliv_unpopular_leader
@@ -1455,6 +1452,33 @@ news_event = { # Operation: Sunburst
 			NOT = { original_tag = VEG }
 		}
 		name = nf_mot_news.3.c
+	}
+}
+news_event = { #Bitter Springs start
+	id = nf_mot_news.4
+	title = nf_mot_news.4.t
+	desc = nf_mot_news.4.d
+	picture = GFX_event_KHA_khans_sign
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot_news.4.a
+		custom_effect_tooltip = mot_bittersprings_march_tt
+		hidden_effect = { country_event = { id = nf_mot_news.5 days = 4 } }
+	}
+}
+news_event = { #Bitter Springs finish
+	id = nf_mot_news.5
+	title = nf_mot_news.5.t
+	desc = nf_mot_news.5.d
+	picture = GFX_event_KHA_bitter_springs_massacre
+
+	is_triggered_only = yes
+
+	option = {
+		name = nf_mot_news.5.a
+		add_stability = -0.05
 	}
 }
 
