@@ -5,5 +5,6 @@ tags={
 dependencies={
 	"Old World Blues"
 }
-name="OWB - Duty, Honor, Republic"
-supported_version="1.12.14"
+name="OWB - Duty, Honor, Republic - DEV"
+supported_version="1.14.*"
+remote_file_id="3152336771"
